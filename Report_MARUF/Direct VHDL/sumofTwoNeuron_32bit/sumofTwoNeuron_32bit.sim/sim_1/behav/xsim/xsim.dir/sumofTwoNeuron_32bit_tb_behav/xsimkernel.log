@@ -1,7 +1,0 @@
-Running: xsim.dir/sumofTwoNeuron_32bit_tb_behav/xsimk.exe -simmode gui -wdb sumofTwoNeuron_32bit_tb_behav.wdb -simrunnum 0 -socket 55592
-Design successfully loaded
-Design Loading Memory Usage: 24984 KB (Peak: 24984 KB)
-Design Loading CPU Usage: 108 ms
-Simulation completed
-Simulation Memory Usage: 25532 KB (Peak: 25532 KB)
-Simulation CPU Usage: 2265 ms
