@@ -1,10 +1,10 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0/stn_16bit_c_addsub_v12_0_i0/sim/stn_16bit_c_addsub_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/stn_16bit_c_addsub_v12_0_i0/sim/stn_16bit_c_addsub_v12_0_i0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_c_addsub_v12_0_i0'
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0/stn_16bit_c_addsub_v12_0_i1/sim/stn_16bit_c_addsub_v12_0_i1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/stn_16bit_c_addsub_v12_0_i1/sim/stn_16bit_c_addsub_v12_0_i1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_c_addsub_v12_0_i1'
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0/stn_16bit_cordic_v6_0_i0/sim/stn_16bit_cordic_v6_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/stn_16bit_cordic_v6_0_i0/sim/stn_16bit_cordic_v6_0_i0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_cordic_v6_0_i0'
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0/stn_16bit_mult_gen_v12_0_i0/sim/stn_16bit_mult_gen_v12_0_i0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/stn_16bit_mult_gen_v12_0_i0/sim/stn_16bit_mult_gen_v12_0_i0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_mult_gen_v12_0_i0'
 INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/conv_pkg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg.vhd" into library xil_defaultlib
@@ -25,6 +25,7 @@ INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_
 INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_693bad5bbb'
 INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_883301bae9'
 INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_71bfc7d96c'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_xlregister'
 INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_d3eecd1a63'
 INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_074aca0999'
 INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_63dd8e5609'
@@ -49,10 +50,7 @@ INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_subsystem'
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_struct'
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_default_clock_driver'
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit'
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0/sim/stn_16bit_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/sim/stn_16bit_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_0'
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/input_package.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/sysgen_STN.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'sysgen_STN'
 INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/sysgen_STN_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'sysgen_STN_tb'
