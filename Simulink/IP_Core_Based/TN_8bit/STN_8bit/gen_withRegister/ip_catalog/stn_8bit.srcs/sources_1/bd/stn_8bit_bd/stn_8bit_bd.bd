@@ -1,0 +1,116 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x53F9567BCB7F868E",
+      "design_src": "SYSGEN",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../stn_8bit.gen/sources_1/bd/stn_8bit_bd",
+      "name": "stn_8bit_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "stn_8bit_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "stn_8bit_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "input_t": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "out_imag": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 5} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out_real": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 5} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "stn_8bit_1": {
+        "vlnv": "User_Company:SysGen:stn_8bit:1.0",
+        "xci_name": "stn_8bit_bd_stn_8bit_1_0",
+        "xci_path": "ip\\stn_8bit_bd_stn_8bit_1_0\\stn_8bit_bd_stn_8bit_1_0.xci",
+        "inst_hier_path": "stn_8bit_1"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "stn_8bit_1/clk"
+        ]
+      },
+      "input_t_1": {
+        "ports": [
+          "input_t",
+          "stn_8bit_1/input_t"
+        ]
+      },
+      "stn_8bit_1_out_imag": {
+        "ports": [
+          "stn_8bit_1/out_imag",
+          "out_imag"
+        ]
+      },
+      "stn_8bit_1_out_real": {
+        "ports": [
+          "stn_8bit_1/out_real",
+          "out_real"
+        ]
+      }
+    }
+  }
+}
