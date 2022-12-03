@@ -1,0 +1,446 @@
+
+*** Running vivado
+    with args -log stn_8bit_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source stn_8bit_0.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source stn_8bit_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/gen/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.cache/ip 
+Command: synth_design -top stn_8bit_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19364
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/synth/stn_8bit_0.vhd:68]
+INFO: [Synth 8-3491] module 'stn_8bit' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:1348' bound to instance 'U0' of component 'stn_8bit' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/synth/stn_8bit_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:1356]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_default_clock_driver' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:1328]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_default_clock_driver' (4#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:1328]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_struct' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:1293]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_subsystem' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:835]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_subsystem_x0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_xladdsub' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:680]
+INFO: [Synth 8-3491] module 'stn_8bit_c_addsub_v12_0_i1' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i1/synth/stn_8bit_c_addsub_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'stn_8bit_c_addsub_v12_0_i1' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:776]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_c_addsub_v12_0_i1' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i1/synth/stn_8bit_c_addsub_v12_0_i1.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 9 - type: integer 
+	Parameter C_B_WIDTH bound to: 9 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 9 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_cordic_v6_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i1/synth/stn_8bit_c_addsub_v12_0_i1.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_c_addsub_v12_0_i1' (11#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i1/synth/stn_8bit_c_addsub_v12_0_i1.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_xladdsub' (12#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:680]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_xladdsub__parameterized0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:680]
+INFO: [Synth 8-3491] module 'stn_8bit_c_addsub_v12_0_i0' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i0/synth/stn_8bit_c_addsub_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'stn_8bit_c_addsub_v12_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:765]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_c_addsub_v12_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i0/synth/stn_8bit_c_addsub_v12_0_i0.vhd:69]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 9 - type: integer 
+	Parameter C_B_WIDTH bound to: 9 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 9 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_14' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_cordic_v6_0_i0/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_14' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i0/synth/stn_8bit_c_addsub_v12_0_i0.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_c_addsub_v12_0_i0' (13#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i0/synth/stn_8bit_c_addsub_v12_0_i0.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_xladdsub__parameterized0' (13#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:680]
+INFO: [Synth 8-638] synthesizing module 'xlcordic_f819f250414fe513e0d0fc1bbf0a1b05' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:864]
+INFO: [Synth 8-3491] module 'stn_8bit_cordic_v6_0_i0' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_cordic_v6_0_i0/synth/stn_8bit_cordic_v6_0_i0.vhd:59' bound to instance 'stn_8bit_cordic_v6_0_i0_instance' of component 'stn_8bit_cordic_v6_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:879]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_cordic_v6_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_cordic_v6_0_i0/synth/stn_8bit_cordic_v6_0_i0.vhd:68]
+	Parameter C_ARCHITECTURE bound to: 2 - type: integer 
+	Parameter C_CORDIC_FUNCTION bound to: 2 - type: integer 
+	Parameter C_COARSE_ROTATE bound to: 1 - type: integer 
+	Parameter C_DATA_FORMAT bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ACLK bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_CARTESIAN bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_PHASE bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_ITERATIONS bound to: 0 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 8 - type: integer 
+	Parameter C_PHASE_FORMAT bound to: 0 - type: integer 
+	Parameter C_PIPELINE_MODE bound to: 0 - type: integer 
+	Parameter C_PRECISION bound to: 0 - type: integer 
+	Parameter C_ROUND_MODE bound to: 0 - type: integer 
+	Parameter C_SCALE_COMP bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_PHASE_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_PHASE_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_PHASE_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_PHASE_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_CARTESIAN_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_CARTESIAN_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_CARTESIAN_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_CARTESIAN_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'cordic_v6_0_17' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_cordic_v6_0_i0/hdl/cordic_v6_0_vh_rfs.vhd:10135' bound to instance 'U0' of component 'cordic_v6_0_17' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_cordic_v6_0_i0/synth/stn_8bit_cordic_v6_0_i0.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_cordic_v6_0_i0' (29#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_cordic_v6_0_i0/synth/stn_8bit_cordic_v6_0_i0.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'xlcordic_f819f250414fe513e0d0fc1bbf0a1b05' (30#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:864]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_5848a47491' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_5848a47491' (31#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_26eac75b3e' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_26eac75b3e' (32#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_f08a578687' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:186]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_f08a578687' (33#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_404d514570' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_404d514570' (34#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:205]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_9668e7269f' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:224]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_9668e7269f' (35#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_230efeff3b' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:243]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_230efeff3b' (36#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:243]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_647337a22b' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:262]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_647337a22b' (37#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'sysgen_inverter_a48c241908' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:282]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_inverter_a48c241908' (38#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'sysgen_logical_d0a5a8348f' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:326]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_d0a5a8348f' (39#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:326]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_49ff4f1d79' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:373]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_49ff4f1d79' (40#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_75407bcf55' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:432]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_75407bcf55' (41#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:432]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_21712366ca' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:478]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_21712366ca' (42#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:478]
+INFO: [Synth 8-638] synthesizing module 'sysgen_shift_e8ffcf643d' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:523]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_shift_e8ffcf643d' (43#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:523]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_xlslice' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:583]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_xlslice' (44#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:583]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_subsystem_x0' (45#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_subsystem1' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:425]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_subsystem1' (46#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:425]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_xladdsub__parameterized1' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:680]
+INFO: [Synth 8-3491] module 'stn_8bit_c_addsub_v12_0_i0' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_c_addsub_v12_0_i0/synth/stn_8bit_c_addsub_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'stn_8bit_c_addsub_v12_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:765]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_xladdsub__parameterized1' (46#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:680]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_2e0ef23534' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_2e0ef23534' (47#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_xlmult' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:978]
+INFO: [Synth 8-3491] module 'stn_8bit_mult_gen_v12_0_i0' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/synth/stn_8bit_mult_gen_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'stn_8bit_mult_gen_v12_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:1040]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_mult_gen_v12_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/synth/stn_8bit_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/synth/stn_8bit_mult_gen_v12_0_i0.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/synth/stn_8bit_mult_gen_v12_0_i0.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 8 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 8 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 15 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_17' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21010' bound to instance 'U0' of component 'mult_gen_v12_0_17' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/synth/stn_8bit_mult_gen_v12_0_i0.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_mult_gen_v12_0_i0' (53#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/synth/stn_8bit_mult_gen_v12_0_i0.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_xlmult' (54#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:978]
+INFO: [Synth 8-638] synthesizing module 'stn_8bit_xlmult__parameterized0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:978]
+INFO: [Synth 8-3491] module 'stn_8bit_mult_gen_v12_0_i0' declared at 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/stn_8bit_mult_gen_v12_0_i0/synth/stn_8bit_mult_gen_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'stn_8bit_mult_gen_v12_0_i0' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:1040]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_xlmult__parameterized0' (54#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:978]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_1999d89de7' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_1999d89de7' (55#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_9376331751' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_9376331751' (56#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_2efb9544f4' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_2efb9544f4' (57#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_837d8a173b' [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_837d8a173b' (58#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit_entity_declarations.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_subsystem' (59#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:835]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_struct' (60#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:1293]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit' (61#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/xil_defaultlib/hdl/stn_8bit.vhd:1356]
+INFO: [Synth 8-256] done synthesizing module 'stn_8bit_0' (62#1) [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/synth/stn_8bit_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1280.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1280.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1280.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1280.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1308 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/constrs/stn_8bit.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_8bit_0/constrs/stn_8bit.xdc] for cell 'U0'
+Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.runs/stn_8bit_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.runs/stn_8bit_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1392.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1393.730 ; gain = 1.285
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.runs/stn_8bit_0_synth_1/dont_touch.xdc, line 21).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/mult/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/mult1/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/mult2/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/mult3/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/mult4/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/mult5/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem/cordic_6_0/stn_8bit_cordic_v6_0_i0_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem1/cordic_6_0/stn_8bit_cordic_v6_0_i0_instance. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem/addsub1/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem/addsub2/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem1/addsub1/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem1/addsub2/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem/addsub3/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/addsub/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/addsub3/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/addsub6/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/addsub7/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem/addsub4/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem1/addsub3/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/stn_8bit_struct/subsystem/subsystem1/addsub4/\comp0.core_instance0 . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/stn_8bit_struct/subsystem/subsystem/constant4' (sysgen_constant_404d514570) to 'U0/stn_8bit_struct/subsystem/subsystem/constant8'
+INFO: [Synth 8-223] decloning instance 'U0/stn_8bit_struct/subsystem/subsystem/constant5' (sysgen_constant_9668e7269f) to 'U0/stn_8bit_struct/subsystem/subsystem/constant9'
+INFO: [Synth 8-223] decloning instance 'U0/stn_8bit_struct/subsystem/subsystem1/constant4' (sysgen_constant_404d514570) to 'U0/stn_8bit_struct/subsystem/subsystem1/constant8'
+INFO: [Synth 8-223] decloning instance 'U0/stn_8bit_struct/subsystem/subsystem1/constant5' (sysgen_constant_9668e7269f) to 'U0/stn_8bit_struct/subsystem/subsystem1/constant9'
+INFO: [Synth 8-223] decloning instance 'U0/stn_8bit_struct/subsystem/exp_theta_hdl_1' (sysgen_constant_2e0ef23534) to 'U0/stn_8bit_struct/subsystem/exp_theta_hdl_2'
+INFO: [Synth 8-223] decloning instance 'U0/stn_8bit_struct/subsystem/phi_hdl_1' (sysgen_constant_2efb9544f4) to 'U0/stn_8bit_struct/subsystem/phi_hdl_2'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     6|
+|3     |LUT1    |   134|
+|4     |LUT2    |   212|
+|5     |LUT3    |   288|
+|6     |LUT5    |    46|
+|7     |LUT6    |    18|
+|8     |MUXCY   |   528|
+|9     |XORCY   |   514|
+|10    |FDRE    |   172|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1393.730 ; gain = 112.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 1393.730 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1393.730 ; gain = 112.918
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1393.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1048 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1393.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 162 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 162 instances
+
+Synth Design complete, checksum: feeb8d2e
+INFO: [Common 17-83] Releasing license: Synthesis
+117 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1393.730 ; gain = 112.918
+INFO: [Common 17-1381] The checkpoint 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.runs/stn_8bit_0_synth_1/stn_8bit_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP stn_8bit_0, cache-ID = 757906b5722667d4
+INFO: [Coretcl 2-1174] Renamed 443 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/vivado/sysgen_STN/sysgen_STN.runs/stn_8bit_0_synth_1/stn_8bit_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file stn_8bit_0_utilization_synth.rpt -pb stn_8bit_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 22 16:23:48 2022...

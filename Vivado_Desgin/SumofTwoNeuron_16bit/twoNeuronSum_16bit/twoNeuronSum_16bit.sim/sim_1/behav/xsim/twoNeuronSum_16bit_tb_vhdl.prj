@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../twoNeuronSum_16bit.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd" \
+"../../../../twoNeuronSum_16bit.srcs/sources_1/new/input_package.vhd" \
+"../../../../twoNeuronSum_16bit.srcs/sources_1/new/mult.vhd" \
+"../../../../twoNeuronSum_16bit.srcs/sources_1/new/pinormalize.vhd" \
+"../../../../twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit.vhd" \
+"../../../../twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit_tb.vhd" \
+
+# Do not sort compile order
+nosort

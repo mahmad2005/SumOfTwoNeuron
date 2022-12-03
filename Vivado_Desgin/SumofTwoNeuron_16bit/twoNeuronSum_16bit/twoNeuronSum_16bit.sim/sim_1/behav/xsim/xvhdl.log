@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'twoNeuronSum_16bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'twoNeuronSum_16bit_tb'

@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Nov 19 13:23:29 2022
+# Process ID: 23284
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29164 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Vivado_Desgin\SumofTwoNeuron_16bit\twoNeuronSum_16bit\twoNeuronSum_16bit.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 81 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+relaunch_sim
+run 81 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 81 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 81 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 81 us
+close_sim

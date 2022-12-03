@@ -1,0 +1,20 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2021.1                 C:/Xilinx/Vivado/2021.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\Polyspace\R2021a
+Vivado 2021.1                           C:/Xilinx/Vivado/2021.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Attempt to access address location 1022, exceeds the dept...
+     Block: 'BRAM_STN_32bit/Subsystem/Subsystem/BRAM_CORDIC/imag'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'BRAM_STN_32bit/Subsystem/Subsystem/BRAM_CORDIC/imag'
+
+Details:
+Attempt to access address location 1022, exceeds the depth , 629,
+specified for single port ROM.
+--------------------------------------------------------------------------------

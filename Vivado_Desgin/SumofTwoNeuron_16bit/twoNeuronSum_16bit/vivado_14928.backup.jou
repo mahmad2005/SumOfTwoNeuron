@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Nov 18 15:57:45 2022
+# Process ID: 14928
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25168 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Vivado_Desgin\twoNeuronSum_16bit\twoNeuronSum_16bit.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.xpr
+update_compile_order -fileset sources_1
+close [ open E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/pinormalize.vhd w ]
+add_files E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/pinormalize.vhd
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+update_compile_order -fileset sources_1
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {0 0ns}
+run 150 us
+add_force {/twoNeuronSum_16bit/t} -radix hex {8192 0ns}
+run 150 us
+add_force {/twoNeuronSum_16bit/t} -radix dec {8192 0ns}
+run 150 us
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {8192 0ns}
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {8192 0ns}
+run 150 us
+run 150 us
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {8192 0ns}
+run 150 us
+close [ open E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/input_package.vhd w ]
+add_files E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/input_package.vhd
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+update_compile_order -fileset sources_1
+close_sim
+close [ open E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/mult.vhd w ]
+add_files E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/mult.vhd
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+update_compile_order -fileset sources_1
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {8192 0ns}
+run 150 us
+close_sim
+create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name cordic_0
+set_property -dict [list CONFIG.Functional_Selection {Sin_and_Cos} CONFIG.Data_Format {SignedFraction}] [get_ips cordic_0]
+generate_target {instantiation_template} [get_files e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/ip/cordic_0/cordic_0.xci]
+generate_target all [get_files  e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/ip/cordic_0/cordic_0.xci]
+catch { config_ip_cache -export [get_ips -all cordic_0] }
+export_ip_user_files -of_objects [get_files e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/ip/cordic_0/cordic_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/ip/cordic_0/cordic_0.xci]
+launch_runs cordic_0_synth_1 -jobs 8
+wait_on_run cordic_0_synth_1
+export_simulation -of_objects [get_files e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/ip/cordic_0/cordic_0.xci] -directory E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.ip_user_files/sim_scripts -ip_user_files_dir E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.ip_user_files -ipstatic_source_dir E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.cache/compile_simlib/modelsim} {questa=E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.cache/compile_simlib/questa} {riviera=E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.cache/compile_simlib/riviera} {activehdl=E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {0 0ns}
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {0 0ns}
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {8192 0ns}
+run 150 us
+add_force {/twoNeuronSum_16bit/t} -radix dec {6144 0ns}
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {00 0ns}
+run 150 us
+add_force {/twoNeuronSum_16bit/t} -radix dec {6144 0ns}
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {0 0ns}
+run 150 us
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {0 0ns}
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {0 0ns}
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit.tcl
+add_force {/twoNeuronSum_16bit/CLK} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/twoNeuronSum_16bit/t} -radix dec {0 0ns}
+run 150 us
+close_sim
+close [ open E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit_tb.vhd w ]
+add_files E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit_tb.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg}
+run 150 us
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+close [ open E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/mult_fix.vhd w ]
+add_files E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/mult_fix.vhd
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+save_wave_config {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 150 us
+run 150 us
+run 150 us
+relaunch_sim
+run 100 us
+relaunch_sim
+run 80 us
+run 81 us
+relaunch_sim
+run 81 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 81 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+relaunch_sim
+run 81 us
+close_sim
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 81 us
+close_sim

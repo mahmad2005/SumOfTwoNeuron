@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Nov 19 16:03:52 2022
+# Process ID: 23148
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18828 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Vivado_Desgin\SumofTwoNeuron_16bit\twoNeuronSum_16bit\twoNeuronSum_16bit.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
+source twoNeuronSum_16bit_tb.tcl
+run 81 us
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top twoNeuronSum_16bit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+file mkdir E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/constrs_1
+file mkdir E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/constrs_1/new
+close [ open E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/constrs_1/new/config.xdc w ]
+add_files -fileset constrs_1 E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/constrs_1/new/config.xdc
+set_property target_constrs_file E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/constrs_1/new/config.xdc [current_fileset -constrset]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

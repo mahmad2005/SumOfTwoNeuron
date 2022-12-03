@@ -1,0 +1,10 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd,1668830891,vhdl,,,,cordic_0,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/input_package.vhd,1668846084,vhdl,E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit.vhd;E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit_tb.vhd,,,nn_package,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/mult.vhd,1668829938,vhdl,,,,mult,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/pinormalize.vhd,1668896003,vhdl,,,,pinormalize,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit.vhd,1668896779,vhdl,E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit_tb.vhd,,,twoneuronsum_16bit,,,,,,,,
+E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.srcs/sources_1/new/twoNeuronSum_16bit_tb.vhd,1668886908,vhdl,,,,twoneuronsum_16bit_tb,,,,,,,,

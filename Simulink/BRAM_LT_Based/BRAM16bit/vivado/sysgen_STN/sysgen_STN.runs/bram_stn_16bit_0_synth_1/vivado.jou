@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 22 21:54:34 2022
+# Process ID: 27016
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_16bit_0_synth_1
+# Command line: vivado.exe -log bram_stn_16bit_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram_stn_16bit_0.tcl
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_16bit_0_synth_1/bram_stn_16bit_0.vds
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_16bit_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bram_stn_16bit_0.tcl -notrace

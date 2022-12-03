@@ -1,0 +1,427 @@
+{
+  'Line_1006' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/exp_theta_hdl_1',
+    'Instance' => 'exp_theta_hdl_1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Exp_Theta_HDL_1'
+  },
+  'Line_1013' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/exp_theta_hdl_2',
+    'Instance' => 'exp_theta_hdl_2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Exp_Theta_HDL_2'
+  },
+  'Line_1020' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/mult',
+    'Instance' => 'mult',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Mult'
+  },
+  'Line_1057' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/mult1',
+    'Instance' => 'mult1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Mult1'
+  },
+  'Line_1094' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/mult2',
+    'Instance' => 'mult2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Mult2'
+  },
+  'Line_1131' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/mult3',
+    'Instance' => 'mult3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Mult3'
+  },
+  'Line_1168' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/mult4',
+    'Instance' => 'mult4',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Mult4'
+  },
+  'Line_120' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/addsub3',
+    'Instance' => 'addsub3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/AddSub3'
+  },
+  'Line_1205' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/mult5',
+    'Instance' => 'mult5',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Mult5'
+  },
+  'Line_1242' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/omega_hdl_1',
+    'Instance' => 'omega_hdl_1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Omega_HDL_1'
+  },
+  'Line_1249' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/omega_hdl_2',
+    'Instance' => 'omega_hdl_2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Omega_HDL_2'
+  },
+  'Line_1256' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/phi_hdl_1',
+    'Instance' => 'phi_hdl_1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Phi_HDL_1'
+  },
+  'Line_1263' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/phi_hdl_2',
+    'Instance' => 'phi_hdl_2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Phi_HDL_2'
+  },
+  'Line_1270' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/reinterpret',
+    'Instance' => 'reinterpret',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Reinterpret'
+  },
+  'Line_1305' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem',
+    'Instance' => 'subsystem',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem'
+  },
+  'Line_1330' => {
+    'CodeInstance' => 'twoneuronhdl_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1362' => {
+    'CodeInstance' => 'twoneuronhdl_default_clock_driver',
+    'Instance' => 'twoneuronhdl_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1370' => {
+    'CodeInstance' => 'twoneuronhdl_struct',
+    'Instance' => 'twoneuronhdl_struct',
+    'SimulinkInstance' => 'twoNeuronHDL'
+  },
+  'Line_151' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/addsub4',
+    'Instance' => 'addsub4',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/AddSub4'
+  },
+  'Line_182' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/cordic_6_0',
+    'Instance' => 'cordic_6_0',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/CORDIC 6.0'
+  },
+  'Line_190' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant_x0',
+    'Instance' => 'constant_x0',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant'
+  },
+  'Line_197' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant3',
+    'Instance' => 'constant3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant3'
+  },
+  'Line_204' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant4',
+    'Instance' => 'constant4',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant4'
+  },
+  'Line_211' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant5',
+    'Instance' => 'constant5',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant5'
+  },
+  'Line_218' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant6',
+    'Instance' => 'constant6',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant6'
+  },
+  'Line_225' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant7',
+    'Instance' => 'constant7',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant7'
+  },
+  'Line_232' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant8',
+    'Instance' => 'constant8',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant8'
+  },
+  'Line_239' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant9',
+    'Instance' => 'constant9',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant9'
+  },
+  'Line_246' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/constant10',
+    'Instance' => 'constant10',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Constant10'
+  },
+  'Line_253' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Inverter'
+  },
+  'Line_261' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Inverter1'
+  },
+  'Line_269' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Logical'
+  },
+  'Line_278' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Logical1'
+  },
+  'Line_287' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/logical2',
+    'Instance' => 'logical2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Logical2'
+  },
+  'Line_296' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/logical3',
+    'Instance' => 'logical3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Logical3'
+  },
+  'Line_305' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/mux',
+    'Instance' => 'mux',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Mux'
+  },
+  'Line_315' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/mux1',
+    'Instance' => 'mux1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Mux1'
+  },
+  'Line_325' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/mux2',
+    'Instance' => 'mux2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Mux2'
+  },
+  'Line_335' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/mux3',
+    'Instance' => 'mux3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Mux3'
+  },
+  'Line_345' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/mux4',
+    'Instance' => 'mux4',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Mux4'
+  },
+  'Line_355' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/relational',
+    'Instance' => 'relational',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Relational'
+  },
+  'Line_364' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/relational1',
+    'Instance' => 'relational1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Relational1'
+  },
+  'Line_373' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/relational2',
+    'Instance' => 'relational2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Relational2'
+  },
+  'Line_382' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/relational3',
+    'Instance' => 'relational3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Relational3'
+  },
+  'Line_391' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/shift1',
+    'Instance' => 'shift1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Shift1'
+  },
+  'Line_399' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/slice',
+    'Instance' => 'slice',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/Slice'
+  },
+  'Line_468' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/AddSub1'
+  },
+  'Line_499' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/addsub2',
+    'Instance' => 'addsub2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/AddSub2'
+  },
+  'Line_530' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/addsub3',
+    'Instance' => 'addsub3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/AddSub3'
+  },
+  'Line_561' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/addsub4',
+    'Instance' => 'addsub4',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/AddSub4'
+  },
+  'Line_58' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/AddSub1'
+  },
+  'Line_592' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/cordic_6_0',
+    'Instance' => 'cordic_6_0',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/CORDIC 6.0'
+  },
+  'Line_600' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant_x0',
+    'Instance' => 'constant_x0',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant'
+  },
+  'Line_607' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant10',
+    'Instance' => 'constant10',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant10'
+  },
+  'Line_614' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant3',
+    'Instance' => 'constant3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant3'
+  },
+  'Line_621' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant4',
+    'Instance' => 'constant4',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant4'
+  },
+  'Line_628' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant5',
+    'Instance' => 'constant5',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant5'
+  },
+  'Line_635' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant6',
+    'Instance' => 'constant6',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant6'
+  },
+  'Line_642' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant7',
+    'Instance' => 'constant7',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant7'
+  },
+  'Line_649' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant8',
+    'Instance' => 'constant8',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant8'
+  },
+  'Line_656' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/constant9',
+    'Instance' => 'constant9',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Constant9'
+  },
+  'Line_663' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Inverter'
+  },
+  'Line_671' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Inverter1'
+  },
+  'Line_679' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Logical'
+  },
+  'Line_688' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Logical1'
+  },
+  'Line_697' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/logical2',
+    'Instance' => 'logical2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Logical2'
+  },
+  'Line_706' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/logical3',
+    'Instance' => 'logical3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Logical3'
+  },
+  'Line_715' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/mux',
+    'Instance' => 'mux',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Mux'
+  },
+  'Line_725' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/mux1',
+    'Instance' => 'mux1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Mux1'
+  },
+  'Line_735' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/mux2',
+    'Instance' => 'mux2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Mux2'
+  },
+  'Line_745' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/mux3',
+    'Instance' => 'mux3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Mux3'
+  },
+  'Line_755' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/mux4',
+    'Instance' => 'mux4',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Mux4'
+  },
+  'Line_765' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/relational',
+    'Instance' => 'relational',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Relational'
+  },
+  'Line_774' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/relational1',
+    'Instance' => 'relational1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Relational1'
+  },
+  'Line_783' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/relational2',
+    'Instance' => 'relational2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Relational2'
+  },
+  'Line_792' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/relational3',
+    'Instance' => 'relational3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Relational3'
+  },
+  'Line_801' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/shift1',
+    'Instance' => 'shift1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Shift1'
+  },
+  'Line_809' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1/slice',
+    'Instance' => 'slice',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1/Slice'
+  },
+  'Line_866' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem',
+    'Instance' => 'subsystem',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem'
+  },
+  'Line_874' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem1',
+    'Instance' => 'subsystem1',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem1'
+  },
+  'Line_882' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/addsub',
+    'Instance' => 'addsub',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/AddSub'
+  },
+  'Line_89' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/subsystem/addsub2',
+    'Instance' => 'addsub2',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/Subsystem/AddSub2'
+  },
+  'Line_913' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/addsub3',
+    'Instance' => 'addsub3',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/AddSub3'
+  },
+  'Line_944' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/addsub6',
+    'Instance' => 'addsub6',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/AddSub6'
+  },
+  'Line_975' => {
+    'CodeInstance' => 'twoneuronhdl_struct/subsystem/addsub7',
+    'Instance' => 'addsub7',
+    'SimulinkInstance' => 'twoNeuronHDL/Subsystem/AddSub7'
+  }
+}

@@ -1,0 +1,23 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2021.1                 C:/Xilinx/Vivado/2021.1
+Matlab 9.10.0.1602886 (R2021a)          C:\Program Files\Polyspace\R2021a
+Vivado 2021.1                           C:/Xilinx/Vivado/2021.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal input type on port: addr
+     Block: 'BRAMBasedCordic/Subsystem/real'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'BRAMBasedCordic/Subsystem/real'
+
+Details:
+The addr port is being driven by a UFix_10_0.
+The addr port must be a UFix_6_0.
+6 bits are needed to address the specified memory depth of 63.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------

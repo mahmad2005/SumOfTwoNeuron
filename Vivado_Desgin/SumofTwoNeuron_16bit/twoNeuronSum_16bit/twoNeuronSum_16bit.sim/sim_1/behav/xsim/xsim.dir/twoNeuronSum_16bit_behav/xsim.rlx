@@ -1,0 +1,12 @@
+
+{ 
+    crc :  14224986328613988980  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 28decf4108074d00a5e1f79181c83f6d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L axi_utils_v2_0_6 -L cordic_v6_0_17 -L secureip -L xpm --snapshot twoNeuronSum_16bit_behav xil_defaultlib.twoNeuronSum_16bit" , 
+    buildDate : "Jun 10 2021" , 
+    buildTime : "20:04:57" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2021.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/twoNeuronSum_16bit_behav/xsimk.exe\"   \"xsim.dir/twoNeuronSum_16bit_behav/obj/xsim_0.win64.obj\" \"xsim.dir/twoNeuronSum_16bit_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2021.1\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

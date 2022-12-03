@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov 22 16:15:50 2022
+# Process ID: 28504
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/gen
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/gen/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_8bit/STN_8bit/gen\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

@@ -1,0 +1,116 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xB71F2E9CA13AC631",
+      "design_src": "SYSGEN",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../twoneuronhdl.gen/sources_1/bd/twoneuronhdl_bd",
+      "name": "twoneuronhdl_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "twoneuronhdl_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "twoneuronhdl_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "gateway_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "gateway_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 13} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "gateway_out1": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 13} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "twoneuronhdl_1": {
+        "vlnv": "User_Company:SysGen:twoneuronhdl:1.0",
+        "xci_name": "twoneuronhdl_bd_twoneuronhdl_1_0",
+        "xci_path": "ip\\twoneuronhdl_bd_twoneuronhdl_1_0\\twoneuronhdl_bd_twoneuronhdl_1_0.xci",
+        "inst_hier_path": "twoneuronhdl_1"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "twoneuronhdl_1/clk"
+        ]
+      },
+      "gateway_in_1": {
+        "ports": [
+          "gateway_in",
+          "twoneuronhdl_1/gateway_in"
+        ]
+      },
+      "twoneuronhdl_1_gateway_out": {
+        "ports": [
+          "twoneuronhdl_1/gateway_out",
+          "gateway_out"
+        ]
+      },
+      "twoneuronhdl_1_gateway_out1": {
+        "ports": [
+          "twoneuronhdl_1/gateway_out1",
+          "gateway_out1"
+        ]
+      }
+    }
+  }
+}
