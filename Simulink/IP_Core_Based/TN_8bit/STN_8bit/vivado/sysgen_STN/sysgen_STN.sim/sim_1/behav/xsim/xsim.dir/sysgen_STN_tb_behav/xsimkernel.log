@@ -1,7 +1,0 @@
-Running: xsim.dir/sysgen_STN_tb_behav/xsimk.exe -simmode gui -wdb sysgen_STN_tb_behav.wdb -simrunnum 0 -socket 60715
-Design successfully loaded
-Design Loading Memory Usage: 11492 KB (Peak: 11492 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 12688 KB (Peak: 12688 KB)
-Simulation CPU Usage: 405 ms

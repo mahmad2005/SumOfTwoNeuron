@@ -62,7 +62,7 @@ count_inst: entity work.sysgen_STN
    VARIABLE  outLine_sin  : LINE;
         begin
         
-        for i in 0 to 628 loop
+        for i in 0 to 800 loop
                 
             CLK <= '1';
             wait for (CLOCK_PERIOD)/2;
