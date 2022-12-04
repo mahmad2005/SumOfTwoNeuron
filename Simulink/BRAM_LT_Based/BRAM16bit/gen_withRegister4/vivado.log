@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sat Dec  3 19:30:22 2022
-# Process ID: 26172
+# Start of session at: Sat Dec  3 20:43:15 2022
+# Process ID: 12452
 # Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/gen_withRegister4
 # Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
 # Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/gen_withRegister4/vivado.log
@@ -60,4 +60,4 @@ WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /bram_stn_16bit_
 WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
 WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /bram_stn_16bit_1/*'
 Wrote  : <E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\BRAM_LT_Based\BRAM16bit\gen_withRegister4\ip_catalog\bram_stn_16bit.srcs\sources_1\bd\bram_stn_16bit_bd\bram_stn_16bit_bd.bd> 
-INFO: [Common 17-206] Exiting Vivado at Sat Dec  3 19:30:38 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  3 20:43:31 2022...

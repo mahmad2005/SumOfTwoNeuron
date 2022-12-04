@@ -1,0 +1,111 @@
+# Note: This file is produced automatically, and will be overwritten the next
+# time you press "Generate" in System Generator. 
+#
+
+
+namespace eval ::xilinx::dsp::planaheaddriver {
+	set Compilation {HDL Netlist}
+	set CompilationFlow {STANDARD}
+	set DSPDevice {xc7z020}
+	set DSPFamily {zynq}
+	set DSPPackage {clg484}
+	set DSPSpeed {-1}
+	set FPGAClockPeriod 100
+	set GenerateTestBench 0
+	set HDLLanguage {vhdl}
+	set IPOOCCacheRootPath {C:/Users/maruf/AppData/Local/Xilinx/Sysgen/SysgenVivado/win64.o/ip}
+	set ImplStrategyName {Vivado Implementation Defaults}
+	set Project {bram_stn_16bit}
+	set ProjectFiles {
+		{{conv_pkg.vhd} -lib {xil_defaultlib}}
+		{{synth_reg.vhd} -lib {xil_defaultlib}}
+		{{synth_reg_w_init.vhd} -lib {xil_defaultlib}}
+		{{srl17e.vhd} -lib {xil_defaultlib}}
+		{{srl33e.vhd} -lib {xil_defaultlib}}
+		{{synth_reg_reg.vhd} -lib {xil_defaultlib}}
+		{{single_reg_w_init.vhd} -lib {xil_defaultlib}}
+		{{xlclockdriver_rd.vhd} -lib {xil_defaultlib}}
+		{{vivado_ip.tcl}}
+		{{xpm_161541_vivado.mem}}
+		{{xpm_184d04_vivado.mem}}
+		{{bram_stn_16bit_entity_declarations.vhd} -lib {xil_defaultlib}}
+		{{bram_stn_16bit.vhd} -lib {xil_defaultlib}}
+		{{bram_stn_16bit_clock.xdc}}
+		{{bram_stn_16bit.xdc}}
+	}
+	set SimPeriod 1
+	set SimTime 7500
+	set SimulationTime {750300.00000000 ns}
+	set SynthStrategyName {Vivado Synthesis Defaults}
+	set SynthesisTool {Vivado}
+	set TargetDir {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/gen_withRegister5}
+	set TopLevelModule {bram_stn_16bit}
+	set TopLevelSimulinkHandle 0.000854492
+	set VHDLLib {xil_defaultlib}
+	set TopLevelPortInterface {}
+	dict set TopLevelPortInterface input_t Name {input_t}
+	dict set TopLevelPortInterface input_t Type Fix_16_11
+	dict set TopLevelPortInterface input_t ArithmeticType xlSigned
+	dict set TopLevelPortInterface input_t BinaryPoint 11
+	dict set TopLevelPortInterface input_t Width 16
+	dict set TopLevelPortInterface input_t DatFile {bram_stn_16bit_subsystem_input_t.dat}
+	dict set TopLevelPortInterface input_t IconText {input_t}
+	dict set TopLevelPortInterface input_t Direction in
+	dict set TopLevelPortInterface input_t Period 1
+	dict set TopLevelPortInterface input_t Interface 0
+	dict set TopLevelPortInterface input_t InterfaceName {}
+	dict set TopLevelPortInterface input_t InterfaceString {DATA}
+	dict set TopLevelPortInterface input_t ClockDomain {bram_stn_16bit}
+	dict set TopLevelPortInterface input_t Locs {}
+	dict set TopLevelPortInterface input_t IOStandard {}
+	dict set TopLevelPortInterface out_imag Name {out_imag}
+	dict set TopLevelPortInterface out_imag Type Fix_16_11
+	dict set TopLevelPortInterface out_imag ArithmeticType xlSigned
+	dict set TopLevelPortInterface out_imag BinaryPoint 11
+	dict set TopLevelPortInterface out_imag Width 16
+	dict set TopLevelPortInterface out_imag DatFile {bram_stn_16bit_subsystem_out_imag.dat}
+	dict set TopLevelPortInterface out_imag IconText {out_imag}
+	dict set TopLevelPortInterface out_imag Direction out
+	dict set TopLevelPortInterface out_imag Period 1
+	dict set TopLevelPortInterface out_imag Interface 0
+	dict set TopLevelPortInterface out_imag InterfaceName {}
+	dict set TopLevelPortInterface out_imag InterfaceString {DATA}
+	dict set TopLevelPortInterface out_imag ClockDomain {bram_stn_16bit}
+	dict set TopLevelPortInterface out_imag Locs {}
+	dict set TopLevelPortInterface out_imag IOStandard {}
+	dict set TopLevelPortInterface out_real Name {out_real}
+	dict set TopLevelPortInterface out_real Type Fix_16_11
+	dict set TopLevelPortInterface out_real ArithmeticType xlSigned
+	dict set TopLevelPortInterface out_real BinaryPoint 11
+	dict set TopLevelPortInterface out_real Width 16
+	dict set TopLevelPortInterface out_real DatFile {bram_stn_16bit_subsystem_out_real.dat}
+	dict set TopLevelPortInterface out_real IconText {out_real}
+	dict set TopLevelPortInterface out_real Direction out
+	dict set TopLevelPortInterface out_real Period 1
+	dict set TopLevelPortInterface out_real Interface 0
+	dict set TopLevelPortInterface out_real InterfaceName {}
+	dict set TopLevelPortInterface out_real InterfaceString {DATA}
+	dict set TopLevelPortInterface out_real ClockDomain {bram_stn_16bit}
+	dict set TopLevelPortInterface out_real Locs {}
+	dict set TopLevelPortInterface out_real IOStandard {}
+	dict set TopLevelPortInterface clk Name {clk}
+	dict set TopLevelPortInterface clk Type -
+	dict set TopLevelPortInterface clk ArithmeticType xlUnsigned
+	dict set TopLevelPortInterface clk BinaryPoint 0
+	dict set TopLevelPortInterface clk Width 1
+	dict set TopLevelPortInterface clk DatFile {}
+	dict set TopLevelPortInterface clk Direction in
+	dict set TopLevelPortInterface clk Period 1
+	dict set TopLevelPortInterface clk Interface 6
+	dict set TopLevelPortInterface clk InterfaceName {}
+	dict set TopLevelPortInterface clk InterfaceString {CLOCK}
+	dict set TopLevelPortInterface clk ClockDomain {bram_stn_16bit}
+	dict set TopLevelPortInterface clk Locs {}
+	dict set TopLevelPortInterface clk IOStandard {}
+	dict set TopLevelPortInterface clk AssociatedInterfaces {}
+	dict set TopLevelPortInterface clk AssociatedResets {}
+	set MemoryMappedPort {}
+}
+
+source SgPaProject.tcl
+::xilinx::dsp::planaheadworker::dsp_create_project

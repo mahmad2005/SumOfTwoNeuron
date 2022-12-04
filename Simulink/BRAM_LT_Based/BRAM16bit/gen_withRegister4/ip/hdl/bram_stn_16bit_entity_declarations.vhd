@@ -737,6 +737,49 @@ end behavior;
 library xil_defaultlib;
 use xil_defaultlib.conv_pkg.all;
 
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+entity sysgen_shift_082d650598 is
+  port (
+    ip : in std_logic_vector((18 - 1) downto 0);
+    op : out std_logic_vector((11 - 1) downto 0);
+    clk : in std_logic;
+    ce : in std_logic;
+    clr : in std_logic);
+end sysgen_shift_082d650598;
+architecture behavior of sysgen_shift_082d650598
+is
+  signal ip_1_23: signed((18 - 1) downto 0);
+  type array_type_op_mem_46_20 is array (0 to (1 - 1)) of unsigned((11 - 1) downto 0);
+  signal op_mem_46_20: array_type_op_mem_46_20 := (
+    0 => "00000000000");
+  signal op_mem_46_20_front_din: unsigned((11 - 1) downto 0);
+  signal op_mem_46_20_back: unsigned((11 - 1) downto 0);
+  signal op_mem_46_20_push_front_pop_back_en: std_logic;
+  signal internal_ip_33_3_convert: unsigned((11 - 1) downto 0);
+begin
+  ip_1_23 <= std_logic_vector_to_signed(ip);
+  op_mem_46_20_back <= op_mem_46_20(0);
+  proc_op_mem_46_20: process (clk)
+  is
+    variable i: integer;
+  begin
+    if (clk'event and (clk = '1')) then
+      if ((ce = '1') and (op_mem_46_20_push_front_pop_back_en = '1')) then
+        op_mem_46_20(0) <= op_mem_46_20_front_din;
+      end if;
+    end if;
+  end process proc_op_mem_46_20;
+  internal_ip_33_3_convert <= std_logic_vector_to_unsigned(convert_type(signed_to_std_logic_vector(ip_1_23), 18, 2, xlSigned, 11, 0, xlUnsigned, xlTruncate, xlSaturate));
+  op_mem_46_20_front_din <= internal_ip_33_3_convert;
+  op_mem_46_20_push_front_pop_back_en <= '1';
+  op <= unsigned_to_std_logic_vector(op_mem_46_20_back);
+end behavior;
+
+library xil_defaultlib;
+use xil_defaultlib.conv_pkg.all;
+
 -------------------------------------------------------------------
  -- System Generator VHDL source file.
  --

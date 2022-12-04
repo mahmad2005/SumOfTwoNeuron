@@ -1,0 +1,18 @@
+vhdl xil_defaultlib  \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_16bit_0_10/bram_stn_16bit_c_addsub_v12_0_i0/sim/bram_stn_16bit_c_addsub_v12_0_i0.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_16bit_0_10/bram_stn_16bit_c_addsub_v12_0_i1/sim/bram_stn_16bit_c_addsub_v12_0_i1.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_16bit_0_10/bram_stn_16bit_div_gen_v5_1_i0/sim/bram_stn_16bit_div_gen_v5_1_i0.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_16bit_0_10/bram_stn_16bit_mult_gen_v12_0_i0/sim/bram_stn_16bit_mult_gen_v12_0_i0.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/conv_pkg.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/synth_reg.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/synth_reg_w_init.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/srl17e.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/srl33e.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/synth_reg_reg.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/single_reg_w_init.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/xlclockdriver_rd.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/bram_stn_16bit_entity_declarations.vhd" \
+"../../../ipstatic/xil_defaultlib/hdl/bram_stn_16bit.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_16bit_0_10/sim/bram_stn_16bit_0.vhd" \
+
+nosort

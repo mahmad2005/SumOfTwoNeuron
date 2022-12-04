@@ -13,24 +13,26 @@ entity bram_stn_16bit_bram_cordic is
   );
 end bram_stn_16bit_bram_cordic;
 architecture structural of bram_stn_16bit_bram_cordic is 
+  signal register_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x0 : std_logic_vector( 16-1 downto 0 );
   signal clk_net : std_logic;
-  signal shift1_op_net : std_logic_vector( 16-1 downto 0 );
+  signal ce_net : std_logic;
+  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 16-1 downto 0 );
   signal constant1_op_net : std_logic_vector( 16-1 downto 0 );
   signal register1_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net : std_logic_vector( 16-1 downto 0 );
-  signal ce_net : std_logic;
-  signal register2_q_net : std_logic_vector( 16-1 downto 0 );
-  signal constant2_op_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
   signal real_data_net : std_logic_vector( 16-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register4_q_net : std_logic_vector( 18-1 downto 0 );
   signal divide_op_net : std_logic_vector( 18-1 downto 0 );
+  signal imag_data_net : std_logic_vector( 16-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 16-1 downto 0 );
   signal register3_q_net : std_logic_vector( 11-1 downto 0 );
   signal shift_op_net : std_logic_vector( 11-1 downto 0 );
-  signal imag_data_net : std_logic_vector( 16-1 downto 0 );
 begin
   out1 <= register_q_net;
-  out2 <= register1_q_net;
-  shift1_op_net <= in1;
+  out2 <= register1_q_net_x0;
+  register1_q_net <= in1;
   clk_net <= clk_1;
   ce_net <= ce_1;
   addsub : entity xil_defaultlib.bram_stn_16bit_xladdsub 
@@ -82,7 +84,7 @@ begin
   port map (
     a_tvalid => '1',
     b_tvalid => '1',
-    a => addsub_s_net,
+    a => register5_q_net,
     b => constant2_op_net,
     clk => clk_net,
     ce => ce_net,
@@ -112,7 +114,7 @@ begin
     d => real_data_net,
     clk => clk_net,
     ce => ce_net,
-    q => register1_q_net
+    q => register1_q_net_x0
   );
   register2 : entity xil_defaultlib.bram_stn_16bit_xlregister 
   generic map (
@@ -122,7 +124,7 @@ begin
   port map (
     en => "1",
     rst => "0",
-    d => shift1_op_net,
+    d => register1_q_net,
     clk => clk_net,
     ce => ce_net,
     q => register2_q_net
@@ -130,7 +132,7 @@ begin
   shift : entity xil_defaultlib.sysgen_shift_ac8d1a4e65 
   port map (
     clr => '0',
-    ip => divide_op_net,
+    ip => register4_q_net,
     clk => clk_net,
     ce => ce_net,
     op => shift_op_net
@@ -184,6 +186,32 @@ begin
     ce => ce_net,
     q => register3_q_net
   );
+  register4 : entity xil_defaultlib.bram_stn_16bit_xlregister 
+  generic map (
+    d_width => 18,
+    init_value => b"000000000000000000"
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    d => divide_op_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register4_q_net
+  );
+  register5 : entity xil_defaultlib.bram_stn_16bit_xlregister 
+  generic map (
+    d_width => 16,
+    init_value => b"0000000000000000"
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    d => addsub_s_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register5_q_net
+  );
 end structural;
 -- Generated from Simulink block BRAM_STN_16bit/Subsystem/Subsystem
 library IEEE;
@@ -200,54 +228,55 @@ entity bram_stn_16bit_subsystem_x0 is
   );
 end bram_stn_16bit_subsystem_x0;
 architecture structural of bram_stn_16bit_subsystem_x0 is 
+  signal mux_y_net : std_logic_vector( 16-1 downto 0 );
+  signal logical3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 16-1 downto 0 );
   signal mux3_y_net : std_logic_vector( 16-1 downto 0 );
   signal mux2_y_net : std_logic_vector( 16-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice_y_net : std_logic_vector( 1-1 downto 0 );
   signal mux4_y_net : std_logic_vector( 16-1 downto 0 );
-  signal shift1_op_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal slice_y_net : std_logic_vector( 1-1 downto 0 );
   signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
   signal clk_net : std_logic;
-  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
   signal ce_net : std_logic;
-  signal addsub1_s_net : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal constant3_op_net : std_logic_vector( 16-1 downto 0 );
+  signal constant6_op_net : std_logic_vector( 16-1 downto 0 );
   signal addsub2_s_net : std_logic_vector( 16-1 downto 0 );
-  signal constant7_op_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub3_s_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net : std_logic_vector( 16-1 downto 0 );
+  signal constant5_op_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 16-1 downto 0 );
   signal constant9_op_net : std_logic_vector( 16-1 downto 0 );
   signal addsub4_s_net : std_logic_vector( 16-1 downto 0 );
-  signal constant6_op_net : std_logic_vector( 16-1 downto 0 );
-  signal constant3_op_net : std_logic_vector( 16-1 downto 0 );
-  signal constant8_op_net : std_logic_vector( 16-1 downto 0 );
-  signal constant5_op_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub3_s_net : std_logic_vector( 16-1 downto 0 );
   signal constant4_op_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net : std_logic_vector( 16-1 downto 0 );
   signal constant_op_net : std_logic_vector( 16-1 downto 0 );
-  signal logical2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux_y_net : std_logic_vector( 16-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal constant8_op_net : std_logic_vector( 16-1 downto 0 );
   signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal constant7_op_net : std_logic_vector( 16-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
   signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
   signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal shift1_op_net : std_logic_vector( 16-1 downto 0 );
 begin
   out1 <= register_q_net_x0;
-  out2 <= register1_q_net;
+  out2 <= register1_q_net_x0;
   addsub_s_net <= in1;
   clk_net <= clk_1;
   ce_net <= ce_1;
   bram_cordic : entity xil_defaultlib.bram_stn_16bit_bram_cordic 
   port map (
-    in1 => shift1_op_net,
+    in1 => register1_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out1 => register_q_net_x0,
-    out2 => register1_q_net
+    out2 => register1_q_net_x0
   );
   addsub1 : entity xil_defaultlib.bram_stn_16bit_xladdsub 
   generic map (
@@ -599,6 +628,19 @@ begin
     x => register_q_net,
     y => slice_y_net
   );
+  register1 : entity xil_defaultlib.bram_stn_16bit_xlregister 
+  generic map (
+    d_width => 16,
+    init_value => b"0000000000000000"
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    d => shift1_op_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register1_q_net
+  );
 end structural;
 -- Generated from Simulink block BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC
 library IEEE;
@@ -615,24 +657,26 @@ entity bram_stn_16bit_bram_cordic_x0 is
   );
 end bram_stn_16bit_bram_cordic_x0;
 architecture structural of bram_stn_16bit_bram_cordic_x0 is 
-  signal shift1_op_net : std_logic_vector( 16-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
-  signal constant1_op_net : std_logic_vector( 16-1 downto 0 );
-  signal imag_data_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
-  signal clk_net : std_logic;
-  signal real_data_net : std_logic_vector( 16-1 downto 0 );
-  signal ce_net : std_logic;
-  signal constant2_op_net : std_logic_vector( 16-1 downto 0 );
   signal divide_op_net : std_logic_vector( 18-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 11-1 downto 0 );
+  signal imag_data_net : std_logic_vector( 16-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 18-1 downto 0 );
   signal shift_op_net : std_logic_vector( 11-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 11-1 downto 0 );
+  signal real_data_net : std_logic_vector( 16-1 downto 0 );
+  signal constant2_op_net : std_logic_vector( 16-1 downto 0 );
+  signal register4_q_net : std_logic_vector( 16-1 downto 0 );
+  signal ce_net : std_logic;
+  signal clk_net : std_logic;
+  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
+  signal constant1_op_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
 begin
   out1 <= register_q_net;
-  out2 <= register1_q_net;
-  shift1_op_net <= in1;
+  out2 <= register1_q_net_x0;
+  register1_q_net <= in1;
   clk_net <= clk_1;
   ce_net <= ce_1;
   addsub : entity xil_defaultlib.bram_stn_16bit_xladdsub 
@@ -684,7 +728,7 @@ begin
   port map (
     a_tvalid => '1',
     b_tvalid => '1',
-    a => addsub_s_net,
+    a => register4_q_net,
     b => constant2_op_net,
     clk => clk_net,
     ce => ce_net,
@@ -714,7 +758,7 @@ begin
     d => real_data_net,
     clk => clk_net,
     ce => ce_net,
-    q => register1_q_net
+    q => register1_q_net_x0
   );
   register2 : entity xil_defaultlib.bram_stn_16bit_xlregister 
   generic map (
@@ -724,15 +768,15 @@ begin
   port map (
     en => "1",
     rst => "0",
-    d => shift1_op_net,
+    d => register1_q_net,
     clk => clk_net,
     ce => ce_net,
     q => register2_q_net
   );
-  shift : entity xil_defaultlib.sysgen_shift_ac8d1a4e65 
+  shift : entity xil_defaultlib.sysgen_shift_082d650598 
   port map (
     clr => '0',
-    ip => divide_op_net,
+    ip => register5_q_net,
     clk => clk_net,
     ce => ce_net,
     op => shift_op_net
@@ -786,6 +830,32 @@ begin
     ce => ce_net,
     q => register3_q_net
   );
+  register4 : entity xil_defaultlib.bram_stn_16bit_xlregister 
+  generic map (
+    d_width => 16,
+    init_value => b"0000000000000000"
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    d => addsub_s_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register4_q_net
+  );
+  register5 : entity xil_defaultlib.bram_stn_16bit_xlregister 
+  generic map (
+    d_width => 18,
+    init_value => b"000000000000000000"
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    d => divide_op_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register5_q_net
+  );
 end structural;
 -- Generated from Simulink block BRAM_STN_16bit/Subsystem/Subsystem1
 library IEEE;
@@ -802,54 +872,55 @@ entity bram_stn_16bit_subsystem1 is
   );
 end bram_stn_16bit_subsystem1;
 architecture structural of bram_stn_16bit_subsystem1 is 
-  signal ce_net : std_logic;
   signal register_q_net : std_logic_vector( 16-1 downto 0 );
-  signal shift1_op_net : std_logic_vector( 16-1 downto 0 );
-  signal constant4_op_net : std_logic_vector( 16-1 downto 0 );
-  signal constant5_op_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub3_s_net_x0 : std_logic_vector( 16-1 downto 0 );
-  signal addsub1_s_net : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
   signal clk_net : std_logic;
+  signal register_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal addsub3_s_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal constant4_op_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub2_s_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub1_s_net : std_logic_vector( 16-1 downto 0 );
+  signal constant5_op_net : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
+  signal ce_net : std_logic;
   signal addsub3_s_net : std_logic_vector( 16-1 downto 0 );
   signal constant8_op_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net_x0 : std_logic_vector( 16-1 downto 0 );
-  signal addsub2_s_net : std_logic_vector( 16-1 downto 0 );
-  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant6_op_net : std_logic_vector( 16-1 downto 0 );
-  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
   signal addsub4_s_net : std_logic_vector( 16-1 downto 0 );
-  signal constant_op_net : std_logic_vector( 16-1 downto 0 );
-  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
-  signal constant7_op_net : std_logic_vector( 16-1 downto 0 );
-  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
   signal constant9_op_net : std_logic_vector( 16-1 downto 0 );
   signal constant3_op_net : std_logic_vector( 16-1 downto 0 );
-  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux_y_net : std_logic_vector( 16-1 downto 0 );
-  signal mux1_y_net : std_logic_vector( 16-1 downto 0 );
-  signal mux4_y_net : std_logic_vector( 16-1 downto 0 );
-  signal slice_y_net : std_logic_vector( 1-1 downto 0 );
-  signal mux3_y_net : std_logic_vector( 16-1 downto 0 );
-  signal logical2_y_net : std_logic_vector( 1-1 downto 0 );
-  signal logical3_y_net : std_logic_vector( 1-1 downto 0 );
-  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
-  signal mux2_y_net : std_logic_vector( 16-1 downto 0 );
+  signal constant_op_net : std_logic_vector( 16-1 downto 0 );
+  signal relational3_op_net : std_logic_vector( 1-1 downto 0 );
+  signal constant6_op_net : std_logic_vector( 16-1 downto 0 );
+  signal constant7_op_net : std_logic_vector( 16-1 downto 0 );
+  signal inverter1_op_net : std_logic_vector( 1-1 downto 0 );
   signal relational_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical1_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational1_op_net : std_logic_vector( 1-1 downto 0 );
+  signal inverter_op_net : std_logic_vector( 1-1 downto 0 );
+  signal logical_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux_y_net : std_logic_vector( 16-1 downto 0 );
+  signal logical3_y_net : std_logic_vector( 1-1 downto 0 );
+  signal mux4_y_net : std_logic_vector( 16-1 downto 0 );
+  signal mux2_y_net : std_logic_vector( 16-1 downto 0 );
+  signal mux3_y_net : std_logic_vector( 16-1 downto 0 );
+  signal slice_y_net : std_logic_vector( 1-1 downto 0 );
+  signal relational2_op_net : std_logic_vector( 1-1 downto 0 );
+  signal mux1_y_net : std_logic_vector( 16-1 downto 0 );
+  signal logical2_y_net : std_logic_vector( 1-1 downto 0 );
+  signal shift1_op_net : std_logic_vector( 16-1 downto 0 );
 begin
   out1 <= register_q_net_x0;
-  out2 <= register1_q_net;
+  out2 <= register1_q_net_x0;
   addsub3_s_net_x0 <= in1;
   clk_net <= clk_1;
   ce_net <= ce_1;
   bram_cordic : entity xil_defaultlib.bram_stn_16bit_bram_cordic_x0 
   port map (
-    in1 => shift1_op_net,
+    in1 => register1_q_net,
     clk_1 => clk_net,
     ce_1 => ce_net,
     out1 => register_q_net_x0,
-    out2 => register1_q_net
+    out2 => register1_q_net_x0
   );
   addsub1 : entity xil_defaultlib.bram_stn_16bit_xladdsub 
   generic map (
@@ -1201,6 +1272,19 @@ begin
     x => register_q_net,
     y => slice_y_net
   );
+  register1 : entity xil_defaultlib.bram_stn_16bit_xlregister 
+  generic map (
+    d_width => 16,
+    init_value => b"0000000000000000"
+  )
+  port map (
+    en => "1",
+    rst => "0",
+    d => shift1_op_net,
+    clk => clk_net,
+    ce => ce_net,
+    q => register1_q_net
+  );
 end structural;
 -- Generated from Simulink block BRAM_STN_16bit/Subsystem
 library IEEE;
@@ -1217,47 +1301,47 @@ entity bram_stn_16bit_subsystem is
   );
 end bram_stn_16bit_subsystem;
 architecture structural of bram_stn_16bit_subsystem is 
+  signal register1_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal phi_hdl_1_op_net : std_logic_vector( 16-1 downto 0 );
+  signal register17_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net_x0 : std_logic_vector( 16-1 downto 0 );
+  signal clk_net : std_logic;
+  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net : std_logic_vector( 16-1 downto 0 );
+  signal input_t_net : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
+  signal ce_net : std_logic;
+  signal addsub3_s_net : std_logic_vector( 16-1 downto 0 );
+  signal register14_q_net : std_logic_vector( 16-1 downto 0 );
+  signal mult_p_net : std_logic_vector( 16-1 downto 0 );
+  signal exp_theta_hdl_1_op_net : std_logic_vector( 16-1 downto 0 );
+  signal phi_hdl_2_op_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub6_s_net : std_logic_vector( 16-1 downto 0 );
+  signal mult4_p_net : std_logic_vector( 16-1 downto 0 );
+  signal addsub7_s_net : std_logic_vector( 16-1 downto 0 );
+  signal mult3_p_net : std_logic_vector( 16-1 downto 0 );
+  signal mult5_p_net : std_logic_vector( 16-1 downto 0 );
+  signal mult1_p_net : std_logic_vector( 16-1 downto 0 );
+  signal mult2_p_net : std_logic_vector( 16-1 downto 0 );
+  signal exp_theta_hdl_2_op_net : std_logic_vector( 16-1 downto 0 );
+  signal register3_q_net : std_logic_vector( 16-1 downto 0 );
+  signal omega_hdl_1_op_net : std_logic_vector( 16-1 downto 0 );
+  signal omega_hdl_2_op_net : std_logic_vector( 16-1 downto 0 );
+  signal register_q_net_x1 : std_logic_vector( 16-1 downto 0 );
+  signal register4_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register1_q_net_x1 : std_logic_vector( 16-1 downto 0 );
+  signal register2_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register5_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register6_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register8_q_net : std_logic_vector( 16-1 downto 0 );
   signal register9_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register10_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register11_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register12_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register7_q_net : std_logic_vector( 16-1 downto 0 );
   signal register13_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register10_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register12_q_net : std_logic_vector( 16-1 downto 0 );
+  signal register11_q_net : std_logic_vector( 16-1 downto 0 );
   signal register15_q_net : std_logic_vector( 16-1 downto 0 );
   signal register16_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register14_q_net : std_logic_vector( 16-1 downto 0 );
-  signal phi_hdl_1_op_net : std_logic_vector( 16-1 downto 0 );
-  signal mult_p_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net_x0 : std_logic_vector( 16-1 downto 0 );
-  signal ce_net : std_logic;
-  signal register_q_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub3_s_net : std_logic_vector( 16-1 downto 0 );
-  signal input_t_net : std_logic_vector( 16-1 downto 0 );
-  signal clk_net : std_logic;
-  signal register1_q_net_x0 : std_logic_vector( 16-1 downto 0 );
-  signal addsub_s_net : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register17_q_net : std_logic_vector( 16-1 downto 0 );
-  signal exp_theta_hdl_2_op_net : std_logic_vector( 16-1 downto 0 );
-  signal mult2_p_net : std_logic_vector( 16-1 downto 0 );
-  signal mult5_p_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub6_s_net : std_logic_vector( 16-1 downto 0 );
-  signal mult3_p_net : std_logic_vector( 16-1 downto 0 );
-  signal mult1_p_net : std_logic_vector( 16-1 downto 0 );
-  signal omega_hdl_2_op_net : std_logic_vector( 16-1 downto 0 );
-  signal phi_hdl_2_op_net : std_logic_vector( 16-1 downto 0 );
-  signal omega_hdl_1_op_net : std_logic_vector( 16-1 downto 0 );
-  signal addsub7_s_net : std_logic_vector( 16-1 downto 0 );
-  signal mult4_p_net : std_logic_vector( 16-1 downto 0 );
-  signal exp_theta_hdl_1_op_net : std_logic_vector( 16-1 downto 0 );
-  signal register3_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register_q_net_x1 : std_logic_vector( 16-1 downto 0 );
-  signal register1_q_net_x1 : std_logic_vector( 16-1 downto 0 );
-  signal register5_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register8_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register6_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register4_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register2_q_net : std_logic_vector( 16-1 downto 0 );
-  signal register7_q_net : std_logic_vector( 16-1 downto 0 );
 begin
   input_t_net <= input_t;
   out_imag <= register14_q_net;
@@ -1918,11 +2002,11 @@ entity bram_stn_16bit_struct is
   );
 end bram_stn_16bit_struct;
 architecture structural of bram_stn_16bit_struct is 
-  signal register14_q_net : std_logic_vector( 16-1 downto 0 );
   signal input_t_net : std_logic_vector( 16-1 downto 0 );
-  signal register17_q_net : std_logic_vector( 16-1 downto 0 );
-  signal ce_net : std_logic;
+  signal register14_q_net : std_logic_vector( 16-1 downto 0 );
   signal clk_net : std_logic;
+  signal ce_net : std_logic;
+  signal register17_q_net : std_logic_vector( 16-1 downto 0 );
 begin
   input_t_net <= input_t;
   out_imag <= register14_q_net;
@@ -1982,7 +2066,7 @@ entity bram_stn_16bit is
 end bram_stn_16bit;
 architecture structural of bram_stn_16bit is 
   attribute core_generation_info : string;
-  attribute core_generation_info of structural : architecture is "bram_stn_16bit,sysgen_core_2021_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z020,speed=-1,package=clg484,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=100,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=7500,addsub=14,constant=26,divide=2,inv=4,logical=8,mult=6,mux=10,register=28,relational=8,shift=4,slice=2,sprom=4,}";
+  attribute core_generation_info of structural : architecture is "bram_stn_16bit,sysgen_core_2021_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynq,part=xc7z020,speed=-1,package=clg484,synthesis_language=vhdl,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=100,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=7500,addsub=14,constant=26,divide=2,inv=4,logical=8,mult=6,mux=10,register=34,relational=8,shift=4,slice=2,sprom=4,}";
   signal clk_1_net : std_logic;
   signal ce_1_net : std_logic;
 begin

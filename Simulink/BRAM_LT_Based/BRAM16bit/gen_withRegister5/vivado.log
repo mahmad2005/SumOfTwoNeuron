@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec  3 20:51:39 2022
+# Process ID: 42840
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/gen_withRegister5
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/gen_withRegister5/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/gen_withRegister5\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM16bit/gen_withRegister5/hdl_netlist'
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_16bit_c_addsub_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_16bit_c_addsub_v12_0_i0' to 'bram_stn_16bit_c_addsub_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000' to '0' has been ignored for IP 'bram_stn_16bit_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'bram_stn_16bit_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'bram_stn_16bit_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_16bit_mult_gen_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_16bit_mult_gen_v12_0_i0' to 'bram_stn_16bit_mult_gen_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_16bit_c_addsub_v12_0_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_16bit_c_addsub_v12_0_i1' to 'bram_stn_16bit_c_addsub_v12_0_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '00000000000000000' to '0' has been ignored for IP 'bram_stn_16bit_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'bram_stn_16bit_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'bram_stn_16bit_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_16bit_div_gen_v5_1_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_16bit_div_gen_v5_1_i0' to 'bram_stn_16bit_div_gen_v5_1_i0' is not allowed and is ignored.
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  3 20:51:46 2022...

@@ -276,7 +276,7 @@ mmediate dependency {} format bool minimum {} maximum {}} value true}}}}}}</spir
       <spirit:file>
         <spirit:name>hdl/bram_stn_16bit.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_246f45c3</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_bdd18b5f</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -407,8 +407,8 @@ mmediate dependency {} format bool minimum {} maximum {}} value true}}}}}}</spir
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>301001420</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-12-04T01:30:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>301005794</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-12-04T02:43:22Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.1</xilinx:xilinxVersion>
