@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec  3 17:52:22 2022
+# Process ID: 32608
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip_catalog'
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_32bit_c_addsub_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_32bit_c_addsub_v12_0_i0' to 'bram_stn_32bit_c_addsub_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '000000000000000000000000000000000' to '0' has been ignored for IP 'bram_stn_32bit_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'bram_stn_32bit_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'bram_stn_32bit_c_addsub_v12_0_i0'
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_32bit_mult_gen_v12_0_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_32bit_mult_gen_v12_0_i0' to 'bram_stn_32bit_mult_gen_v12_0_i0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_32bit_c_addsub_v12_0_i1' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_32bit_c_addsub_v12_0_i1' to 'bram_stn_32bit_c_addsub_v12_0_i1' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'B_Value' from '000000000000000000000000000000000' to '0' has been ignored for IP 'bram_stn_32bit_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_Sense' from 'Active_High' to 'Active_Low' has been ignored for IP 'bram_stn_32bit_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Bypass_CE_Priority' from 'CE_Overrides_Bypass' to 'Bypass_Overrides_CE' has been ignored for IP 'bram_stn_32bit_c_addsub_v12_0_i1'
+WARNING: [IP_Flow 19-4832] The IP name 'bram_stn_32bit_div_gen_v5_1_i0' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'bram_stn_32bit_div_gen_v5_1_i0' to 'bram_stn_32bit_div_gen_v5_1_i0' is not allowed and is ignored.
+IP Repository Located at : C:/Xilinx/Vivado/2021.1/data/ip
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip_catalog'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+Adding File e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip_catalog/bram_stn_32bit.srcs/sources_1/ip/bram_stn_32bit_c_addsub_v12_0_i0/bram_stn_32bit_c_addsub_v12_0_i0.xci
+Adding File e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip_catalog/bram_stn_32bit.srcs/sources_1/ip/bram_stn_32bit_c_addsub_v12_0_i1/bram_stn_32bit_c_addsub_v12_0_i1.xci
+Adding File e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip_catalog/bram_stn_32bit.srcs/sources_1/ip/bram_stn_32bit_div_gen_v5_1_i0/bram_stn_32bit_div_gen_v5_1_i0.xci
+Adding File e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip_catalog/bram_stn_32bit.srcs/sources_1/ip/bram_stn_32bit_mult_gen_v12_0_i0/bram_stn_32bit_mult_gen_v12_0_i0.xci
+Adding File E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/sysgen/bram_stn_32bit.xdc
+Adding File E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/sysgen/xpm_f35e4b_vivado.mem
+Adding File E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/sysgen/xpm_b9d794_vivado.mem
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from TCL Argument).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip_catalog'.)
+0
+Wrote  : <E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\BRAM_LT_Based\BRAM32bit\gen_withRegister\ip_catalog\bram_stn_32bit.srcs\sources_1\bd\bram_stn_32bit_bd\bram_stn_32bit_bd.bd> 
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /bram_stn_32bit_1/*'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /bram_stn_32bit_1/*'
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /bram_stn_32bit_1/*'
+Wrote  : <E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\BRAM_LT_Based\BRAM32bit\gen_withRegister\ip_catalog\bram_stn_32bit.srcs\sources_1\bd\bram_stn_32bit_bd\bram_stn_32bit_bd.bd> 
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  3 17:52:39 2022...

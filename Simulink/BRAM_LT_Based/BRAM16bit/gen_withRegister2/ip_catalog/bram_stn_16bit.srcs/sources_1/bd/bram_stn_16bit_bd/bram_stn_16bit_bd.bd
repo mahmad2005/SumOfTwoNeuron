@@ -1,0 +1,116 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA467E600928BB4A9",
+      "design_src": "SYSGEN",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../bram_stn_16bit.gen/sources_1/bd/bram_stn_16bit_bd",
+      "name": "bram_stn_16bit_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "bram_stn_16bit_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "bram_stn_16bit_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "input_t": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "out_imag": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 11} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "out_real": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 11} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "bram_stn_16bit_1": {
+        "vlnv": "User_Company:SysGen:bram_stn_16bit:1.0",
+        "xci_name": "bram_stn_16bit_bd_bram_stn_16bit_1_0",
+        "xci_path": "ip\\bram_stn_16bit_bd_bram_stn_16bit_1_0\\bram_stn_16bit_bd_bram_stn_16bit_1_0.xci",
+        "inst_hier_path": "bram_stn_16bit_1"
+      }
+    },
+    "nets": {
+      "bram_stn_16bit_1_out_imag": {
+        "ports": [
+          "bram_stn_16bit_1/out_imag",
+          "out_imag"
+        ]
+      },
+      "bram_stn_16bit_1_out_real": {
+        "ports": [
+          "bram_stn_16bit_1/out_real",
+          "out_real"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "bram_stn_16bit_1/clk"
+        ]
+      },
+      "input_t_1": {
+        "ports": [
+          "input_t",
+          "bram_stn_16bit_1/input_t"
+        ]
+      }
+    }
+  }
+}

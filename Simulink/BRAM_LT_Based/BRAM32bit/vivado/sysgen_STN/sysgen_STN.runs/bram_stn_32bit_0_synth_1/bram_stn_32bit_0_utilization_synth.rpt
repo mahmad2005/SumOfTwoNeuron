@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Tue Nov 22 21:29:27 2022
+| Date         : Sat Dec  3 18:06:51 2022
 | Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file bram_stn_32bit_0_utilization_synth.rpt -pb bram_stn_32bit_0_utilization_synth.pb
 | Design       : bram_stn_32bit_0
@@ -35,8 +35,8 @@ Table of Contents
 |   LUT as Memory            |    8 |     0 |          0 |     17400 |  0.05 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |    8 |     0 |            |           |       |
-| Slice Registers            | 8052 |     0 |          0 |    106400 |  7.57 |
-|   Register as Flip Flop    | 8052 |     0 |          0 |    106400 |  7.57 |
+| Slice Registers            | 8276 |     0 |          0 |    106400 |  7.78 |
+|   Register as Flip Flop    | 8276 |     0 |          0 |    106400 |  7.78 |
 |   Register as Latch        |    0 |     0 |          0 |    106400 |  0.00 |
 | F7 Muxes                   |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                   |    0 |     0 |          0 |     13300 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 8052  |          Yes |       Reset |            - |
+| 8276  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,7 +150,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 8052 |        Flop & Latch |
+| FDRE     | 8276 |        Flop & Latch |
 | LUT3     | 2488 |                 LUT |
 | CARRY4   |  798 |          CarryLogic |
 | LUT2     |  476 |                 LUT |

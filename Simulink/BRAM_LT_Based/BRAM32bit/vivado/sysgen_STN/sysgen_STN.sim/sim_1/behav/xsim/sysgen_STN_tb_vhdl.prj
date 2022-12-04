@@ -1,9 +1,9 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_c_addsub_v12_0_i0/sim/bram_stn_32bit_c_addsub_v12_0_i0.vhd" \
-"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_c_addsub_v12_0_i1/sim/bram_stn_32bit_c_addsub_v12_0_i1.vhd" \
-"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_div_gen_v5_1_i0/sim/bram_stn_32bit_div_gen_v5_1_i0.vhd" \
-"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_mult_gen_v12_0_i0/sim/bram_stn_32bit_mult_gen_v12_0_i0.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_c_addsub_v12_0_i0/sim/bram_stn_32bit_c_addsub_v12_0_i0.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_c_addsub_v12_0_i1/sim/bram_stn_32bit_c_addsub_v12_0_i1.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_div_gen_v5_1_i0/sim/bram_stn_32bit_div_gen_v5_1_i0.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_mult_gen_v12_0_i0/sim/bram_stn_32bit_mult_gen_v12_0_i0.vhd" \
 "../../../../sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/conv_pkg.vhd" \
 "../../../../sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg.vhd" \
 "../../../../sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg_w_init.vhd" \
@@ -14,7 +14,7 @@ vhdl xil_defaultlib  \
 "../../../../sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/xlclockdriver_rd.vhd" \
 "../../../../sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/bram_stn_32bit_entity_declarations.vhd" \
 "../../../../sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/bram_stn_32bit.vhd" \
-"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/sim/bram_stn_32bit_0.vhd" \
+"../../../../sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/sim/bram_stn_32bit_0.vhd" \
 "../../../../sysgen_STN.srcs/sources_1/new/input_package.vhd" \
 "../../../../sysgen_STN.srcs/sources_1/new/sysgen_STN.vhd" \
 "../../../../sysgen_STN.srcs/sources_1/new/sysgen_STN_tb.vhd" \

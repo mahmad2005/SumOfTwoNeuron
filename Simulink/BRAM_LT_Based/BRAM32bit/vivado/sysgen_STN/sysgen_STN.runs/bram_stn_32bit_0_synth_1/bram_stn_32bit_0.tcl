@@ -85,14 +85,14 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part avnet.com:zedboard:part0:1.4 [current_project]
-set_property ip_repo_paths e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen/ip [current_project]
+set_property ip_repo_paths e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen_withRegister/ip [current_project]
 update_ip_catalog
 set_property ip_output_repo e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0.xci
-set_property used_in_implementation false [get_files -all e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/constrs/bram_stn_32bit.xdc]
+read_ip -quiet e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0.xci
+set_property used_in_implementation false [get_files -all e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/constrs/bram_stn_32bit.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -163,32 +163,32 @@ create_report "bram_stn_32bit_0_synth_1_synth_report_utilization_0" "report_util
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0.dcp e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0.dcp
+  file copy -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0.dcp e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_stub.v
+  write_verilog -force -mode synth_stub e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_stub.vhdl
+  write_vhdl -force -mode synth_stub e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_sim_netlist.v
+  write_verilog -force -mode funcsim e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -198,32 +198,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0.dcp e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0.dcp
+  file copy -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0.dcp e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_stub.v e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_stub.v
+  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_stub.v e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_stub.vhdl e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_stub.vhdl
+  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_stub.vhdl e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_sim_netlist.v e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_sim_netlist.v
+  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_sim_netlist.v e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_sim_netlist.vhdl e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_sim_netlist.vhdl
+  file rename -force E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.runs/bram_stn_32bit_0_synth_1/bram_stn_32bit_0_sim_netlist.vhdl e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -232,13 +232,13 @@ if { [catch {
 
 if {[file isdir E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ip/bram_stn_32bit_0]} {
   catch { 
-    file copy -force e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_stub.v E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ip/bram_stn_32bit_0
+    file copy -force e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_stub.v E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ip/bram_stn_32bit_0
   }
 }
 
 if {[file isdir E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ip/bram_stn_32bit_0]} {
   catch { 
-    file copy -force e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0/bram_stn_32bit_0_stub.vhdl E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ip/bram_stn_32bit_0
+    file copy -force e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_32bit_0_4/bram_stn_32bit_0_stub.vhdl E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ip/bram_stn_32bit_0
   }
 }
 file delete __synthesis_is_running__

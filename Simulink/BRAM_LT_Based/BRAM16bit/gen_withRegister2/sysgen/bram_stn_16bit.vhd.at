@@ -1,0 +1,612 @@
+{
+  'Line_1006' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Inverter'
+  },
+  'Line_1014' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Inverter1'
+  },
+  'Line_1022' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Logical'
+  },
+  'Line_103' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register1',
+    'Instance' => 'register1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/Register1'
+  },
+  'Line_1031' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Logical1'
+  },
+  'Line_1040' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/logical2',
+    'Instance' => 'logical2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Logical2'
+  },
+  'Line_1049' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/logical3',
+    'Instance' => 'logical3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Logical3'
+  },
+  'Line_1058' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/mux',
+    'Instance' => 'mux',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Mux'
+  },
+  'Line_1068' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/mux1',
+    'Instance' => 'mux1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Mux1'
+  },
+  'Line_1078' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/mux2',
+    'Instance' => 'mux2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Mux2'
+  },
+  'Line_1088' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/mux3',
+    'Instance' => 'mux3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Mux3'
+  },
+  'Line_1098' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/mux4',
+    'Instance' => 'mux4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Mux4'
+  },
+  'Line_1108' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Register'
+  },
+  'Line_1121' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/relational',
+    'Instance' => 'relational',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Relational'
+  },
+  'Line_1130' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/relational1',
+    'Instance' => 'relational1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Relational1'
+  },
+  'Line_1139' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/relational2',
+    'Instance' => 'relational2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Relational2'
+  },
+  'Line_1148' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/relational3',
+    'Instance' => 'relational3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Relational3'
+  },
+  'Line_1157' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/shift1',
+    'Instance' => 'shift1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Shift1'
+  },
+  'Line_116' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register2',
+    'Instance' => 'register2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/Register2'
+  },
+  'Line_1165' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/slice',
+    'Instance' => 'slice',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Slice'
+  },
+  'Line_1239' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem',
+    'Instance' => 'subsystem',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem'
+  },
+  'Line_1247' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1',
+    'Instance' => 'subsystem1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1'
+  },
+  'Line_1255' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/addsub',
+    'Instance' => 'addsub',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/AddSub'
+  },
+  'Line_1286' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/addsub3',
+    'Instance' => 'addsub3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/AddSub3'
+  },
+  'Line_129' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/shift',
+    'Instance' => 'shift',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/Shift'
+  },
+  'Line_1317' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/addsub6',
+    'Instance' => 'addsub6',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/AddSub6'
+  },
+  'Line_1348' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/addsub7',
+    'Instance' => 'addsub7',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/AddSub7'
+  },
+  'Line_137' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag',
+    'Instance' => 'imag',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/imag'
+  },
+  'Line_1379' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/exp_theta_hdl_1',
+    'Instance' => 'exp_theta_hdl_1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Exp_Theta_HDL_1'
+  },
+  'Line_1386' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/exp_theta_hdl_2',
+    'Instance' => 'exp_theta_hdl_2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Exp_Theta_HDL_2'
+  },
+  'Line_1393' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/mult',
+    'Instance' => 'mult',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Mult'
+  },
+  'Line_1430' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/mult1',
+    'Instance' => 'mult1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Mult1'
+  },
+  'Line_1467' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/mult2',
+    'Instance' => 'mult2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Mult2'
+  },
+  'Line_1504' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/mult3',
+    'Instance' => 'mult3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Mult3'
+  },
+  'Line_1541' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/mult4',
+    'Instance' => 'mult4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Mult4'
+  },
+  'Line_155' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/real',
+    'Instance' => 'real',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/real'
+  },
+  'Line_1578' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/mult5',
+    'Instance' => 'mult5',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Mult5'
+  },
+  'Line_1615' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/omega_hdl_1',
+    'Instance' => 'omega_hdl_1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Omega_HDL_1'
+  },
+  'Line_1622' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/omega_hdl_2',
+    'Instance' => 'omega_hdl_2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Omega_HDL_2'
+  },
+  'Line_1629' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/phi_hdl_1',
+    'Instance' => 'phi_hdl_1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Phi_HDL_1'
+  },
+  'Line_1636' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/phi_hdl_2',
+    'Instance' => 'phi_hdl_2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Phi_HDL_2'
+  },
+  'Line_1643' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register'
+  },
+  'Line_1656' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register1',
+    'Instance' => 'register1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register1'
+  },
+  'Line_1669' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register2',
+    'Instance' => 'register2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register2'
+  },
+  'Line_1682' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register4',
+    'Instance' => 'register4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register4'
+  },
+  'Line_1695' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register5',
+    'Instance' => 'register5',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register5'
+  },
+  'Line_1708' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register6',
+    'Instance' => 'register6',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register6'
+  },
+  'Line_1721' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register3',
+    'Instance' => 'register3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register3'
+  },
+  'Line_1734' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register7',
+    'Instance' => 'register7',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register7'
+  },
+  'Line_1747' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register8',
+    'Instance' => 'register8',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register8'
+  },
+  'Line_1760' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register9',
+    'Instance' => 'register9',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register9'
+  },
+  'Line_1773' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register10',
+    'Instance' => 'register10',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register10'
+  },
+  'Line_1786' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register11',
+    'Instance' => 'register11',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register11'
+  },
+  'Line_1799' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register12',
+    'Instance' => 'register12',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register12'
+  },
+  'Line_1812' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register13',
+    'Instance' => 'register13',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register13'
+  },
+  'Line_1825' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register14',
+    'Instance' => 'register14',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register14'
+  },
+  'Line_1838' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register15',
+    'Instance' => 'register15',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register15'
+  },
+  'Line_1851' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register16',
+    'Instance' => 'register16',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register16'
+  },
+  'Line_1864' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/register17',
+    'Instance' => 'register17',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Register17'
+  },
+  'Line_1904' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem',
+    'Instance' => 'subsystem',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem'
+  },
+  'Line_1929' => {
+    'CodeInstance' => 'bram_stn_16bit_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1961' => {
+    'CodeInstance' => 'bram_stn_16bit_default_clock_driver',
+    'Instance' => 'bram_stn_16bit_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1969' => {
+    'CodeInstance' => 'bram_stn_16bit_struct',
+    'Instance' => 'bram_stn_16bit_struct',
+    'SimulinkInstance' => 'BRAM_STN_16bit'
+  },
+  'Line_230' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic',
+    'Instance' => 'bram_cordic',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC'
+  },
+  'Line_238' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/AddSub1'
+  },
+  'Line_269' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/addsub2',
+    'Instance' => 'addsub2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/AddSub2'
+  },
+  'Line_300' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/addsub3',
+    'Instance' => 'addsub3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/AddSub3'
+  },
+  'Line_331' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/addsub4',
+    'Instance' => 'addsub4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/AddSub4'
+  },
+  'Line_35' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/addsub',
+    'Instance' => 'addsub',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/AddSub'
+  },
+  'Line_362' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant_x0',
+    'Instance' => 'constant_x0',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant'
+  },
+  'Line_369' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant3',
+    'Instance' => 'constant3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant3'
+  },
+  'Line_376' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant4',
+    'Instance' => 'constant4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant4'
+  },
+  'Line_383' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant5',
+    'Instance' => 'constant5',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant5'
+  },
+  'Line_390' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant6',
+    'Instance' => 'constant6',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant6'
+  },
+  'Line_397' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant7',
+    'Instance' => 'constant7',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant7'
+  },
+  'Line_404' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant8',
+    'Instance' => 'constant8',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant8'
+  },
+  'Line_411' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/constant9',
+    'Instance' => 'constant9',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Constant9'
+  },
+  'Line_418' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Inverter'
+  },
+  'Line_426' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/inverter1',
+    'Instance' => 'inverter1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Inverter1'
+  },
+  'Line_434' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Logical'
+  },
+  'Line_443' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Logical1'
+  },
+  'Line_452' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/logical2',
+    'Instance' => 'logical2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Logical2'
+  },
+  'Line_461' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/logical3',
+    'Instance' => 'logical3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Logical3'
+  },
+  'Line_470' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/mux',
+    'Instance' => 'mux',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Mux'
+  },
+  'Line_480' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/mux1',
+    'Instance' => 'mux1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Mux1'
+  },
+  'Line_490' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/mux2',
+    'Instance' => 'mux2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Mux2'
+  },
+  'Line_500' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/mux3',
+    'Instance' => 'mux3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Mux3'
+  },
+  'Line_510' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/mux4',
+    'Instance' => 'mux4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Mux4'
+  },
+  'Line_520' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Register'
+  },
+  'Line_533' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/relational',
+    'Instance' => 'relational',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Relational'
+  },
+  'Line_542' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/relational1',
+    'Instance' => 'relational1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Relational1'
+  },
+  'Line_551' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/relational2',
+    'Instance' => 'relational2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Relational2'
+  },
+  'Line_560' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/relational3',
+    'Instance' => 'relational3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Relational3'
+  },
+  'Line_569' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/shift1',
+    'Instance' => 'shift1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Shift1'
+  },
+  'Line_577' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/slice',
+    'Instance' => 'slice',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/Slice'
+  },
+  'Line_623' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/addsub',
+    'Instance' => 'addsub',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/AddSub'
+  },
+  'Line_654' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/constant1',
+    'Instance' => 'constant1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/Constant1'
+  },
+  'Line_66' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/constant1',
+    'Instance' => 'constant1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/Constant1'
+  },
+  'Line_661' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/constant2',
+    'Instance' => 'constant2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/Constant2'
+  },
+  'Line_668' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/divide',
+    'Instance' => 'divide',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/Divide'
+  },
+  'Line_678' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/Register'
+  },
+  'Line_691' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register1',
+    'Instance' => 'register1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/Register1'
+  },
+  'Line_704' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register2',
+    'Instance' => 'register2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/Register2'
+  },
+  'Line_717' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/shift',
+    'Instance' => 'shift',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/Shift'
+  },
+  'Line_725' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag',
+    'Instance' => 'imag',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/imag'
+  },
+  'Line_73' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/constant2',
+    'Instance' => 'constant2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/Constant2'
+  },
+  'Line_743' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/real',
+    'Instance' => 'real',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC/real'
+  },
+  'Line_80' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide',
+    'Instance' => 'divide',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/Divide'
+  },
+  'Line_818' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic',
+    'Instance' => 'bram_cordic',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/BRAM_CORDIC'
+  },
+  'Line_826' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/addsub1',
+    'Instance' => 'addsub1',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/AddSub1'
+  },
+  'Line_857' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/addsub2',
+    'Instance' => 'addsub2',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/AddSub2'
+  },
+  'Line_888' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/addsub3',
+    'Instance' => 'addsub3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/AddSub3'
+  },
+  'Line_90' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem/BRAM_CORDIC/Register'
+  },
+  'Line_919' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/addsub4',
+    'Instance' => 'addsub4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/AddSub4'
+  },
+  'Line_950' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant_x0',
+    'Instance' => 'constant_x0',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant'
+  },
+  'Line_957' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant3',
+    'Instance' => 'constant3',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant3'
+  },
+  'Line_964' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant4',
+    'Instance' => 'constant4',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant4'
+  },
+  'Line_971' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant5',
+    'Instance' => 'constant5',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant5'
+  },
+  'Line_978' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant6',
+    'Instance' => 'constant6',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant6'
+  },
+  'Line_985' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant7',
+    'Instance' => 'constant7',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant7'
+  },
+  'Line_992' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant8',
+    'Instance' => 'constant8',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant8'
+  },
+  'Line_999' => {
+    'CodeInstance' => 'bram_stn_16bit_struct/subsystem/subsystem1/constant9',
+    'Instance' => 'constant9',
+    'SimulinkInstance' => 'BRAM_STN_16bit/Subsystem/Subsystem1/Constant9'
+  }
+}
