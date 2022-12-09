@@ -27,8 +27,8 @@ formatSpec = '%f';
 
 COS_FPGA = fscanf(fileID1,formatSpec);
 SIN_FPGA = fscanf(fileID2,formatSpec);
-COS_FPGA = COS_FPGA(20:820);
-SIN_FPGA = SIN_FPGA(20:820);
+COS_FPGA = COS_FPGA(15:815);
+SIN_FPGA = SIN_FPGA(15:815);
 z = COS_FPGA + SIN_FPGA*1i;
 
 f2= figure;
