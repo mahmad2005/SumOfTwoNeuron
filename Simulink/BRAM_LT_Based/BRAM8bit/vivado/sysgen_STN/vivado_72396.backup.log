@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Dec  9 22:25:15 2022
+# Process ID: 72396
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent69900 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\BRAM_LT_Based\BRAM8bit\vivado\sysgen_STN\sysgen_STN.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/gen/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1257.707 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Fri Dec  9 22:26:40 2022] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Dec  9 22:30:57 2022] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1408.062 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2061.613 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2061.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2061.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2183.574 ; gain = 925.867
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/bram_stn_8bit_0.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2256.082 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/constrs/bram_stn_8bit.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/constrs/bram_stn_8bit.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
+Finished Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2291.711 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+save_constraints
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Dec  9 22:36:26 2022] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
+[Fri Dec  9 22:36:27 2022] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2448.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.260 . Memory (MB): peak = 2448.168 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.260 . Memory (MB): peak = 2448.168 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2448.168 ; gain = 15.340
+reset_timing
+reset_timing
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Dec  9 23:01:38 2022] Launched synth_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
+[Fri Dec  9 23:01:38 2022] Launched impl_1...
+Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2532.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2532.988 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2532.988 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2532.988 ; gain = 0.000
+reset_timing
+reset_timing
+current_design synth_1
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/bram_stn_8bit_0.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2562.246 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/constrs/bram_stn_8bit.xdc] for cell 'your_instance_name/U0'
+Finished Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/constrs/bram_stn_8bit.xdc] for cell 'your_instance_name/U0'
+Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
+Finished Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2562.246 ; gain = 29.258
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+reset_timing
+current_design impl_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+reset_run synth_1
+current_design synth_1
+refresh_design

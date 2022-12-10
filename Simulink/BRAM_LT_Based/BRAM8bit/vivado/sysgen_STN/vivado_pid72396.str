@@ -1,0 +1,723 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:33 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 72396
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Dec 09 22:25:33 CST 2022
+Time zone: 	Central Standard Time (America/Regina)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2
+Java executable: 	C:/Xilinx/Vivado/2021.1/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	maruf
+User home directory: C:/Users/maruf
+User working directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.1
+RDI_DATADIR: C:/Xilinx/Vivado/2021.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/
+Vivado layouts directory: C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/vivado.log
+Vivado journal file: 	E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/vivado.jou
+Engine tmp dir: 	E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/.Xil/Vivado-72396-DESKTOP-1FT5C23
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.1
+XILINX_SDK: C:/Xilinx/Vitis/2021.1
+XILINX_VITIS: C:/Xilinx/Vitis/2021.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,268 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 97 MB (+98952kb) [00:00:06]
+// [Engine Memory]: 1,268 MB (+1178311kb) [00:00:06]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\BRAM_LT_Based\BRAM8bit\vivado\sysgen_STN\sysgen_STN.xpr. Version: Vivado v2021.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+5012kb) [00:00:09]
+// [GUI Memory]: 116 MB (+4606kb) [00:00:10]
+// [GUI Memory]: 124 MB (+1868kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2729 ms.
+// Tcl Message: open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/gen/ip'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,268 MB. GUI used memory: 70 MB. Current time: 12/9/22, 10:25:33 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1257.707 ; gain = 0.000 
+// Project name: sysgen_STN; location: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 133 MB (+2851kb) [00:00:58]
+// Elapsed time: 49 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, config.xdc]", 5, false); // D
+// [GUI Memory]: 142 MB (+2379kb) [00:01:02]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, config.xdc]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // o
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Fri Dec  9 22:26:40 2022] Launched synth_1... Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Synthesis Completed: addNotify
+// Elapsed time: 255 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Fri Dec  9 22:30:57 2022] Launched impl_1... Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 428ms to process. Increasing delay to 3000 ms.
+// ag (cs): Implementation Completed: addNotify
+// [GUI Memory]: 150 MB (+1178kb) [00:08:43]
+// Elapsed time: 190 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,401 MB. GUI used memory: 91 MB. Current time: 12/9/22, 10:34:21 PM CST
+// [Engine Memory]: 1,401 MB (+72863kb) [00:08:59]
+// [Engine Memory]: 1,478 MB (+6768kb) [00:09:00]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 167 MB (+10619kb) [00:09:01]
+// [Engine Memory]: 1,577 MB (+26475kb) [00:09:01]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2179 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1408.062 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2061.613 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2061.613 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2061.613 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2183.574 ; gain = 925.867 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 178 MB (+1802kb) [00:09:04]
+// WARNING: HEventQueue.dispatchEvent() is taking  1060 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dU' command handler elapsed time: 19 seconds
+// Device view-level: 0.1
+// Device view-level: 0.0
+// Elapsed time: 19 seconds
+dismissDialog("Open Implemented Design"); // bz
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aK
+// [GUI Memory]: 187 MB (+283kb) [00:09:34]
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 19, false); // o
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// cz (cs): Timing Constraints Wizard: addNotify
+selectButton("CANCEL", "Cancel"); // JButton
+dismissDialog("Timing Constraints Wizard"); // cz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Edit Timing Constraints]", 20, false); // o
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // o
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // o
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Edit Timing Constraints]", 17, false); // o
+// bz (cs):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg484-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,643 MB. GUI used memory: 134 MB. Current time: 12/9/22, 10:35:42 PM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,690 MB (+35654kb) [00:10:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,692 MB. GUI used memory: 134 MB. Current time: 12/9/22, 10:35:43 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 196 MB (+224kb) [00:10:23]
+// WARNING: HEventQueue.dispatchEvent() is taking  1570 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/bram_stn_8bit_0.dcp' for cell 'your_instance_name' 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2256.082 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2291.711 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WINDOW
+dismissDialog("Open Synthesized Design"); // bz
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; CLK ; 50.0 ; 0.0 ; 25.0 ; false ; [get_ports CLK] ; E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc ;  ; ", 0, "CLK", 1); // f
+editTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "CLK", 0, "Clock Name", 1); // f
+// [Engine Memory]: 1,781 MB (+7245kb) [00:10:31]
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; CLK ; 50.0 ; 0.0 ; 25.0 ; false ; [get_ports CLK] ; E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc ;  ; ", 0, "50.0", 2); // f
+selectTable(PAResourceEtoH.EditCreateClockTablePanel_EDIT_CREATE_CLOCK_TABLE, "1 ; CLK ; 50.0 ; 0.0 ; 25.0 ; false ; [get_ports CLK] ; E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc ;  ; ", 0, "50.0", 2, false, false, false, false, true); // f - Double Click
+// aY (cs): Edit Create Clock: addNotify
+// Elapsed time: 13 seconds
+setSpinner(PAResourceAtoD.ClockCreationPanel_ENTER_POSITIVE_NUMBER, "33.33"); // b
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (aY):  Validate XDC Command : addNotify
+dismissDialog("Validate XDC Command"); // bz
+dismissDialog("Edit Create Clock"); // aY
+// HMemoryUtils.trashcanNow. Engine heap size: 1,829 MB. GUI used memory: 149 MB. Current time: 12/9/22, 10:36:07 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 29, false); // o
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "OK"); // JButton
+// bz (cs):  Apply All XDC Constraints : addNotify
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// [GUI Memory]: 207 MB (+555kb) [00:10:57]
+// am (cs): Save Project: addNotify
+dismissDialog("Apply All XDC Constraints"); // bz
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// A (cs): Out of Date Design: addNotify
+dismissDialog("Save Project"); // am
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Save Constraints : addNotify
+dismissDialog("Out of Date Design"); // A
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// Tcl Message: save_constraints 
+// A (cs): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Constraints"); // bz
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Fri Dec  9 22:36:26 2022] Launched synth_1... Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log [Fri Dec  9 22:36:27 2022] Launched impl_1... Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 12 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Completed: addNotify
+// Elapsed time: 457 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Reloading : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1322 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design impl_1 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,834 MB. GUI used memory: 140 MB. Current time: 12/9/22, 10:44:08 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,834 MB. GUI used memory: 141 MB. Current time: 12/9/22, 10:44:08 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2033 ms.
+// Tcl Message: refresh_design 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,834 MB. GUI used memory: 138 MB. Current time: 12/9/22, 10:44:11 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2883 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2448.168 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.260 . Memory (MB): peak = 2448.168 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.260 . Memory (MB): peak = 2448.168 ; gain = 0.000 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2448.168 ; gain = 15.340 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Elapsed time: 13 seconds
+dismissDialog("Reloading"); // bz
+// Elapsed time: 270 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+// Elapsed time: 692 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Timing Constraints", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+// Elapsed time: 25 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_TIMING, "Reset Timing..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: PAResourceCommand.PACommandNames_RESET_TIMING
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: reset_timing 
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_TIMING, "Reset Timing..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: PAResourceCommand.PACommandNames_RESET_TIMING
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// [GUI Memory]: 219 MB (+2281kb) [00:35:44]
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: reset_timing 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 31, false); // o
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// cz (cs): Timing Constraints Wizard: addNotify
+// bz (cz):  Timing Constraints Wizard : addNotify
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CREATED
+// bz (cz):  Timing Constraints Wizard : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bz
+selectTable(PAResourceOtoP.PrimaryClocksPanel_RECOMMENDED_CONSTRAINTS_TABLE, "true ; CLK ; CLK ;  ;  ;  ;  ; ", 0, (String) null, 3); // cg
+editTable(PAResourceOtoP.PrimaryClocksPanel_RECOMMENDED_CONSTRAINTS_TABLE, "50.0", 0, "Frequency (MHz)", 3); // cg
+selectButton("NEXT", "Next >"); // JButton
+// bz (cz):  Apply XDC Constraints : addNotify
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// bz (cz):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bz
+selectButton(PAResourceTtoZ.TimingConstraintsWizard_GOTO_CONSTRAINTS_SUMMARY_PAGE, "Skip to Finish >>"); // a
+// bz (cs):  Commit Design Constraints : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CLOSED
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Commit Design Constraints"); // bz
+dismissDialog("Timing Constraints Wizard"); // cz
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 29, false); // o
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cs):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Fri Dec  9 23:01:38 2022] Launched synth_1... Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log [Fri Dec  9 23:01:38 2022] Launched impl_1... Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 424ms to process. Increasing delay to 3000 ms.
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cs): Implementation Completed: addNotify
+// Elapsed time: 149 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bz (cs):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// TclEventType: TIMING_RESULTS_UNLOAD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,834 MB. GUI used memory: 147 MB. Current time: 12/9/22, 11:04:10 PM CST
+// Engine heap size: 1,834 MB. GUI used memory: 147 MB. Current time: 12/9/22, 11:04:10 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1860 ms.
+// Tcl Message: refresh_design 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,834 MB. GUI used memory: 146 MB. Current time: 12/9/22, 11:04:12 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2470 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 2532.988 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2532.988 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2532.988 ; gain = 0.000 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2532.988 ; gain = 0.000 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+dismissDialog("Reloading"); // bz
+// Elapsed time: 223 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Timing Constraints", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+// Elapsed time: 51 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_TIMING, "Reset Timing..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: PAResourceCommand.PACommandNames_RESET_TIMING
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: reset_timing 
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_TIMING, "Reset Timing..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: PAResourceCommand.PACommandNames_RESET_TIMING
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: reset_timing 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // o - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Constraints Wizard]", 16, false); // o
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// cX (cs): Design Modified on Disk: addNotify
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // a
+// bz (cs):  Reloading : addNotify
+dismissDialog("Design Modified on Disk"); // cX
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: current_design synth_1 
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,834 MB. GUI used memory: 156 MB. Current time: 12/9/22, 11:09:14 PM CST
+// Engine heap size: 1,834 MB. GUI used memory: 156 MB. Current time: 12/9/22, 11:09:14 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1152 ms.
+// Tcl Message: refresh_design 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM8bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/bram_stn_8bit_0/bram_stn_8bit_0.dcp' for cell 'your_instance_name' 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,834 MB. GUI used memory: 155 MB. Current time: 12/9/22, 11:09:16 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2209 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2562.246 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2021.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2562.246 ; gain = 29.258 
+dismissDialog("Reloading"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Constraints Wizard]", 16, false); // o
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// cz (cs): Timing Constraints Wizard: addNotify
+// bz (cz):  Timing Constraints Wizard : addNotify
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CREATED
+// bz (cz):  Timing Constraints Wizard : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bz
+selectButton("CANCEL", "Cancel"); // JButton
+// bz (cz):  Apply XDC Constraints : addNotify
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CLOSED
+dismissDialog("Apply XDC Constraints"); // bz
+dismissDialog("Timing Constraints Wizard"); // cz
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_TIMING, "Reset Timing..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // af
+// Run Command: PAResourceCommand.PACommandNames_RESET_TIMING
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: reset_timing 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Constraints Wizard]", 31, false); // o
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// TclEventType: CURR_DESIGN_SET
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// Tcl Command: 'create_clock -help'
+// cz (cs): Timing Constraints Wizard: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1299 ms.
+// Tcl Message: current_design impl_1 
+// bz (cz):  Timing Constraints Wizard : addNotify
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CREATED
+// bz (cz):  Timing Constraints Wizard : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Timing Constraints Wizard"); // bz
+selectTable(PAResourceOtoP.PrimaryClocksPanel_RECOMMENDED_CONSTRAINTS_TABLE, "true ; CLK ; CLK ;  ;  ;  ;  ; ", 0, (String) null, 3); // cg
+editTable(PAResourceOtoP.PrimaryClocksPanel_RECOMMENDED_CONSTRAINTS_TABLE, "100.0", 0, "Frequency (MHz)", 3); // cg
+selectButton("NEXT", "Next >"); // JButton
+// bz (cz):  Apply XDC Constraints : addNotify
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// bz (cz):  Timing Constraints Wizard : addNotify
+dismissDialog("Timing Constraints Wizard"); // bz
+selectButton(PAResourceTtoZ.TimingConstraintsWizard_GOTO_CONSTRAINTS_SUMMARY_PAGE, "Skip to Finish >>"); // a
+// bz (cs):  Commit Design Constraints : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTR_MGR_CLEAR
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: DESIGN_SAVE
+// TclEventType: TIMING_CONSTRAINTS_WIZARD_CLOSED
+selectButton("FINISH", "Finish"); // JButton
+dismissDialog("Commit Design Constraints"); // bz
+dismissDialog("Timing Constraints Wizard"); // cz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 29, false); // o
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// am (cs): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// ae (cs): Design Modified on Disk: addNotify
+dismissDialog("Save Project"); // am

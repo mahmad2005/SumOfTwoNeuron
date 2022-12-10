@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log sysgen_STN_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sysgen_STN_tb.tcl
+EAStep vivado -log sysgen_STN.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sysgen_STN.tcl

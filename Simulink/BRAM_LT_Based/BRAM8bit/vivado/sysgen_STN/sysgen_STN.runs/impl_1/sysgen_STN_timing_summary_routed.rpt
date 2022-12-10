@@ -1,0 +1,1278 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Fri Dec  9 23:50:15 2022
+| Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file sysgen_STN_timing_summary_routed.rpt -pb sysgen_STN_timing_summary_routed.pb -rpx sysgen_STN_timing_summary_routed.rpx -warn_on_violation
+| Design       : sysgen_STN
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                    Violations  
+---------  --------  -----------------------------  ----------  
+TIMING-16  Warning   Large setup violation          87          
+TIMING-18  Warning   Missing input or output delay  24          
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (8)
+6. checking no_output_delay (16)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (8)
+------------------------------
+ There are 8 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (16)
+--------------------------------
+ There are 16 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -1.212     -176.969                    298                  664        0.116        0.000                      0                  664       -0.576       -3.383                      11                   559  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+CLK    {0.000 1.000}        2.000           500.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+CLK                -1.212     -176.969                    298                  664        0.116        0.000                      0                  664       -0.576       -3.383                      11                   559  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  CLK
+  To Clock:  CLK
+
+Setup :          298  Failing Endpoints,  Worst Slack       -1.212ns,  Total Violation     -176.969ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.116ns,  Total Violation        0.000ns
+PW    :           11  Failing Endpoints,  Worst Slack       -0.576ns,  Total Violation       -3.383ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -1.212ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_6/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/A[1]
+                            (rising edge-triggered cell DSP48E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        1.102ns  (logic 0.419ns (38.010%)  route 0.683ns (61.990%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.604ns = ( 6.604 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.033ns
+    Clock Pessimism Removal (CPR):    0.458ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.753     5.033    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y5           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_6/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y5           FDRE (Prop_fdre_C_Q)         0.419     5.452 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_6/Q
+                         net (fo=1, routed)           0.683     6.135    your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_n_6_alias
+    DSP48_X0Y3           DSP48E1                                      r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/A[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.667     6.604    your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/CLK
+    DSP48_X0Y3           DSP48E1                                      r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                         clock pessimism              0.458     7.061    
+                         clock uncertainty           -0.035     7.026    
+    DSP48_X0Y3           DSP48E1 (Setup_dsp48e1_CLK_A[1])
+                                                     -2.103     4.923    your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg
+  -------------------------------------------------------------------
+                         required time                          4.923    
+                         arrival time                          -6.135    
+  -------------------------------------------------------------------
+                         slack                                 -1.212    
+
+Slack (VIOLATED) :        -1.176ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_8/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult5/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/A[11]
+                            (rising edge-triggered cell DSP48E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        1.243ns  (logic 0.518ns (41.664%)  route 0.725ns (58.337%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.031ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.598ns = ( 6.598 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.025ns
+    Clock Pessimism Removal (CPR):    0.458ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.745     5.025    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X8Y16          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_8/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y16          FDRE (Prop_fdre_C_Q)         0.518     5.543 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_8/Q
+                         net (fo=23, routed)          0.725     6.268    your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult5/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_n_8_alias
+    DSP48_X0Y6           DSP48E1                                      r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult5/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/A[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.661     6.598    your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult5/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/CLK
+    DSP48_X0Y6           DSP48E1                                      r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult5/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+                         clock pessimism              0.458     7.055    
+                         clock uncertainty           -0.035     7.020    
+    DSP48_X0Y6           DSP48E1 (Setup_dsp48e1_CLK_A[11])
+                                                     -1.928     5.092    your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult5/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg
+  -------------------------------------------------------------------
+                         required time                          5.092    
+                         arrival time                          -6.268    
+  -------------------------------------------------------------------
+                         slack                                 -1.176    
+
+Slack (VIOLATED) :        -1.144ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        2.949ns  (logic 2.454ns (83.212%)  route 0.495ns (16.788%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.515ns = ( 6.515 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.075ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.795     5.075    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y0          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y0          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[2])
+                                                      2.454     7.529 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[2]
+                         net (fo=1, routed)           0.495     8.024    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[2]_alias
+    SLICE_X9Y0           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.578     6.515    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y0           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13/C
+                         clock pessimism              0.494     7.009    
+                         clock uncertainty           -0.035     6.973    
+    SLICE_X9Y0           FDRE (Setup_fdre_C_D)       -0.093     6.880    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13
+  -------------------------------------------------------------------
+                         required time                          6.880    
+                         arrival time                          -8.024    
+  -------------------------------------------------------------------
+                         slack                                 -1.144    
+
+Slack (VIOLATED) :        -1.142ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.795%)  route 0.546ns (18.205%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.510ns = ( 6.510 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.070ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.790     5.070    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y4          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[7])
+                                                      2.454     7.524 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[7]
+                         net (fo=1, routed)           0.546     8.070    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[7]_alias
+    SLICE_X9Y12          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.573     6.510    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y12          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp/C
+                         clock pessimism              0.494     7.004    
+                         clock uncertainty           -0.035     6.968    
+    SLICE_X9Y12          FDRE (Setup_fdre_C_D)       -0.040     6.928    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp
+  -------------------------------------------------------------------
+                         required time                          6.928    
+                         arrival time                          -8.070    
+  -------------------------------------------------------------------
+                         slack                                 -1.142    
+
+Slack (VIOLATED) :        -1.142ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_15/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.795%)  route 0.546ns (18.205%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.515ns = ( 6.515 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.075ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.795     5.075    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y0          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y0          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     7.529 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[0]
+                         net (fo=1, routed)           0.546     8.075    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[0]_alias
+    SLICE_X9Y0           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_15/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.578     6.515    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y0           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_15/C
+                         clock pessimism              0.494     7.009    
+                         clock uncertainty           -0.035     6.973    
+    SLICE_X9Y0           FDRE (Setup_fdre_C_D)       -0.040     6.933    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_15
+  -------------------------------------------------------------------
+                         required time                          6.933    
+                         arrival time                          -8.075    
+  -------------------------------------------------------------------
+                         slack                                 -1.142    
+
+Slack (VIOLATED) :        -1.142ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.795%)  route 0.546ns (18.205%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.514ns = ( 6.514 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.074ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.794     5.074    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y2          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y2          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     7.528 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[0]
+                         net (fo=1, routed)           0.546     8.074    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/A[0]_alias
+    SLICE_X9Y5           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.577     6.514    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y5           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7/C
+                         clock pessimism              0.494     7.008    
+                         clock uncertainty           -0.035     6.972    
+    SLICE_X9Y5           FDRE (Setup_fdre_C_D)       -0.040     6.932    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7
+  -------------------------------------------------------------------
+                         required time                          6.932    
+                         arrival time                          -8.074    
+  -------------------------------------------------------------------
+                         slack                                 -1.142    
+
+Slack (VIOLATED) :        -1.142ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_8/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.795%)  route 0.546ns (18.205%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.515ns = ( 6.515 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.075ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.795     5.075    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y0          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y0          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[7])
+                                                      2.454     7.529 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[7]
+                         net (fo=1, routed)           0.546     8.075    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[7]_alias
+    SLICE_X9Y2           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_8/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.578     6.515    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y2           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_8/C
+                         clock pessimism              0.494     7.009    
+                         clock uncertainty           -0.035     6.973    
+    SLICE_X9Y2           FDRE (Setup_fdre_C_D)       -0.040     6.933    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub6/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_8
+  -------------------------------------------------------------------
+                         required time                          6.933    
+                         arrival time                          -8.075    
+  -------------------------------------------------------------------
+                         slack                                 -1.142    
+
+Slack (VIOLATED) :        -1.140ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.795%)  route 0.546ns (18.205%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.512ns = ( 6.512 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.070ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.790     5.070    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y4          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     7.524 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[0]
+                         net (fo=1, routed)           0.546     8.070    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[0]_alias
+    SLICE_X9Y10          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.575     6.512    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y10          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7/C
+                         clock pessimism              0.494     7.006    
+                         clock uncertainty           -0.035     6.970    
+    SLICE_X9Y10          FDRE (Setup_fdre_C_D)       -0.040     6.930    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_7
+  -------------------------------------------------------------------
+                         required time                          6.930    
+                         arrival time                          -8.070    
+  -------------------------------------------------------------------
+                         slack                                 -1.140    
+
+Slack (VIOLATED) :        -1.140ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        2.949ns  (logic 2.454ns (83.212%)  route 0.495ns (16.788%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.062ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.508ns = ( 6.508 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.064ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.784     5.064    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y6          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y6          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[2])
+                                                      2.454     7.518 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[2]
+                         net (fo=1, routed)           0.495     8.013    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/A[2]_alias
+    SLICE_X9Y15          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.571     6.508    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y15          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13/C
+                         clock pessimism              0.494     7.002    
+                         clock uncertainty           -0.035     6.966    
+    SLICE_X9Y15          FDRE (Setup_fdre_C_D)       -0.093     6.873    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_13
+  -------------------------------------------------------------------
+                         required time                          6.873    
+                         arrival time                          -8.013    
+  -------------------------------------------------------------------
+                         slack                                 -1.140    
+
+Slack (VIOLATED) :        -1.139ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_1/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        2.990ns  (logic 2.454ns (82.075%)  route 0.536ns (17.925%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.510ns = ( 6.510 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.070ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.790     5.070    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X0Y4          RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[6])
+                                                      2.454     7.524 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[6]
+                         net (fo=1, routed)           0.536     8.060    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/B[6]_alias
+    SLICE_X9Y12          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         1.573     6.510    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/CLK
+    SLICE_X9Y12          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_1/C
+                         clock pessimism              0.494     7.004    
+                         clock uncertainty           -0.035     6.968    
+    SLICE_X9Y12          FDRE (Setup_fdre_C_D)       -0.047     6.921    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub7/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_simple_model.i_gt_1.carrychaingen[7].carryxor_i_1_psdsp_1
+  -------------------------------------------------------------------
+                         required time                          6.921    
+                         arrival time                          -8.060    
+  -------------------------------------------------------------------
+                         slack                                 -1.139    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.116ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][4]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[8]
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.358ns  (logic 0.141ns (39.433%)  route 0.217ns (60.567%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.058ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.079ns
+    Source Clock Delay      (SCD):    1.519ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.594     1.519    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/clk
+    SLICE_X9Y5           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y5           FDRE (Prop_fdre_C_Q)         0.141     1.660 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][4]/Q
+                         net (fo=2, routed)           0.217     1.876    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[4]
+    RAMB18_X0Y0          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.905     2.079    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y0          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.577    
+    RAMB18_X0Y0          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[8])
+                                                      0.183     1.760    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.760    
+                         arrival time                           1.876    
+  -------------------------------------------------------------------
+                         slack                                  0.116    
+
+Slack (MET) :             0.118ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/reg_quot_out.reg_quot/opt_has_pipe.first_q_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/signed_output.cmp_quot/twos_comp/i_reg_arch_simp.i_q.q_i_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.252ns  (logic 0.186ns (73.721%)  route 0.066ns (26.279%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.064ns
+    Source Clock Delay      (SCD):    1.547ns
+    Clock Pessimism Removal (CPR):    0.505ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.622     1.547    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/reg_quot_out.reg_quot/aclk
+    SLICE_X7Y9           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/reg_quot_out.reg_quot/opt_has_pipe.first_q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y9           FDRE (Prop_fdre_C_Q)         0.141     1.688 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/reg_quot_out.reg_quot/opt_has_pipe.first_q_reg[6]/Q
+                         net (fo=2, routed)           0.066     1.754    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/reg_quot_out.reg_quot/first_q[6]
+    SLICE_X6Y9           LUT4 (Prop_lut4_I1_O)        0.045     1.799 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/reg_quot_out.reg_quot/i_reg_arch_simp.i_q.q_i[5]_i_1/O
+                         net (fo=1, routed)           0.000     1.799    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/signed_output.cmp_quot/twos_comp/D[5]
+    SLICE_X6Y9           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/signed_output.cmp_quot/twos_comp/i_reg_arch_simp.i_q.q_i_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.891     2.064    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/signed_output.cmp_quot/twos_comp/aclk
+    SLICE_X6Y9           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/signed_output.cmp_quot/twos_comp/i_reg_arch_simp.i_q.q_i_reg[5]/C
+                         clock pessimism             -0.505     1.560    
+    SLICE_X6Y9           FDRE (Hold_fdre_C_D)         0.121     1.681    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/signed_output.cmp_quot/twos_comp/i_reg_arch_simp.i_q.q_i_reg[5]
+  -------------------------------------------------------------------
+                         required time                         -1.681    
+                         arrival time                           1.799    
+  -------------------------------------------------------------------
+                         slack                                  0.118    
+
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][2]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.362ns  (logic 0.141ns (38.907%)  route 0.221ns (61.093%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.055ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.074ns
+    Source Clock Delay      (SCD):    1.517ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.592     1.517    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/clk
+    SLICE_X9Y10          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y10          FDRE (Prop_fdre_C_Q)         0.141     1.658 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][2]/Q
+                         net (fo=2, routed)           0.221     1.879    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[2]
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.900     2.074    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.572    
+    RAMB18_X0Y4          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[6])
+                                                      0.183     1.755    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.755    
+                         arrival time                           1.879    
+  -------------------------------------------------------------------
+                         slack                                  0.124    
+
+Slack (MET) :             0.127ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.366ns  (logic 0.141ns (38.528%)  route 0.225ns (61.472%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.055ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.074ns
+    Source Clock Delay      (SCD):    1.517ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.592     1.517    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/clk
+    SLICE_X9Y10          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y10          FDRE (Prop_fdre_C_Q)         0.141     1.658 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][0]/Q
+                         net (fo=2, routed)           0.225     1.883    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[0]
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.900     2.074    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.572    
+    RAMB18_X0Y4          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[4])
+                                                      0.183     1.755    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.755    
+                         arrival time                           1.883    
+  -------------------------------------------------------------------
+                         slack                                  0.127    
+
+Slack (MET) :             0.134ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][2]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.391ns  (logic 0.141ns (36.101%)  route 0.250ns (63.899%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.073ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.070ns
+    Source Clock Delay      (SCD):    1.515ns
+    Clock Pessimism Removal (CPR):    0.482ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.590     1.515    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/clk
+    SLICE_X11Y15         FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y15         FDRE (Prop_fdre_C_Q)         0.141     1.656 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][2]/Q
+                         net (fo=2, routed)           0.250     1.905    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[2]
+    RAMB18_X0Y6          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.896     2.070    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y6          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.482     1.588    
+    RAMB18_X0Y6          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[6])
+                                                      0.183     1.771    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.771    
+                         arrival time                           1.905    
+  -------------------------------------------------------------------
+                         slack                                  0.134    
+
+Slack (MET) :             0.140ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/addsub2/comp1.core_instance1/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22_reg[0][4]/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.273ns  (logic 0.186ns (68.106%)  route 0.087ns (31.894%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.035ns
+    Source Clock Delay      (SCD):    1.518ns
+    Clock Pessimism Removal (CPR):    0.505ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.593     1.518    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/addsub2/comp1.core_instance1/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/CLK
+    SLICE_X11Y7          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/addsub2/comp1.core_instance1/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y7          FDRE (Prop_fdre_C_Q)         0.141     1.659 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/addsub2/comp1.core_instance1/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[5]/Q
+                         net (fo=1, routed)           0.087     1.746    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/S[4]
+    SLICE_X10Y7          LUT3 (Prop_lut3_I0_O)        0.045     1.791 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22[0][4]_i_1/O
+                         net (fo=1, routed)           0.000     1.791    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22[0][4]_i_1_n_0
+    SLICE_X10Y7          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22_reg[0][4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.862     2.035    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/clk
+    SLICE_X10Y7          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22_reg[0][4]/C
+                         clock pessimism             -0.505     1.531    
+    SLICE_X10Y7          FDRE (Hold_fdre_C_D)         0.120     1.651    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22_reg[0][4]
+  -------------------------------------------------------------------
+                         required time                         -1.651    
+                         arrival time                           1.791    
+  -------------------------------------------------------------------
+                         slack                                  0.140    
+
+Slack (MET) :             0.143ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/D
+                            (rising edge-triggered cell SRL16E clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.276ns  (logic 0.164ns (59.419%)  route 0.112ns (40.581%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.064ns
+    Source Clock Delay      (SCD):    1.547ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.622     1.547    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/aclk
+    SLICE_X6Y7           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y7           FDRE (Prop_fdre_C_Q)         0.164     1.711 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=1, routed)           0.112     1.823    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/first_q[1]
+    SLICE_X6Y8           SRL16E                                       r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.891     2.064    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/aclk
+    SLICE_X6Y8           SRL16E                                       r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+                         clock pessimism             -0.502     1.563    
+    SLICE_X6Y8           SRL16E (Hold_srl16e_CLK_D)
+                                                      0.117     1.680    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11
+  -------------------------------------------------------------------
+                         required time                         -1.680    
+                         arrival time                           1.823    
+  -------------------------------------------------------------------
+                         slack                                  0.143    
+
+Slack (MET) :             0.145ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][3]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.383ns  (logic 0.164ns (42.871%)  route 0.219ns (57.129%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.054ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.074ns
+    Source Clock Delay      (SCD):    1.518ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.593     1.518    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/clk
+    SLICE_X8Y9           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y9           FDRE (Prop_fdre_C_Q)         0.164     1.682 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/shift/op_mem_46_20_reg[0][3]/Q
+                         net (fo=2, routed)           0.219     1.900    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[3]
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.900     2.074    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y4          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.572    
+    RAMB18_X0Y4          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[7])
+                                                      0.183     1.755    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.755    
+                         arrival time                           1.900    
+  -------------------------------------------------------------------
+                         slack                                  0.145    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][1]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.389ns  (logic 0.164ns (42.188%)  route 0.225ns (57.812%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.057ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.078ns
+    Source Clock Delay      (SCD):    1.519ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.594     1.519    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/clk
+    SLICE_X8Y5           FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y5           FDRE (Prop_fdre_C_Q)         0.164     1.683 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][1]/Q
+                         net (fo=2, routed)           0.225     1.907    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[1]
+    RAMB18_X0Y2          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.904     2.078    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y2          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.576    
+    RAMB18_X0Y2          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
+                                                      0.183     1.759    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.759    
+                         arrival time                           1.907    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[4]
+                            (rising edge-triggered cell RAMB18E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.386ns  (logic 0.141ns (36.522%)  route 0.245ns (63.478%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.052ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.070ns
+    Source Clock Delay      (SCD):    1.516ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.591     1.516    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/clk
+    SLICE_X9Y12          FDRE                                         r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y12          FDRE (Prop_fdre_C_Q)         0.141     1.657 r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/shift/op_mem_46_20_reg[0][0]/Q
+                         net (fo=2, routed)           0.245     1.902    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[0]
+    RAMB18_X0Y6          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=558, routed)         0.896     2.070    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB18_X0Y6          RAMB18E1                                     r  your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.568    
+    RAMB18_X0Y6          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[4])
+                                                      0.183     1.751    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.751    
+                         arrival time                           1.902    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         CLK
+Waveform(ns):       { 0.000 1.000 }
+Period(ns):         2.000
+Sources:            { CLK }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB18_X0Y0    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB18_X0Y4    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB18_X0Y2    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB18_X0Y6    your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     BUFG/I              n/a            2.155         2.000       -0.155     BUFGCTRL_X0Y0  CLK_IBUF_BUFG_inst/I
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y1     your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y2     your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult1/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y0     your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult2/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y4     your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult3/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y3     your_instance_name/U0/bram_stn_8bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X7Y1     your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X7Y1     your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X11Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X11Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+High Pulse Width  Fast    SRL16E/CLK          n/a            0.980         1.000       0.020      SLICE_X6Y8     your_instance_name/U0/bram_stn_8bit_struct/subsystem/subsystem1/subsystem/divide/bram_stn_8bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[12].pipe_reg[12][1]_srl11/CLK
+High Pulse Width  Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X7Y1     your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X7Y1     your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X11Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X11Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y1    your_instance_name/U0/bram_stn_8bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/C
+
+
+

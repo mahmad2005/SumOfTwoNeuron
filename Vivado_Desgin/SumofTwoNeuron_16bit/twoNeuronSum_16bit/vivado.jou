@@ -2,17 +2,69 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Nov 23 02:05:57 2022
-# Process ID: 25460
+# Start of session at: Sat Dec 10 02:24:29 2022
+# Process ID: 67048
 # Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14912 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Vivado_Desgin\SumofTwoNeuron_16bit\twoNeuronSum_16bit\twoNeuronSum_16bit.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent67932 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Vivado_Desgin\SumofTwoNeuron_16bit\twoNeuronSum_16bit\twoNeuronSum_16bit.xpr
 # Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/vivado.log
 # Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit.xpr
 update_compile_order -fileset sources_1
-launch_simulation
-open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Vivado_Desgin/SumofTwoNeuron_16bit/twoNeuronSum_16bit/twoNeuronSum_16bit_behav.wcfg
-source twoNeuronSum_16bit_tb.tcl
-close_sim
+open_run synth_1 -name synth_1
+save_constraints
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+save_constraints
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+current_design synth_1
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design

@@ -1,0 +1,51 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/cordic_6_0/stn_8bit_cordic_v6_0_i0_instance/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_x_addsub/m_axis_dout_tdata[14]_INST_0_psdsp/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/cordic_6_0/stn_8bit_cordic_v6_0_i0_instance/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_x_addsub/m_axis_dout_tdata[13]_INST_0_psdsp/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/cordic_6_0/stn_8bit_cordic_v6_0_i0_instance/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_x_addsub/m_axis_dout_tdata[10]_INST_0_psdsp/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/cordic_6_0/stn_8bit_cordic_v6_0_i0_instance/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_y_addsub/m_axis_dout_tdata[2]_INST_0_psdsp/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/cordic_6_0/stn_8bit_cordic_v6_0_i0_instance/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rotate.gen_data_x_addsub/m_axis_dout_tdata[8]_INST_0_psdsp/D|
+|                      CLK |                      CLK |               your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/relational2/op_mem_37_22_reg[0]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][3]/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[6]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux2/pipe_16_22_reg[0][1]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux2/pipe_16_22_reg[0][3]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux2/pipe_16_22_reg[0][4]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux/pipe_16_22_reg[0][0]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux4/pipe_16_22_reg[0][1]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux3/pipe_16_22_reg[0][5]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux3/pipe_16_22_reg[0][3]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux4/pipe_16_22_reg[0][3]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux4/pipe_16_22_reg[0][0]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22_reg[0][3]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux4/pipe_16_22_reg[0][3]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][5]/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[0]|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux2/pipe_16_22_reg[0][2]/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[12]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[9]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[14]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[13]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[11]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[15]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[2]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[6]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[8]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[5]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[1]|
+|                      CLK |                      CLK |                      your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux/pipe_16_22_reg[0][5]/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[7]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[17]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[16]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[4]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[10]|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/B[3]|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux/pipe_16_22_reg[0][2]/D|
+|                      CLK |                      CLK |your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/addsub1/comp1.core_instance1/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux/pipe_16_22_reg[0][4]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux2/pipe_16_22_reg[0][0]/D|
+|                      CLK |                      CLK |                     your_instance_name/U0/stn_8bit_struct/subsystem/subsystem/mux2/pipe_16_22_reg[0][4]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux1/pipe_16_22_reg[0][4]/D|
+|                      CLK |                      CLK |                    your_instance_name/U0/stn_8bit_struct/subsystem/subsystem1/mux3/pipe_16_22_reg[0][1]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1668925158">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670660091">
   <File Type="ROUTE-PWR" Name="sumofTwoNeuron_8bit_power_routed.rpt"/>
   <File Type="PA-TCL" Name="sumofTwoNeuron_8bit.tcl"/>
   <File Type="BITSTR-MMI" Name="sumofTwoNeuron_8bit.mmi"/>
@@ -133,7 +133,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

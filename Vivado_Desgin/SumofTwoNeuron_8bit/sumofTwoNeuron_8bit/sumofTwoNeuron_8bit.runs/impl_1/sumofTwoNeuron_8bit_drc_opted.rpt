@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Nov 20 00:20:24 2022
+| Date         : Sat Dec 10 02:16:28 2022
 | Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command      : report_drc -file sumofTwoNeuron_8bit_drc_opted.rpt -pb sumofTwoNeuron_8bit_drc_opted.pb -rpx sumofTwoNeuron_8bit_drc_opted.rpx
 | Design       : sumofTwoNeuron_8bit

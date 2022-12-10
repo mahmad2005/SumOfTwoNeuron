@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1668925158">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670660090">
   <File Type="PA-TCL" Name="sumofTwoNeuron_8bit.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="sumofTwoNeuron_8bit_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="sumofTwoNeuron_8bit_reports.tcl"/>
@@ -67,7 +67,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>

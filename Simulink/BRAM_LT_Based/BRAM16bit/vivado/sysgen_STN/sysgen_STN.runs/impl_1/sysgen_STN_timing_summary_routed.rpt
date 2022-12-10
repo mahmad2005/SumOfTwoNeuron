@@ -1,0 +1,1275 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Dec 10 03:09:51 2022
+| Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file sysgen_STN_timing_summary_routed.rpt -pb sysgen_STN_timing_summary_routed.pb -rpx sysgen_STN_timing_summary_routed.rpx -warn_on_violation
+| Design       : sysgen_STN
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                    Violations  
+---------  --------  -----------------------------  ----------  
+TIMING-16  Warning   Large setup violation          32          
+TIMING-18  Warning   Missing input or output delay  48          
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (16)
+6. checking no_output_delay (32)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (16)
+-------------------------------
+ There are 16 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (32)
+--------------------------------
+ There are 32 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -1.205     -358.584                    909                 2337        0.093        0.000                      0                 2337       -0.576       -3.383                      11                  2171  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)         Period(ns)      Frequency(MHz)
+-----  ------------         ----------      --------------
+CLK    {0.000 1.000}        2.000           500.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+CLK                -1.205     -358.584                    909                 2337        0.093        0.000                      0                 2337       -0.576       -3.383                      11                  2171  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  CLK
+  To Clock:  CLK
+
+Setup :          909  Failing Endpoints,  Worst Slack       -1.205ns,  Total Violation     -358.584ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.093ns,  Total Violation        0.000ns
+PW    :           11  Failing Endpoints,  Worst Slack       -0.576ns,  Total Violation       -3.383ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -1.205ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.063ns  (logic 2.454ns (80.126%)  route 0.609ns (19.874%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.497ns = ( 6.497 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.057ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.777     5.057    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y4          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y4          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[9])
+                                                      2.454     7.511 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[9]
+                         net (fo=1, routed)           0.609     8.120    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[9]
+    SLICE_X9Y24          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.560     6.497    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X9Y24          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.991    
+                         clock uncertainty           -0.035     6.955    
+    SLICE_X9Y24          FDRE (Setup_fdre_C_D)       -0.040     6.915    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.915    
+                         arrival time                          -8.120    
+  -------------------------------------------------------------------
+                         slack                                 -1.205    
+
+Slack (VIOLATED) :        -1.171ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.017ns  (logic 2.454ns (81.327%)  route 0.563ns (18.673%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.102ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.497ns = ( 6.497 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.057ns
+    Clock Pessimism Removal (CPR):    0.458ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.777     5.057    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y4          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y4          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[15])
+                                                      2.454     7.511 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[15]
+                         net (fo=1, routed)           0.563     8.075    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[15]
+    SLICE_X8Y25          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.560     6.497    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X8Y25          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp/C
+                         clock pessimism              0.458     6.955    
+                         clock uncertainty           -0.035     6.919    
+    SLICE_X8Y25          FDRE (Setup_fdre_C_D)       -0.016     6.903    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[15].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.903    
+                         arrival time                          -8.075    
+  -------------------------------------------------------------------
+                         slack                                 -1.171    
+
+Slack (VIOLATED) :        -1.171ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.016ns  (logic 2.454ns (81.354%)  route 0.562ns (18.646%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.106ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.497ns = ( 6.497 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.061ns
+    Clock Pessimism Removal (CPR):    0.458ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.781     5.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[0])
+                                                      2.454     7.515 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[0]
+                         net (fo=1, routed)           0.562     8.078    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[0]
+    SLICE_X8Y24          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.560     6.497    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X8Y24          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/C
+                         clock pessimism              0.458     6.955    
+                         clock uncertainty           -0.035     6.919    
+    SLICE_X8Y24          FDRE (Setup_fdre_C_D)       -0.013     6.906    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.906    
+                         arrival time                          -8.078    
+  -------------------------------------------------------------------
+                         slack                                 -1.171    
+
+Slack (VIOLATED) :        -1.168ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.015ns  (logic 2.454ns (81.393%)  route 0.561ns (18.607%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.070ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.497ns = ( 6.497 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.061ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.781     5.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[2])
+                                                      2.454     7.515 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[2]
+                         net (fo=1, routed)           0.561     8.076    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[2]
+    SLICE_X9Y25          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.560     6.497    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X9Y25          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.991    
+                         clock uncertainty           -0.035     6.955    
+    SLICE_X9Y25          FDRE (Setup_fdre_C_D)       -0.047     6.908    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.908    
+                         arrival time                          -8.076    
+  -------------------------------------------------------------------
+                         slack                                 -1.168    
+
+Slack (VIOLATED) :        -1.147ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.792%)  route 0.546ns (18.208%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.503ns = ( 6.503 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.061ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.781     5.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[3])
+                                                      2.454     7.515 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[3]
+                         net (fo=1, routed)           0.546     8.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[3]
+    SLICE_X9Y29          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.566     6.503    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X9Y29          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.997    
+                         clock uncertainty           -0.035     6.961    
+    SLICE_X9Y29          FDRE (Setup_fdre_C_D)       -0.047     6.914    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.914    
+                         arrival time                          -8.061    
+  -------------------------------------------------------------------
+                         slack                                 -1.147    
+
+Slack (VIOLATED) :        -1.147ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.792%)  route 0.546ns (18.208%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.503ns = ( 6.503 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.061ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.781     5.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[9])
+                                                      2.454     7.515 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[9]
+                         net (fo=1, routed)           0.546     8.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[9]
+    SLICE_X9Y30          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.566     6.503    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X9Y30          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.997    
+                         clock uncertainty           -0.035     6.961    
+    SLICE_X9Y30          FDRE (Setup_fdre_C_D)       -0.047     6.914    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.914    
+                         arrival time                          -8.061    
+  -------------------------------------------------------------------
+                         slack                                 -1.147    
+
+Slack (VIOLATED) :        -1.141ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        2.990ns  (logic 2.454ns (82.072%)  route 0.536ns (17.928%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.068ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.499ns = ( 6.499 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.061ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.781     5.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[8])
+                                                      2.454     7.515 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[8]
+                         net (fo=1, routed)           0.536     8.051    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[8]
+    SLICE_X9Y26          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.562     6.499    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X9Y26          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.993    
+                         clock uncertainty           -0.035     6.957    
+    SLICE_X9Y26          FDRE (Setup_fdre_C_D)       -0.047     6.910    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[8].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.910    
+                         arrival time                          -8.051    
+  -------------------------------------------------------------------
+                         slack                                 -1.141    
+
+Slack (VIOLATED) :        -1.140ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.792%)  route 0.546ns (18.208%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.499ns = ( 6.499 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.057ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.777     5.057    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y4          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y4          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[3])
+                                                      2.454     7.511 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[3]
+                         net (fo=1, routed)           0.546     8.057    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[3]
+    SLICE_X9Y23          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.562     6.499    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X9Y23          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.993    
+                         clock uncertainty           -0.035     6.957    
+    SLICE_X9Y23          FDRE (Setup_fdre_C_D)       -0.040     6.917    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[3].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.917    
+                         arrival time                          -8.057    
+  -------------------------------------------------------------------
+                         slack                                 -1.140    
+
+Slack (VIOLATED) :        -1.139ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        3.000ns  (logic 2.454ns (81.792%)  route 0.546ns (18.208%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.500ns = ( 6.500 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.057ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.777     5.057    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y4          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y4          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[14])
+                                                      2.454     7.511 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[14]
+                         net (fo=1, routed)           0.546     8.057    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[14]
+    SLICE_X9Y22          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.563     6.500    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X9Y22          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.994    
+                         clock uncertainty           -0.035     6.958    
+    SLICE_X9Y22          FDRE (Setup_fdre_C_D)       -0.040     6.918    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[14].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.918    
+                         arrival time                          -8.057    
+  -------------------------------------------------------------------
+                         slack                                 -1.139    
+
+Slack (VIOLATED) :        -1.139ns  (required time - arrival time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            2.000ns  (CLK rise@2.000ns - CLK rise@0.000ns)
+  Data Path Delay:        2.990ns  (logic 2.454ns (82.072%)  route 0.536ns (17.928%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.068ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.499ns = ( 6.499 - 2.000 ) 
+    Source Clock Delay      (SCD):    5.061ns
+    Clock Pessimism Removal (CPR):    0.494ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         1.008     1.008 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           2.171     3.179    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.280 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.781     5.061    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[10])
+                                                      2.454     7.515 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/DOADO[10]
+                         net (fo=1, routed)           0.536     8.051    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[10]
+    SLICE_X8Y26          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        2.000     2.000 r  
+    AA9                                               0.000     2.000 r  CLK (IN)
+                         net (fo=0)                   0.000     2.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.874     2.874 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.972     4.846    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.937 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        1.562     6.499    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X8Y26          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp/C
+                         clock pessimism              0.494     6.993    
+                         clock uncertainty           -0.035     6.957    
+    SLICE_X8Y26          FDRE (Setup_fdre_C_D)       -0.045     6.912    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register_x0/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[10].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                          6.912    
+                         arrival time                          -8.051    
+  -------------------------------------------------------------------
+                         slack                                 -1.139    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.093ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.333ns  (logic 0.164ns (49.262%)  route 0.169ns (50.737%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.067ns
+    Source Clock Delay      (SCD):    1.509ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.584     1.509    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X8Y28          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y28          FDRE (Prop_fdre_C_Q)         0.164     1.673 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp/Q
+                         net (fo=2, routed)           0.169     1.842    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[2]
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.893     2.067    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.565    
+    RAMB36_X0Y5          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[6])
+                                                      0.183     1.748    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.748    
+                         arrival time                           1.842    
+  -------------------------------------------------------------------
+                         slack                                  0.093    
+
+Slack (MET) :             0.095ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[8]
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.334ns  (logic 0.164ns (49.029%)  route 0.170ns (50.971%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.067ns
+    Source Clock Delay      (SCD):    1.509ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.584     1.509    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X8Y27          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y27          FDRE (Prop_fdre_C_Q)         0.164     1.673 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[4].bit_is_0.fdre_comp/Q
+                         net (fo=2, routed)           0.170     1.843    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[4]
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.893     2.067    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.565    
+    RAMB36_X0Y5          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[8])
+                                                      0.183     1.748    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.748    
+                         arrival time                           1.843    
+  -------------------------------------------------------------------
+                         slack                                  0.095    
+
+Slack (MET) :             0.097ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[9]
+                            (rising edge-triggered cell RAMB36E1 clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.336ns  (logic 0.164ns (48.737%)  route 0.172ns (51.263%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.067ns
+    Source Clock Delay      (SCD):    1.509ns
+    Clock Pessimism Removal (CPR):    0.502ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.584     1.509    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X8Y27          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y27          FDRE (Prop_fdre_C_Q)         0.164     1.673 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/register3/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[5].bit_is_0.fdre_comp/Q
+                         net (fo=2, routed)           0.172     1.845    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/addra[5]
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/ADDRARDADDR[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.893     2.067    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+                         clock pessimism             -0.502     1.565    
+    RAMB36_X0Y5          RAMB36E1 (Hold_ramb36e1_CLKARDCLK_ADDRARDADDR[9])
+                                                      0.183     1.748    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg
+  -------------------------------------------------------------------
+                         required time                         -1.748    
+                         arrival time                           1.845    
+  -------------------------------------------------------------------
+                         slack                                  0.097    
+
+Slack (MET) :             0.121ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[18].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.056ns
+    Source Clock Delay      (SCD):    1.541ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.616     1.541    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/aclk
+    SLICE_X5Y31          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y31          FDRE (Prop_fdre_C_Q)         0.141     1.682 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[6]/Q
+                         net (fo=1, routed)           0.056     1.738    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[18].quot_gen.quot_reg.i_div1.quot_out/D[7]
+    SLICE_X5Y31          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[18].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.883     2.056    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[18].quot_gen.quot_reg.i_div1.quot_out/aclk
+    SLICE_X5Y31          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[18].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[7]/C
+                         clock pessimism             -0.516     1.541    
+    SLICE_X5Y31          FDRE (Hold_fdre_C_D)         0.076     1.617    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[18].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -1.617    
+                         arrival time                           1.738    
+  -------------------------------------------------------------------
+                         slack                                  0.121    
+
+Slack (MET) :             0.122ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.023ns
+    Source Clock Delay      (SCD):    1.509ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.584     1.509    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X11Y27         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y27         FDRE (Prop_fdre_C_Q)         0.141     1.650 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp/Q
+                         net (fo=1, routed)           0.056     1.706    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[13]
+    SLICE_X11Y27         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.850     2.023    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X11Y27         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp/C
+                         clock pessimism             -0.515     1.509    
+    SLICE_X11Y27         FDRE (Hold_fdre_C_D)         0.075     1.584    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[13].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                         -1.584    
+                         arrival time                           1.706    
+  -------------------------------------------------------------------
+                         slack                                  0.122    
+
+Slack (MET) :             0.122ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.024ns
+    Source Clock Delay      (SCD):    1.509ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.584     1.509    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X11Y28         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y28         FDRE (Prop_fdre_C_Q)         0.141     1.650 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register1/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/Q
+                         net (fo=1, routed)           0.056     1.706    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/i[9]
+    SLICE_X11Y28         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.851     2.024    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/clk
+    SLICE_X11Y28         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp/C
+                         clock pessimism             -0.516     1.509    
+    SLICE_X11Y28         FDRE (Hold_fdre_C_D)         0.075     1.584    your_instance_name/U0/bram_stn_16bit_struct/subsystem/register4/synth_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[9].bit_is_0.fdre_comp
+  -------------------------------------------------------------------
+                         required time                         -1.584    
+                         arrival time                           1.706    
+  -------------------------------------------------------------------
+                         slack                                  0.122    
+
+Slack (MET) :             0.126ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][7]/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.270ns  (logic 0.190ns (70.343%)  route 0.080ns (29.657%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.063ns
+    Source Clock Delay      (SCD):    1.546ns
+    Clock Pessimism Removal (CPR):    0.505ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.621     1.546    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/CLK
+    SLICE_X5Y10          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y10          FDRE (Prop_fdre_C_Q)         0.141     1.687 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[8]/Q
+                         net (fo=1, routed)           0.080     1.767    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/S[7]
+    SLICE_X4Y10          LUT3 (Prop_lut3_I0_O)        0.049     1.816 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22[0][7]_i_1/O
+                         net (fo=1, routed)           0.000     1.816    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22[0][7]_i_1_n_0
+    SLICE_X4Y10          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.890     2.063    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/clk
+    SLICE_X4Y10          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][7]/C
+                         clock pessimism             -0.505     1.559    
+    SLICE_X4Y10          FDRE (Hold_fdre_C_D)         0.131     1.690    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][7]
+  -------------------------------------------------------------------
+                         required time                         -1.690    
+                         arrival time                           1.816    
+  -------------------------------------------------------------------
+                         slack                                  0.126    
+
+Slack (MET) :             0.126ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/pipe_16_22_reg[0][11]/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.270ns  (logic 0.190ns (70.343%)  route 0.080ns (29.657%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.034ns
+    Source Clock Delay      (SCD):    1.516ns
+    Clock Pessimism Removal (CPR):    0.506ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.591     1.516    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/CLK
+    SLICE_X19Y11         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X19Y11         FDRE (Prop_fdre_C_Q)         0.141     1.657 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/addsub4/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/Q
+                         net (fo=1, routed)           0.080     1.737    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/S[11]
+    SLICE_X18Y11         LUT3 (Prop_lut3_I0_O)        0.049     1.786 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/pipe_16_22[0][11]_i_1/O
+                         net (fo=1, routed)           0.000     1.786    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/pipe_16_22[0][11]_i_1_n_0
+    SLICE_X18Y11         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/pipe_16_22_reg[0][11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.861     2.034    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/clk
+    SLICE_X18Y11         FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/pipe_16_22_reg[0][11]/C
+                         clock pessimism             -0.506     1.529    
+    SLICE_X18Y11         FDRE (Hold_fdre_C_D)         0.131     1.660    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/mux3/pipe_16_22_reg[0][11]
+  -------------------------------------------------------------------
+                         required time                         -1.660    
+                         arrival time                           1.786    
+  -------------------------------------------------------------------
+                         slack                                  0.126    
+
+Slack (MET) :             0.134ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[16].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.230ns  (logic 0.141ns (61.277%)  route 0.089ns (38.723%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.057ns
+    Source Clock Delay      (SCD):    1.541ns
+    Clock Pessimism Removal (CPR):    0.504ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.616     1.541    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[16].quot_gen.quot_reg.i_div1.quot_out/aclk
+    SLICE_X3Y31          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[16].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y31          FDRE (Prop_fdre_C_Q)         0.141     1.682 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[16].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[3]/Q
+                         net (fo=1, routed)           0.089     1.771    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[16]_0[4]
+    SLICE_X2Y31          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.884     2.057    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/aclk
+    SLICE_X2Y31          FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[4]/C
+                         clock pessimism             -0.504     1.554    
+    SLICE_X2Y31          FDRE (Hold_fdre_C_D)         0.083     1.637    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/i_sdivider.divider_blk/div_loop[17].quot_gen.quot_reg.i_div1.quot_out/opt_has_pipe.first_q_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.637    
+                         arrival time                           1.771    
+  -------------------------------------------------------------------
+                         slack                                  0.134    
+
+Slack (MET) :             0.141ns  (arrival time - required time)
+  Source:                 your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][0]/C
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Destination:            your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/pipe_16_22_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by CLK  {rise@0.000ns fall@1.000ns period=2.000ns})
+  Path Group:             CLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK rise@0.000ns - CLK rise@0.000ns)
+  Data Path Delay:        0.275ns  (logic 0.186ns (67.611%)  route 0.089ns (32.389%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.064ns
+    Source Clock Delay      (SCD):    1.547ns
+    Clock Pessimism Removal (CPR):    0.505ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.236     0.236 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.663     0.899    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.925 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.622     1.547    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/clk
+    SLICE_X5Y8           FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y8           FDRE (Prop_fdre_C_Q)         0.141     1.688 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux3/pipe_16_22_reg[0][0]/Q
+                         net (fo=1, routed)           0.089     1.777    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/pipe_16_22_reg[0][13]_0[0]
+    SLICE_X4Y8           LUT3 (Prop_lut3_I0_O)        0.045     1.822 r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/pipe_16_22[0][0]_i_1/O
+                         net (fo=1, routed)           0.000     1.822    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/pipe_16_22[0][0]_i_1_n_0
+    SLICE_X4Y8           FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/pipe_16_22_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK rise edge)        0.000     0.000 r  
+    AA9                                               0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    AA9                  IBUF (Prop_ibuf_I_O)         0.425     0.425 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.719     1.144    CLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.173 r  CLK_IBUF_BUFG_inst/O
+                         net (fo=2170, routed)        0.891     2.064    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/clk
+    SLICE_X4Y8           FDRE                                         r  your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/pipe_16_22_reg[0][0]/C
+                         clock pessimism             -0.505     1.560    
+    SLICE_X4Y8           FDRE (Hold_fdre_C_D)         0.121     1.681    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/mux4/pipe_16_22_reg[0][0]
+  -------------------------------------------------------------------
+                         required time                         -1.681    
+                         arrival time                           1.822    
+  -------------------------------------------------------------------
+                         slack                                  0.141    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         CLK
+Waveform(ns):       { 0.000 1.000 }
+Period(ns):         2.000
+Sources:            { CLK }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB36_X0Y4    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB36_X0Y6    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB36_X0Y5    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/imag/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         2.000       -0.576     RAMB36_X0Y7    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/real/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg/CLKARDCLK
+Min Period        n/a     BUFG/I              n/a            2.155         2.000       -0.155     BUFGCTRL_X0Y0  CLK_IBUF_BUFG_inst/I
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y2     your_instance_name/U0/bram_stn_16bit_struct/subsystem/mult/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y4     your_instance_name/U0/bram_stn_16bit_struct/subsystem/mult1/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y8     your_instance_name/U0/bram_stn_16bit_struct/subsystem/mult2/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y14    your_instance_name/U0/bram_stn_16bit_struct/subsystem/mult3/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.154         2.000       -0.154     DSP48_X0Y9     your_instance_name/U0/bram_stn_16bit_struct/subsystem/mult4/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/inferred_dsp.use_p_reg.p_reg_reg/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[10]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[10]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[11]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[11]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+High Pulse Width  Fast    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         1.000       0.020      SLICE_X2Y26    your_instance_name/U0/bram_stn_16bit_struct/subsystem/subsystem1/bram_cordic/divide/bram_stn_16bit_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider/sign_pipeline.i_unrolled.sign_pipe/opt_has_pipe.i_pipe[21].pipe_reg[21][1]_srl20/CLK
+High Pulse Width  Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[10]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[10]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[11]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[11]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         1.000       0.500      SLICE_X10Y9    your_instance_name/U0/bram_stn_16bit_struct/subsystem/addsub/comp0.core_instance0/U0/xst_addsub/i_baseblox.i_baseblox_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+
+
+
