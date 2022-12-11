@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670668005">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670674241">
   <File Type="PA-TCL" Name="sysgen_STN.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="sysgen_STN_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="sysgen_STN_reports.tcl"/>
@@ -55,8 +55,17 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
-    <Step Id="synth_design"/>
+    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2021">
+      <Desc>Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold</Desc>
+    </StratHandle>
+    <Step Id="synth_design">
+      <Option Id="ResourceSharing">2</Option>
+      <Option Id="ShregMinSize">5</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="FsmExtraction">1</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="Directive">7</Option>
+    </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="stn_32bit_0"/>
 </GenRun>

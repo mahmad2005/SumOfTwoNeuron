@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec 10 04:42:33 2022
+# Process ID: 75440
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_32bit/STN_32bit/vivado/sysgen_STN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent74360 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\IP_Core_Based\TN_32bit\STN_32bit\vivado\sysgen_STN\sysgen_STN.xpr
+# Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_32bit/STN_32bit/vivado/sysgen_STN/vivado.log
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_32bit/STN_32bit/vivado/sysgen_STN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_32bit/STN_32bit/vivado/sysgen_STN/sysgen_STN.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+reset_timing
+reset_timing
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+save_constraints
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property strategy Flow_AreaOptimized_high [get_runs synth_1]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+copy_run -name synth_1_copy_2 [get_runs synth_1] 
+set_property strategy Flow_PerfOptimized_high [get_runs synth_1]
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+set_property strategy Performance_Retiming [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design

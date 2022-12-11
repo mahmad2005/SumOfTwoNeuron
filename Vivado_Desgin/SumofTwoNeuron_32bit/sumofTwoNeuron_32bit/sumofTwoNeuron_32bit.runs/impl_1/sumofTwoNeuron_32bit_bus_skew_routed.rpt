@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat Dec 10 04:20:11 2022
+| Date         : Sat Dec 10 16:16:02 2022
 | Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file sumofTwoNeuron_32bit_bus_skew_routed.rpt -pb sumofTwoNeuron_32bit_bus_skew_routed.pb -rpx sumofTwoNeuron_32bit_bus_skew_routed.rpx
 | Design       : sumofTwoNeuron_32bit

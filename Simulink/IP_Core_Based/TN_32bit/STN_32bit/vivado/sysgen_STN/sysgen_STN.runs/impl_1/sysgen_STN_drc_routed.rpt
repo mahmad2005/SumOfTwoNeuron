@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat Dec 10 04:30:55 2022
+| Date         : Sat Dec 10 06:19:39 2022
 | Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command      : report_drc -file sysgen_STN_drc_routed.rpt -pb sysgen_STN_drc_routed.pb -rpx sysgen_STN_drc_routed.rpx
 | Design       : sysgen_STN
@@ -24,13 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 25
+             Violations found: 21
 +--------+------------------+----------------------------+------------+
 | Rule   | Severity         | Description                | Violations |
 +--------+------------------+----------------------------+------------+
 | NSTD-1 | Critical Warning | Unspecified I/O Standard   | 1          |
 | UCIO-1 | Critical Warning | Unconstrained Logical Port | 1          |
-| DPIP-1 | Warning          | Input pipelining           | 4          |
 | DPOP-1 | Warning          | PREG Output pipelining     | 6          |
 | DPOP-2 | Warning          | MREG Output pipelining     | 12         |
 | ZPS7-1 | Warning          | PS7 block required         | 1          |
@@ -46,26 +45,6 @@ Related violations: <none>
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
 97 out of 97 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: CLK, input_t[31:0], out_imag[31:0], out_real[31:0].
-Related violations: <none>
-
-DPIP-1#1 Warning
-Input pipelining  
-DSP your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult2/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult2/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#2 Warning
-Input pipelining  
-DSP your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult2/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult2/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#3 Warning
-Input pipelining  
-DSP your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult3/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult3/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#4 Warning
-Input pipelining  
-DSP your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult3/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input your_instance_name/U0/stn_32bit_struct/cordic_ip_based_sumoftwoneurons/mult3/comp0.core_instance0/U0/i_mult/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 Related violations: <none>
 
 DPOP-1#1 Warning

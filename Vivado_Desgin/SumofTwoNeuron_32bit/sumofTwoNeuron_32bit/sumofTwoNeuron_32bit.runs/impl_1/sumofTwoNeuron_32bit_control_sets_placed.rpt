@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat Dec 10 04:18:47 2022
+| Date         : Sat Dec 10 16:11:40 2022
 | Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file sumofTwoNeuron_32bit_control_sets_placed.rpt
 | Design       : sumofTwoNeuron_32bit
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |            7097 |         1923 |
+| No           | No                    | No                     |            7097 |         1921 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              10 |            6 |
 | Yes          | No                    | No                     |             116 |           38 |
@@ -73,11 +73,11 @@ Table of Contents
 +----------------+---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 |  Clock Signal  |                                        Enable Signal                                        |                                                   Set/Reset Signal                                                   | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|  CLK_IBUF_BUFG |                                                                                             | neuron_1_CompExpo/U0/i_synth/i_synth/gen_cordic.input_stage/gen_rotation.gen_rot_phase.gen_phase_int_dly/phase_cr_a1 |                3 |              5 |         1.67 |
 |  CLK_IBUF_BUFG |                                                                                             | neuron_2_CompExpo/U0/i_synth/i_synth/gen_cordic.input_stage/gen_rotation.gen_rot_phase.gen_phase_int_dly/phase_cr_a1 |                3 |              5 |         1.67 |
-|  CLK_IBUF_BUFG | neuron_1_CompExpo/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr |                                                                                                                      |               19 |             58 |         3.05 |
+|  CLK_IBUF_BUFG |                                                                                             | neuron_1_CompExpo/U0/i_synth/i_synth/gen_cordic.input_stage/gen_rotation.gen_rot_phase.gen_phase_int_dly/phase_cr_a1 |                3 |              5 |         1.67 |
 |  CLK_IBUF_BUFG | neuron_2_CompExpo/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr |                                                                                                                      |               19 |             58 |         3.05 |
-|  CLK_IBUF_BUFG |                                                                                             |                                                                                                                      |             1923 |           7107 |         3.70 |
+|  CLK_IBUF_BUFG | neuron_1_CompExpo/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr |                                                                                                                      |               19 |             58 |         3.05 |
+|  CLK_IBUF_BUFG |                                                                                             |                                                                                                                      |             1921 |           7107 |         3.70 |
 +----------------+---------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 
 
