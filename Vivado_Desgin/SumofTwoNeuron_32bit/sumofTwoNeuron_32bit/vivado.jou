@@ -59,3 +59,16 @@ set_property strategy Congestion_SpreadLogic_high [get_runs impl_1]
 reset_run impl_1
 launch_runs impl_1 -jobs 8
 wait_on_run impl_1
+refresh_design
+copy_run -name impl_1_copy_9 [get_runs impl_1] -parent_run synth_1
+set_property strategy Congestion_SpreadLogic_low [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+copy_run -name impl_1_copy_10 [get_runs impl_1] -parent_run synth_1
+set_property strategy Performance_Explore [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design

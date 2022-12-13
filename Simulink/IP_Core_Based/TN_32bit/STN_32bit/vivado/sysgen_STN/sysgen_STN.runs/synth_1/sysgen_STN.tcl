@@ -85,7 +85,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/maruf/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part avnet.com:zedboard:part0:1.4 [current_project]
-set_property ip_repo_paths e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_32bit/STN_32bit/gen2flipflop/ip [current_project]
+set_property ip_repo_paths e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen [current_project]
 update_ip_catalog
 set_property ip_output_repo e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_32bit/STN_32bit/vivado/sysgen_STN/sysgen_STN.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

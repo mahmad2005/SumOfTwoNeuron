@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat Dec 10 06:17:33 2022
+| Date         : Mon Dec 12 13:15:45 2022
 | Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file sysgen_STN_control_sets_placed.rpt
 | Design       : sysgen_STN
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             874 |          234 |
+| No           | No                    | No                     |             874 |          239 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
@@ -73,7 +73,7 @@ Table of Contents
 +----------------+---------------+------------------+------------------+----------------+--------------+
 |  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+---------------+------------------+------------------+----------------+--------------+
-|  CLK_IBUF_BUFG |               |                  |              234 |            874 |         3.74 |
+|  CLK_IBUF_BUFG |               |                  |              239 |            874 |         3.66 |
 +----------------+---------------+------------------+------------------+----------------+--------------+
 
 

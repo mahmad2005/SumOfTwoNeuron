@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Sat Dec 10 06:19:43 2022
+| Date             : Mon Dec 12 13:17:54 2022
 | Host             : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command          : report_power -file sysgen_STN_power_routed.rpt -pb sysgen_STN_power_summary_routed.pb -rpx sysgen_STN_power_routed.rpx
 | Design           : sysgen_STN
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.133        |
+| Total On-Chip Power (W)  | 0.248        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.028        |
-| Device Static (W)        | 0.105        |
+| Dynamic (W)              | 0.141        |
+| Device Static (W)        | 0.106        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 83.5         |
-| Junction Temperature (C) | 26.5         |
+| Max Ambient (C)          | 82.1         |
+| Junction Temperature (C) | 27.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.009 |    13011 |       --- |             --- |
-|   LUT as Logic |     0.007 |     7658 |     53200 |           14.39 |
-|   CARRY4       |     0.002 |     2028 |     13300 |           15.25 |
-|   Register     |    <0.001 |      874 |    106400 |            0.82 |
+| Clocks         |     0.004 |        3 |       --- |             --- |
+| Slice Logic    |     0.043 |    13146 |       --- |             --- |
+|   LUT as Logic |     0.034 |     7661 |     53200 |           14.40 |
+|   CARRY4       |     0.008 |     2028 |     13300 |           15.25 |
+|   Register     |    <0.001 |     1006 |    106400 |            0.95 |
 |   Others       |     0.000 |     2211 |       --- |             --- |
-| Signals        |     0.012 |    11263 |       --- |             --- |
-| DSPs           |     0.001 |       24 |       220 |           10.91 |
-| I/O            |     0.006 |       97 |       200 |           48.50 |
-| Static Power   |     0.105 |          |           |                 |
-| Total          |     0.133 |          |           |                 |
+| Signals        |     0.059 |    11397 |       --- |             --- |
+| DSPs           |     0.006 |       24 |       220 |           10.91 |
+| I/O            |     0.030 |       97 |       200 |           48.50 |
+| Static Power   |     0.106 |          |           |                 |
+| Total          |     0.248 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,11 +72,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.030 |       0.022 |      0.008 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.011 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.119 |       0.111 |      0.008 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.013 |       0.002 |      0.011 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.004 |       0.003 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.015 |       0.014 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -85,7 +85,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,7 +135,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| CLK   | CLK    |           100.0 |
+| CLK   | CLK    |            20.0 |
 +-------+--------+-----------------+
 
 
@@ -148,10 +148,10 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| sysgen_STN             |     0.028 |
-|   your_instance_name   |     0.022 |
-|     U0                 |     0.022 |
-|       stn_32bit_struct |     0.022 |
+| sysgen_STN             |     0.141 |
+|   your_instance_name   |     0.110 |
+|     U0                 |     0.110 |
+|       stn_32bit_struct |     0.110 |
 +------------------------+-----------+
 
 
