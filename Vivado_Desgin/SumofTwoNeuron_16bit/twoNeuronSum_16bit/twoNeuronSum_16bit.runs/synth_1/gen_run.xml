@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670663045">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670976593">
   <File Type="PA-TCL" Name="twoNeuronSum_16bit.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="twoNeuronSum_16bit_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="twoNeuronSum_16bit_reports.tcl"/>

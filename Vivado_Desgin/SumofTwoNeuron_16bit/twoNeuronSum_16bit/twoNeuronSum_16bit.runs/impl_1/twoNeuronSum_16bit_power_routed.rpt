@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Sat Dec 10 03:07:40 2022
+| Date             : Tue Dec 13 21:53:29 2022
 | Host             : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command          : report_power -file twoNeuronSum_16bit_power_routed.rpt -pb twoNeuronSum_16bit_power_summary_routed.pb -rpx twoNeuronSum_16bit_power_routed.rpx
 | Design           : twoNeuronSum_16bit
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.553        |
+| Total On-Chip Power (W)  | 0.287        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.442        |
-| Device Static (W)        | 0.111        |
+| Dynamic (W)              | 0.180        |
+| Device Static (W)        | 0.107        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 78.6         |
-| Junction Temperature (C) | 31.4         |
+| Max Ambient (C)          | 81.7         |
+| Junction Temperature (C) | 28.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.050 |        3 |       --- |             --- |
-| Slice Logic             |     0.126 |     5463 |       --- |             --- |
-|   LUT as Logic          |     0.096 |     2110 |     53200 |            3.97 |
-|   CARRY4                |     0.018 |      530 |     13300 |            3.98 |
-|   Register              |     0.011 |     1948 |    106400 |            1.83 |
+| Clocks                  |     0.020 |        3 |       --- |             --- |
+| Slice Logic             |     0.058 |     5459 |       --- |             --- |
+|   LUT as Logic          |     0.047 |     2107 |     53200 |            3.96 |
+|   CARRY4                |     0.007 |      530 |     13300 |            3.98 |
+|   Register              |     0.004 |     1944 |    106400 |            1.83 |
 |   F7/F8 Muxes           |    <0.001 |       25 |     53200 |            0.05 |
 |   LUT as Shift Register |    <0.001 |        8 |     17400 |            0.05 |
 |   Others                |     0.000 |      769 |       --- |             --- |
-| Signals                 |     0.123 |     2608 |       --- |             --- |
-| I/O                     |     0.143 |       49 |       200 |           24.50 |
-| Static Power            |     0.111 |          |           |                 |
-| Total                   |     0.553 |          |           |                 |
+| Signals                 |     0.044 |     2604 |       --- |             --- |
+| I/O                     |     0.057 |       49 |       200 |           24.50 |
+| Static Power            |     0.107 |          |           |                 |
+| Total                   |     0.287 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,20 +73,20 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.308 |       0.299 |      0.009 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.023 |       0.012 |      0.011 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.131 |       0.123 |      0.008 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.015 |       0.005 |      0.011 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.069 |       0.068 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.028 |       0.027 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.019 |       0.000 |      0.019 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -136,7 +136,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| CLK   | CLK    |             2.0 |
+| CLK   | CLK    |             5.0 |
 +-------+--------+-----------------+
 
 
@@ -149,15 +149,15 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| twoNeuronSum_16bit          |     0.442 |
-|   neuron_1_CompExpo         |     0.142 |
-|     U0                      |     0.142 |
-|       i_synth               |     0.142 |
-|   neuron_2_CompExpo         |     0.142 |
-|     U0                      |     0.142 |
-|       i_synth               |     0.142 |
-|   process_pinormalize_unit  |     0.003 |
-|   process_pinormalize_unit2 |     0.003 |
+| twoNeuronSum_16bit          |     0.180 |
+|   neuron_1_CompExpo         |     0.059 |
+|     U0                      |     0.059 |
+|       i_synth               |     0.059 |
+|   neuron_2_CompExpo         |     0.058 |
+|     U0                      |     0.058 |
+|       i_synth               |     0.058 |
+|   process_pinormalize_unit  |     0.001 |
+|   process_pinormalize_unit2 |     0.001 |
 +-----------------------------+-----------+
 
 

@@ -72,10 +72,10 @@ SIN_FPGA_D8 = SIN_FPGA_D8(38:838);
 
 f3= figure; f3.Position=[120   50   1200   600];
 sgtitle('The output of the sum of two neurons using different approaches');
-subplot(2,2,1), plot(theta,y_real), hold on, plot(theta,y_imag), xlabel('Theta'),ylabel('Amplitude'),title('MATLAB Simulink');
-subplot(2,2,2), plot(theta,COS_FPGA_BR8), hold on, plot(theta,SIN_FPGA_BR8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit Block-RAM');
-subplot(2,2,3), plot(theta,COS_FPGA_IP8), hold on, plot(theta,SIN_FPGA_IP8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit CORDIC Simulink');
-subplot(2,2,4), plot(theta,COS_FPGA_D8), hold on, plot(theta,SIN_FPGA_D8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit Direct VHDL');
+subplot(2,2,1), plot(theta,y_real), hold on, plot(theta,y_imag), xlabel('Theta'),ylabel('Amplitude'),title('MATLAB simulation');
+subplot(2,2,2), plot(theta,COS_FPGA_BR8), hold on, plot(theta,SIN_FPGA_BR8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit Block-RAM Simulink');
+subplot(2,2,3), plot(theta,COS_FPGA_IP8), hold on, plot(theta,SIN_FPGA_IP8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit CORDIC IP Simulink');
+subplot(2,2,4), plot(theta,COS_FPGA_D8), hold on, plot(theta,SIN_FPGA_D8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit Direct VHDL in Vivado');
 
 % FPGA_IN_OUT = [Theta, COS_FPGA_IP8, SIN_FPGA_IP8];
 % 
@@ -91,9 +91,9 @@ sin_abs_diff_D8 = abs(y_imag' - SIN_FPGA_D8);
 
 f4= figure; f4.Position=[120   50   1200   300];
 sgtitle('Absolute different of Real values');
-subplot(1,3,1), plot(theta, cos_abs_diff_BR8), xlabel('Theta'),ylabel('Amplitude'),title('MATLAB Simulink');
-subplot(1,3,2), plot(theta, cos_abs_diff_IP8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit Block-RAM');
-subplot(1,3,3), plot(theta, cos_abs_diff_D8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit CORDIC Simulink');
+subplot(1,3,1), plot(theta, cos_abs_diff_BR8), xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit Block-RAM');
+subplot(1,3,2), plot(theta, cos_abs_diff_IP8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit CORDIC IP Simulink');
+subplot(1,3,3), plot(theta, cos_abs_diff_D8) ,xlabel('Theta'),ylabel('Amplitude'),title('FPGA output: 32-bit direct VHDL in Vivado');
 
 % 
  Avg_BR8_cos_abs_diff = sum( cos_abs_diff_BR8 )/801;
