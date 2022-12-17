@@ -1,7 +1,7 @@
 clc;
 clear all;
 theta = -4:0.01:4;
-y = exp((1i*1.*theta)+log(2))*exp(1i*pi/2)+exp((1i*2.*theta)+log(2))*exp(1i*pi/2);;
+y = exp((1i*1.*theta)+log(2))*exp(1i*pi/2)+exp((1i*2.*theta)+log(2))*exp(1i*pi/2);
 
 y_real = real(y);
 y_imag = imag(y);

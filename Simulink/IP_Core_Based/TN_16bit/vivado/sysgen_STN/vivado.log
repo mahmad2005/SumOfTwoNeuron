@@ -2,10 +2,10 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Dec 13 12:38:19 2022
-# Process ID: 83228
+# Start of session at: Thu Dec 15 23:36:53 2022
+# Process ID: 10648
 # Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent73820 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\IP_Core_Based\TN_16bit\vivado\sysgen_STN\sysgen_STN.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent78492 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\IP_Core_Based\TN_16bit\vivado\sysgen_STN\sysgen_STN.xpr
 # Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/vivado.log
 # Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN\vivado.jou
 #-----------------------------------------------------------
@@ -16,351 +16,263 @@ Current project path is 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/gen_withRegister/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.859 ; gain = 0.000
-update_compile_order -fileset sources_1
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7z020clg484-1
-INFO: [Device 21-403] Loading part xc7z020clg484-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/stn_16bit_0.dcp' for cell 'your_instance_name'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 1454.895 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/constrs/stn_16bit.xdc] for cell 'your_instance_name/U0'
-Finished Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/constrs/stn_16bit.xdc] for cell 'your_instance_name/U0'
-Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
-Finished Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1590.137 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1705.324 ; gain = 447.465
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-set_property  ip_repo_paths  E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen'.
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-set_property  ip_repo_paths  E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/gen [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/gen'.
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-INFO: [Timing 38-480] Writing timing data to binary archive.
-[Tue Dec 13 12:57:08 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-close_design
-open_run impl_1
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.182 . Memory (MB): peak = 2363.668 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.504 . Memory (MB): peak = 2363.668 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.506 . Memory (MB): peak = 2363.668 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2363.668 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2402.410 ; gain = 38.742
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7z020clg484-1
-INFO: [Project 1-454] Reading design checkpoint 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/stn_16bit_0.dcp' for cell 'your_instance_name'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 2453.242 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/constrs/stn_16bit.xdc] for cell 'your_instance_name/U0'
-Finished Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/stn_16bit_0_1/constrs/stn_16bit.xdc] for cell 'your_instance_name/U0'
-Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
-Finished Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.srcs/constrs_1/new/config.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2541.266 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-save_constraints
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 13:05:07 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 13:05:07 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 2638.746 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2638.746 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2638.746 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2638.746 ; gain = 29.547
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 13:11:01 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 13:11:01 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2661.637 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.262 . Memory (MB): peak = 2661.637 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.262 . Memory (MB): peak = 2661.637 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2661.637 ; gain = 22.891
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 13:16:23 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 13:16:23 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 2678.109 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 2678.109 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 2678.109 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2678.109 ; gain = 16.473
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 13:22:46 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 13:22:46 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 2781.824 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.256 . Memory (MB): peak = 2781.824 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.256 . Memory (MB): peak = 2781.824 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2781.824 ; gain = 30.281
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 13:28:28 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 13:28:28 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2808.844 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.246 . Memory (MB): peak = 2808.844 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.247 . Memory (MB): peak = 2808.844 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2808.844 ; gain = 27.020
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 13:35:01 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 13:35:01 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 2910.645 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.252 . Memory (MB): peak = 2910.645 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.253 . Memory (MB): peak = 2910.645 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2910.645 ; gain = 30.195
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 13:41:55 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 13:41:55 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 2935.145 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 2935.145 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 2935.145 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2935.145 ; gain = 24.500
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-set_property  ip_repo_paths  E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/gen_withRegister [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/gen_withRegister'.
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 17:50:32 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 3363.781 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.368 . Memory (MB): peak = 3363.781 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 3363.781 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 3363.781 ; gain = 31.176
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Tue Dec 13 17:59:47 2022] Launched synth_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/synth_1/runme.log
-[Tue Dec 13 17:59:47 2022] Launched impl_1...
-Run output will be captured here: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.runs/impl_1/runme.log
-current_design impl_1
-refresh_design
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.144 . Memory (MB): peak = 3363.781 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 540 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.308 . Memory (MB): peak = 3363.781 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.308 . Memory (MB): peak = 3363.781 ; gain = 0.000
-refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3363.781 ; gain = 0.000
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1283.223 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property top sysgen_STN_tb [current_fileset]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'sysgen_STN_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.1/data/xsim/xsim.ini' copied to run dir:'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sysgen_STN_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sysgen_STN_tb_vlog.prj"
+"xvhdl --incr --relax -prj sysgen_STN_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'synth_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg_w_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'synth_reg_w_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/srl17e.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'srl17e'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/srl33e.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'srlc33e'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/synth_reg_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'synth_reg_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/single_reg_w_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'single_reg_w_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/xlclockdriver_rd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xlclockdriver'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/stn_16bit_entity_declarations.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_693bad5bbb'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_883301bae9'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_71bfc7d96c'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_xlregister'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_d3eecd1a63'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_074aca0999'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_63dd8e5609'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_59d7a09762'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_c8be316fba'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_9d5f01882d'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_constant_a83c06ebb5'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_inverter_093109fc15'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_logical_cd9e0c0419'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_mux_fa81cf80b1'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_relational_f767c8578e'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_relational_fc0fe97981'
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_shift_826b2e0d0c'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_xlslice'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_xladdsub'
+INFO: [VRFC 10-3107] analyzing entity 'xlcordic_42a051611ad73b92ffe37c70245f0072'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_xlmult'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.ip_user_files/ipstatic/xil_defaultlib/hdl/stn_16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_subsystem_x0'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_subsystem1'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_subsystem'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_struct'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit_default_clock_driver'
+INFO: [VRFC 10-3107] analyzing entity 'stn_16bit'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1283.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.sim/sim_1/behav/xsim'
+"xelab -wto fbe87a45d32c4dd797102ce5a03b483d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L axi_utils_v2_0_6 -L cordic_v6_0_17 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sysgen_STN_tb_behav xil_defaultlib.sysgen_STN_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto fbe87a45d32c4dd797102ce5a03b483d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L axi_utils_v2_0_6 -L cordic_v6_0_17 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sysgen_STN_tb_behav xil_defaultlib.sysgen_STN_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.nn_package
+Compiling package xil_defaultlib.conv_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package c_reg_fd_v12_0_6.c_reg_fd_v12_0_6_viv_comp
+Compiling package cordic_v6_0_17.cordic_v6_0_17_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_pkg
+Compiling package ieee.std_logic_signed
+Compiling package cordic_v6_0_17.cordic_pack
+Compiling package cordic_v6_0_17.cordic_hdl_comps
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_viv_comp
+Compiling package mult_gen_v12_0_17.dsp_pkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture structural of entity xil_defaultlib.single_reg_w_init [\single_reg_w_init(width=1)(0,3)...]
+Compiling architecture structural of entity xil_defaultlib.synth_reg_w_init [\synth_reg_w_init(width=1)(0,3)\]
+Compiling architecture behavior of entity xil_defaultlib.xlclockdriver [\xlclockdriver(period=1,log_2_pe...]
+Compiling architecture structural of entity xil_defaultlib.stn_16bit_default_clock_driver [stn_16bit_default_clock_driver_d...]
+Compiling architecture structural of entity c_reg_fd_v12_0_6.c_reg_fd_v12_0_6_viv [\c_reg_fd_v12_0_6_viv(c_width=17...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_14.c_addsub_v12_0_14_lut6_legacy [\c_addsub_v12_0_14_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_fabric_legacy [\c_addsub_v12_0_14_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_legacy [\c_addsub_v12_0_14_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture stn_16bit_c_addsub_v12_0_i1_arch of entity xil_defaultlib.stn_16bit_c_addsub_v12_0_i1 [stn_16bit_c_addsub_v12_0_i1_defa...]
+Compiling architecture behavior of entity xil_defaultlib.stn_16bit_xladdsub [\stn_16bit_xladdsub(core_name0="...]
+Compiling architecture rtl of entity c_addsub_v12_0_14.c_addsub_v12_0_14_lut6_legacy [\c_addsub_v12_0_14_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_fabric_legacy [\c_addsub_v12_0_14_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_legacy [\c_addsub_v12_0_14_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture stn_16bit_c_addsub_v12_0_i0_arch of entity xil_defaultlib.stn_16bit_c_addsub_v12_0_i0 [stn_16bit_c_addsub_v12_0_i0_defa...]
+Compiling architecture behavior of entity xil_defaultlib.stn_16bit_xladdsub [\stn_16bit_xladdsub(core_name0="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity c_addsub_v12_0_14.c_addsub_v12_0_14_lut6_legacy [\c_addsub_v12_0_14_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_fabric_legacy [\c_addsub_v12_0_14_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_legacy [\c_addsub_v12_0_14_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture synth of entity cordic_v6_0_17.addsub [\addsub(family="zynq",add_mode=2...]
+Compiling architecture struct_all of entity cordic_v6_0_17.delay [\delay(delay_len=0,family="zynq"...]
+Compiling architecture struct_all of entity cordic_v6_0_17.delay [\delay(delay_len=0,family="zynq"...]
+Compiling architecture struct_all of entity cordic_v6_0_17.delay_bit [\delay_bit(delay_len=0,family="z...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_inp_config [\cordic_inp_config(p_xdevicefami...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_pha_acc_slice_par [\cordic_pha_acc_slice_par(p_xdev...]
+Compiling architecture struct_all of entity cordic_v6_0_17.delay [\delay(delay_len=0,family="zynq"...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_ctrl_slice_par [\cordic_ctrl_slice_par(p_xdevice...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_eng [\cordic_eng(p_xdevicefamily="zyn...]
+Compiling architecture struct_all of entity cordic_v6_0_17.delay [\delay(delay_len=0,family="zynq"...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_round [\cordic_round(p_xdevicefamily="z...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_out_config [\cordic_out_config(p_xdevicefami...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_v6_0_17_synth [\cordic_v6_0_17_synth(c_architec...]
+Compiling architecture synth of entity cordic_v6_0_17.cordic_v6_0_17_viv [\cordic_v6_0_17_viv(c_architectu...]
+Compiling architecture xilinx of entity cordic_v6_0_17.cordic_v6_0_17 [\cordic_v6_0_17(c_architecture=2...]
+Compiling architecture stn_16bit_cordic_v6_0_i0_arch of entity xil_defaultlib.stn_16bit_cordic_v6_0_i0 [stn_16bit_cordic_v6_0_i0_default]
+Compiling architecture behavior of entity xil_defaultlib.xlcordic_42a051611ad73b92ffe37c70245f0072 [xlcordic_42a051611ad73b92ffe37c7...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_d3eecd1a63 [sysgen_constant_d3eecd1a63_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_074aca0999 [sysgen_constant_074aca0999_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_63dd8e5609 [sysgen_constant_63dd8e5609_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_59d7a09762 [sysgen_constant_59d7a09762_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_c8be316fba [sysgen_constant_c8be316fba_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_9d5f01882d [sysgen_constant_9d5f01882d_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_a83c06ebb5 [sysgen_constant_a83c06ebb5_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_inverter_093109fc15 [sysgen_inverter_093109fc15_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_logical_cd9e0c0419 [sysgen_logical_cd9e0c0419_defaul...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_mux_fa81cf80b1 [sysgen_mux_fa81cf80b1_default]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_relational_f767c8578e [sysgen_relational_f767c8578e_def...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_relational_fc0fe97981 [sysgen_relational_fc0fe97981_def...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_shift_826b2e0d0c [sysgen_shift_826b2e0d0c_default]
+Compiling architecture behavior of entity xil_defaultlib.stn_16bit_xlslice [\stn_16bit_xlslice(new_msb=15,ne...]
+Compiling architecture structural of entity xil_defaultlib.stn_16bit_subsystem_x0 [stn_16bit_subsystem_x0_default]
+Compiling architecture structural of entity xil_defaultlib.stn_16bit_subsystem1 [stn_16bit_subsystem1_default]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_693bad5bbb [sysgen_constant_693bad5bbb_defau...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.op_resize [\op_resize(ao_width=25)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.mult_gen_v12_0_17_viv [\mult_gen_v12_0_17_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.mult_gen_v12_0_17 [\mult_gen_v12_0_17(c_xdevicefami...]
+Compiling architecture stn_16bit_mult_gen_v12_0_i0_arch of entity xil_defaultlib.stn_16bit_mult_gen_v12_0_i0 [stn_16bit_mult_gen_v12_0_i0_defa...]
+Compiling architecture behavior of entity xil_defaultlib.stn_16bit_xlmult [\stn_16bit_xlmult(core_name0="st...]
+Compiling architecture behavior of entity xil_defaultlib.stn_16bit_xlmult [\stn_16bit_xlmult(core_name0="st...]
+Compiling architecture behavior of entity xil_defaultlib.stn_16bit_xlmult [\stn_16bit_xlmult(core_name0="st...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_883301bae9 [sysgen_constant_883301bae9_defau...]
+Compiling architecture behavior of entity xil_defaultlib.sysgen_constant_71bfc7d96c [sysgen_constant_71bfc7d96c_defau...]
+Compiling architecture structural of entity xil_defaultlib.single_reg_w_init [\single_reg_w_init(width=16,init...]
+Compiling architecture structural of entity xil_defaultlib.synth_reg_w_init [\synth_reg_w_init(width=16,init_...]
+Compiling architecture behavior of entity xil_defaultlib.stn_16bit_xlregister [\stn_16bit_xlregister(d_width=16...]
+Compiling architecture structural of entity xil_defaultlib.stn_16bit_subsystem [stn_16bit_subsystem_default]
+Compiling architecture structural of entity xil_defaultlib.stn_16bit_struct [stn_16bit_struct_default]
+Compiling architecture structural of entity xil_defaultlib.stn_16bit [stn_16bit_default]
+Compiling architecture stn_16bit_0_arch of entity xil_defaultlib.stn_16bit_0 [stn_16bit_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.sysgen_STN [sysgen_stn_default]
+Compiling architecture behavioral of entity xil_defaultlib.sysgen_stn_tb
+Built simulation snapshot sysgen_STN_tb_behav
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.sim/sim_1/behav/xsim/xsim.dir/sysgen_STN_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 16 00:06:41 2022...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 1283.223 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sysgen_STN_tb_behav -key {Behavioral:sim_1:Functional:sysgen_STN_tb} -tclbatch {sysgen_STN_tb.tcl} -view {E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN_tb_behav.wcfg
+source sysgen_STN_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1283.223 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sysgen_STN_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:31 . Memory (MB): peak = 1283.223 ; gain = 0.000
+update_compile_order -fileset sources_1
+run 100 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1283.223 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 13 18:03:57 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 16 04:57:38 2022...

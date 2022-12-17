@@ -2,99 +2,24 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Dec 13 12:38:19 2022
-# Process ID: 83228
+# Start of session at: Thu Dec 15 23:36:53 2022
+# Process ID: 10648
 # Current directory: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent73820 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\IP_Core_Based\TN_16bit\vivado\sysgen_STN\sysgen_STN.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent78492 E:\FPGAProject\01102022\FPGAResearch\5_Final_Submission\Simulink\IP_Core_Based\TN_16bit\vivado\sysgen_STN\sysgen_STN.xpr
 # Log file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/vivado.log
 # Journal file: E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN.xpr
 update_compile_order -fileset sources_1
-open_run synth_1 -name synth_1
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/BRAM32bit/gen [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/gen [current_project]
-update_ip_catalog
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-close_design
-open_run impl_1
-open_run synth_1 -name synth_1
-save_constraints
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-set_property  ip_repo_paths  E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/gen_withRegister [current_project]
-update_ip_catalog
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-refresh_design
-current_design synth_1
-save_constraints -force
-reset_run synth_1
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sysgen_STN_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+open_wave_config E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/IP_Core_Based/TN_16bit/vivado/sysgen_STN/sysgen_STN_tb_behav.wcfg
+source sysgen_STN_tb.tcl
+update_compile_order -fileset sources_1
+run 100 us
+close_sim

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/input_package.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/sysgen_STN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_STN'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/sysgen_STN_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sysgen_STN_tb'
