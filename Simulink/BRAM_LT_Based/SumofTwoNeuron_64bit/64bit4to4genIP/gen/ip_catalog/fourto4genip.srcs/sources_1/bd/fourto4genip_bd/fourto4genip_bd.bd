@@ -1,0 +1,98 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6B4A6A392399DB9C",
+      "design_src": "SYSGEN",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../fourto4genip.gen/sources_1/bd/fourto4genip_bd",
+      "name": "fourto4genip_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "fourto4genip_1": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "fourto4genip_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "gateway_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "gateway_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "63",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 64} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 59} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "fourto4genip_1": {
+        "vlnv": "User_Company:SysGen:fourto4genip:1.0",
+        "xci_name": "fourto4genip_bd_fourto4genip_1_0",
+        "xci_path": "ip\\fourto4genip_bd_fourto4genip_1_0\\fourto4genip_bd_fourto4genip_1_0.xci",
+        "inst_hier_path": "fourto4genip_1"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "fourto4genip_1/clk"
+        ]
+      },
+      "fourto4genip_1_gateway_out": {
+        "ports": [
+          "fourto4genip_1/gateway_out",
+          "gateway_out"
+        ]
+      },
+      "gateway_in_1": {
+        "ports": [
+          "gateway_in",
+          "fourto4genip_1/gateway_in"
+        ]
+      }
+    }
+  }
+}

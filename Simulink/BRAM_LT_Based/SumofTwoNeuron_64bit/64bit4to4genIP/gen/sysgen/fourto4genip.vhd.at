@@ -1,0 +1,22 @@
+{
+  'Line_24' => {
+    'CodeInstance' => 'fourto4genip_struct/rom',
+    'Instance' => 'rom',
+    'SimulinkInstance' => 'Fourto4genIP/ROM'
+  },
+  'Line_59' => {
+    'CodeInstance' => 'fourto4genip_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_90' => {
+    'CodeInstance' => 'fourto4genip_default_clock_driver',
+    'Instance' => 'fourto4genip_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_98' => {
+    'CodeInstance' => 'fourto4genip_struct',
+    'Instance' => 'fourto4genip_struct',
+    'SimulinkInstance' => 'Fourto4genIP'
+  }
+}

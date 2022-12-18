@@ -4,7 +4,7 @@ Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto fbe87a45d3
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-1537] value 5.76460752303423E+17 is out of target constraint range -2147483648 to 2147483647 [E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/input_package.vhd:14]
+WARNING: [VRFC 10-1537] value 5.76460752303423E+17 is out of target constraint range -2147483648 to 2147483647 [E:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.srcs/sources_1/new/input_package.vhd:14]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -282,5 +282,12 @@ Compiling architecture structural of entity xil_defaultlib.bram_stn_64bit_struct
 Compiling architecture structural of entity xil_defaultlib.bram_stn_64bit [bram_stn_64bit_default]
 Compiling architecture bram_stn_64bit_0_arch of entity xil_defaultlib.bram_stn_64bit_0 [bram_stn_64bit_0_default]
 Compiling architecture behavioral of entity xil_defaultlib.sysgen_STN [sysgen_stn_default]
+Compiling architecture structural of entity xil_defaultlib.fourto4genip_default_clock_driver [fourto4genip_default_clock_drive...]
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=3,ME...
+Compiling module xpm.xpm_memory_sprom(MEMORY_SIZE=655...
+Compiling architecture behavior of entity xil_defaultlib.fourto4genip_xlsprom [\fourto4genip_xlsprom(c_address_...]
+Compiling architecture structural of entity xil_defaultlib.fourto4genip_struct [fourto4genip_struct_default]
+Compiling architecture structural of entity xil_defaultlib.fourto4genip [fourto4genip_default]
+Compiling architecture fourto4genip_0_arch of entity xil_defaultlib.fourto4genip_0 [fourto4genip_0_default]
 Compiling architecture behavioral of entity xil_defaultlib.sysgen_stn_tb
 Built simulation snapshot sysgen_STN_tb_behav

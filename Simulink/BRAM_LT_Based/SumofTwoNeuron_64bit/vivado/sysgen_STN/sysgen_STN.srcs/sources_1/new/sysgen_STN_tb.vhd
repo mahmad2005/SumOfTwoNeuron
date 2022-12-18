@@ -21,6 +21,15 @@ end sysgen_STN_tb;
 
 architecture Behavioral of sysgen_STN_tb is
 
+COMPONENT fourto4genip_0
+  PORT (
+    gateway_in : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    gateway_out : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
+  );
+END COMPONENT;
+
+
 file result : text is out "FinalData.txt";
 file result_cos : text is out "FinalData_cos.txt";
 file result_sin : text is out "FinalData_sin.txt";
@@ -34,6 +43,7 @@ file file_RESULTS_Cos : text;
     signal input_t     :  STD_LOGIC_VECTOR (N-1 downto 0):= (others=>'0'); 
     signal  y_real       :  STD_LOGIC_VECTOR (N-1 downto 0);
     signal  y_imag       :  STD_LOGIC_VECTOR (N-1 downto 0);
+     signal gen_input     :  STD_LOGIC_VECTOR (9 downto 0):= (others=>'0'); 
     
     constant CLOCK_PERIOD   :   time                           := 100 ns;
 begin
@@ -41,6 +51,7 @@ begin
 file_open(file_RESULTS, "output_results.txt", write_mode);
 file_open(file_RESULTS_Sin, "output_sin.txt", write_mode);
 file_open(file_RESULTS_Cos, "output_cos.txt", write_mode);
+
 
 count_inst: entity work.sysgen_STN
    port map (
@@ -67,14 +78,16 @@ count_inst: entity work.sysgen_STN
             CLK <= '1';
             wait for (CLOCK_PERIOD)/2;
             CLK <= '0';
-            input_t <= STD_LOGIC_VECTOR(TO_SIGNED(12,64));
-            input_t <= "0000110000000001100000000000000001100000000000000001100000000000";            --  3.1416 ->  1686633657 
+            gen_input <= STD_LOGIC_VECTOR(TO_UNSIGNED(integer(input_3(i)),10));
+            --input_t <= "0000110000000001100000000000000001100000000000000001100000000000";            --  3.1416 ->  1686633657 
             --input_t <= 0c01800060001800;
             wait for (CLOCK_PERIOD)/2; 
                  
            
-		   write(outLine_cos,real(TO_INTEGER(SIGNED(y_real(N-1 downto 0))))/real(2**27));
-		   write(outLine_sin,real(TO_INTEGER(SIGNED(y_imag(N-1 downto 0))))/real(2**27));
+		   --write(outLine_cos,real(TO_INTEGER(SIGNED(y_real(N-1 downto 0))))/real(2**27));
+		   --write(outLine_sin,real(TO_INTEGER(SIGNED(y_imag(N-1 downto 0))))/real(2**27));
+		   write(outLine_cos,y_real(N-1 downto 0));
+		   write(outLine_sin,y_imag(N-1 downto 0));
            
            --writeline(result,outLine);
 		   writeline(result_cos,outLine_cos);
@@ -82,4 +95,13 @@ count_inst: entity work.sysgen_STN
        end loop;
        
     end process;
+    
+    your_instance_name : fourto4genip_0
+  PORT MAP (
+    gateway_in => gen_input,
+    clk => clk,
+    gateway_out => input_t
+  );
+
+    
 end Behavioral;

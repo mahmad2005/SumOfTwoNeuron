@@ -73,6 +73,9 @@ count_inst: entity work.sysgen_STN
            
 		   write(outLine_cos,real(TO_INTEGER(SIGNED(y_real(N-1 downto 0))))/real(2**F));
 		   write(outLine_sin,real(TO_INTEGER(SIGNED(y_imag(N-1 downto 0))))/real(2**F));
+		   
+		   write(outLine_cos, y_real(N-1 downto 0));
+		   write(outLine_sin, y_imag(N-1 downto 0));
            
            --writeline(result,outLine);
 		   writeline(result_cos,outLine_cos);

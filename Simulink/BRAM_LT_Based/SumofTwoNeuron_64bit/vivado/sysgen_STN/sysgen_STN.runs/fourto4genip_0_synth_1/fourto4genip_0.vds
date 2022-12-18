@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Dec 17 03:43:03 2022
+# Process ID: 85328
+# Current directory: E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1
+# Command line: vivado.exe -log fourto4genip_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fourto4genip_0.tcl
+# Log file: E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1/fourto4genip_0.vds
+# Journal file: E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fourto4genip_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/SumofTwoNeuron_64bit/vivado/gen64'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FPGAProject/01102022/FPGAResearch/5_Final_Submission/Simulink/BRAM_LT_Based/SumofTwoNeuron_64bit/64bit4to4genIP/gen'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.cache/ip 
+Command: synth_design -top fourto4genip_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44468
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fourto4genip_0' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/synth/fourto4genip_0.vhd:67]
+INFO: [Synth 8-3491] module 'fourto4genip' declared at 'e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip.vhd:77' bound to instance 'U0' of component 'fourto4genip' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/synth/fourto4genip_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'fourto4genip' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'fourto4genip_default_clock_driver' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'fourto4genip_default_clock_driver' (4#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'fourto4genip_struct' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'fourto4genip_xlsprom' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip_entity_declarations.vhd:63]
+	Parameter MEMORY_SIZE bound to: 65536 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: block - type: string 
+	Parameter MEMORY_INIT_FILE bound to: xpm_d4b9e8_vivado.mem - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 1 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 10 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_memory_sprom' declared at 'C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8760' bound to instance 'xpm_memory_sprom_inst' of component 'xpm_memory_sprom' [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip_entity_declarations.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sprom' [C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8760]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-3876] $readmem data file 'xpm_d4b9e8_vivado.mem' is read successfully [C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1127]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (5#1) [C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sprom' (6#1) [C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8760]
+INFO: [Synth 8-256] done synthesizing module 'fourto4genip_xlsprom' (7#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip_entity_declarations.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'fourto4genip_struct' (8#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'fourto4genip' (9#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/xil_defaultlib/hdl/fourto4genip.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'fourto4genip_0' (10#1) [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/synth/fourto4genip_0.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1282.871 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/constrs/fourto4genip.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.gen/sources_1/ip/fourto4genip_0/constrs/fourto4genip.xdc] for cell 'U0'
+Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1282.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---ROMs : 
+	                    ROMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/fourto4genip_struct/rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/fourto4genip_struct/rom/xpm_memory_sprom_inst/xpm_memory_base_inst/gen_rd_a.douta_reg_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1282.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.328 ; gain = 4.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.328 ; gain = 4.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.328 ; gain = 4.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.328 ; gain = 4.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.332 ; gain = 4.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.332 ; gain = 4.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAMB36E1 |     2|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1287.332 ; gain = 4.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1287.332 ; gain = 4.461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.332 ; gain = 4.461
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1287.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1311.598 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 2320508e
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1311.598 ; gain = 28.727
+INFO: [Common 17-1381] The checkpoint 'E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1/fourto4genip_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP fourto4genip_0, cache-ID = 9eaaf6a4267a0725
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/FPGAProject/01102022/FPGAResearch/6_FinalExam/Vivado/SumofTwoNeuron_64bit/vivado/sysgen_STN/sysgen_STN.runs/fourto4genip_0_synth_1/fourto4genip_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fourto4genip_0_utilization_synth.rpt -pb fourto4genip_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 17 03:43:36 2022...
