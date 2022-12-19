@@ -1,1 +1,3 @@
 The problem has been identified. 
+In BRAM based unexpected spikes problem are not related to timing iusse. 
+It is related to techbench output data conversion, there is a limit for integer variable that is 32 bit, so some how, while in coversion it goes beyond the limit and gives unexpected spikes. 
