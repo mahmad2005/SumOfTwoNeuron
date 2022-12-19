@@ -1,7 +1,7 @@
 clc;
 clear all;
 theta = -4:0.01:4;
-y = exp((1i*1.*theta)+log(2))*exp(1i*pi/2)+exp((1i*2.*theta)+log(2))*exp(1i*pi/2);
+y = exp((1i*1.*theta)+log(2))*exp(1i*pi/2)+exp((1i*2.*theta)+log(2))*exp(1i*pi/2);;
 
 y_real = real(y);
 y_imag = imag(y);
@@ -23,49 +23,12 @@ MATLAB_IN_OUT = [Theta, COS_MATLAB, SIN_MATLAB];
 
 fileID1 = fopen('FinalData_cos.txt','r');
 fileID2 = fopen('FinalData_sin.txt','r');
-formatSpec = '%32c';
+formatSpec = '%f';
 
-COS_FPGA1 = fscanf(fileID1,formatSpec);
-SIN_FPGA1 = fscanf(fileID2,formatSpec);
-    m = 1;
-    bitsize=32;
-    k = bitsize;
-    Cosco2=0;
-for n = 1:1000
-    Cosco1 = COS_FPGA1(m:k);
-    try
-    Cosco2 = typecast(uint32(bin2dec(Cosco1)), 'int32');
-    catch
-    end 
-    Cosco3(n) = double(Cosco2)*2^-27;
-    m =k+1;
-    k =m+bitsize+1;
-end
-
-    m = 1;
-    bitsize=32;
-    k = bitsize;
-    Sinco2 = 0;
-for n = 1:1000
-    Sinco1 = SIN_FPGA1(m:k);
-    try
-    Sinco2 = typecast(uint32(bin2dec(Sinco1)), 'int32');
-    catch
-    end 
-    Sinco3(n) = double(Sinco2)*2^-27;
-    m =k+1;
-    k =m+bitsize+1;
-end
-%COS_FPGA = COS_FPGA1(55:855);
-%SIN_FPGA = SIN_FPGA1(55:855);
-%COS_FPGA = bin2dec(COS_FPGA);
-%COS_FPGA = COS_FPGA.*2^-59;
-%SIN_FPGA = bin2dec(SIN_FPGA);
-%SIN_FPGA = SIN_FPGA.*2^-59;
-COS_FPGA = Cosco3;
-SIN_FPGA = Sinco3;
-COS_FPGA = COS_FPGA(58:858);
-SIN_FPGA = SIN_FPGA(58:858);
+COS_FPGA = fscanf(fileID1,formatSpec);
+SIN_FPGA = fscanf(fileID2,formatSpec);
+COS_FPGA = COS_FPGA(55:855);
+SIN_FPGA = SIN_FPGA(55:855);
 z = COS_FPGA + SIN_FPGA*1i;
 
 f2= figure;
@@ -79,8 +42,8 @@ title('FPGA output: 32 bit BRAM SysGen');
 % FPGA_IN_OUT = [Theta, COS_FPGA, SIN_FPGA];
 % 
 % 
-cos_abs_diff = abs(y_real-COS_FPGA);
-sin_abs_diff = abs(y_imag - SIN_FPGA);
+cos_abs_diff = abs(y_real'-COS_FPGA);
+sin_abs_diff = abs(y_imag' - SIN_FPGA);
 % 
 f3= figure;
 plot(theta, cos_abs_diff);
