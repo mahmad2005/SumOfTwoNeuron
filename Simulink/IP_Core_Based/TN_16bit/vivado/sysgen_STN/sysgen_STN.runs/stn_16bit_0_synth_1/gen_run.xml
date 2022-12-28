@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="stn_16bit_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670108515">
+<GenRun Id="stn_16bit_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1672036031">
   <File Type="PA-TCL" Name="stn_16bit_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="stn_16bit_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="stn_16bit_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="stn_16bit_0.vds"/>
   <File Type="RDS-UTIL" Name="stn_16bit_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="stn_16bit_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="stn_16bit_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="stn_16bit_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="stn_16bit_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/stn_16bit_0">
-    <File Path="$PSRCDIR/sources_1/ip/stn_16bit_0_1/stn_16bit_0.xci">
+    <File Path="$PSRCDIR/sources_1/ip/stn_16bit_0_3/stn_16bit_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -20,7 +23,7 @@
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/stn_16bit_0">
-    <File Path="$PSRCDIR/sources_1/ip/stn_16bit_0_1/stn_16bit_0.xci">
+    <File Path="$PSRCDIR/sources_1/ip/stn_16bit_0_3/stn_16bit_0.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -39,7 +42,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -19,3 +19,4 @@ close_sim
 launch_simulation
 source sysgen_STN_tb.tcl
 run 100 us
+close_sim

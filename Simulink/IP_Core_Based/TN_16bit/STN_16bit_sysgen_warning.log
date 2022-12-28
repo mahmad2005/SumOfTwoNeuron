@@ -1,0 +1,17 @@
+Warning:
+ code:     
+ severity: L1
+ open_fcn:   
+ summary:  Your license for Sysgen will expire in 13 days.
+ Environment variable XILINXD_LICENSE_FILE is not set.
+ Environment variable LM_LICENSE_FILE is not set.
+ License search path: C:\Users\maruf\AppData\Roaming\XilinxLicense;C:\.Xilinx;C:\Xilinx\Vivado\2021.1\data\ipcore_licenses
+INFO:: Your license for 'SysGen' is for evaluation use only.
+
+ details:  Your license for Sysgen will expire in 13 days.
+ Environment variable XILINXD_LICENSE_FILE is not set.
+ Environment variable LM_LICENSE_FILE is not set.
+ License search path: C:\Users\maruf\AppData\Roaming\XilinxLicense;C:\.Xilinx;C:\Xilinx\Vivado\2021.1\data\ipcore_licenses
+INFO:: Your license for 'SysGen' is for evaluation use only.
+
+

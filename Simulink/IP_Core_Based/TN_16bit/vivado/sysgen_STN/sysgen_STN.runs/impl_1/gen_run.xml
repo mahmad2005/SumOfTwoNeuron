@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1670975987">
-  <File Type="ROUTE-PWR" Name="sysgen_STN_power_routed.rpt"/>
   <File Type="PA-TCL" Name="sysgen_STN.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="sysgen_STN_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="sysgen_STN_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="sysgen_STN.msk"/>
-  <File Type="ROUTE-CLK" Name="sysgen_STN_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="sysgen_STN.vdi"/>
   <File Type="BG-BIT" Name="sysgen_STN.bit"/>
   <File Type="BG-DRC" Name="sysgen_STN.drc"/>
@@ -15,32 +12,16 @@
   <File Type="BITSTR-NKY" Name="sysgen_STN.nky"/>
   <File Type="BITSTR-BMM" Name="sysgen_STN_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="sysgen_STN.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="sysgen_STN_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="sysgen_STN.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="sysgen_STN.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="sysgen_STN_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="sysgen_STN.hwdef"/>
-  <File Type="PLACE-IO" Name="sysgen_STN_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="sysgen_STN_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="sysgen_STN_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="sysgen_STN_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="sysgen_STN_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="sysgen_STN_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="sysgen_STN_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="sysgen_STN_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="sysgen_STN_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="sysgen_STN_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="sysgen_STN_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="sysgen_STN_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="sysgen_STN_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="sysgen_STN_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="sysgen_STN_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="sysgen_STN_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW" Name="sysgen_STN_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="sysgen_STN_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="sysgen_STN_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="sysgen_STN_opt.dcp"/>
   <File Type="PLACE-DCP" Name="sysgen_STN_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="sysgen_STN_pwropt.dcp"/>
@@ -48,9 +29,6 @@
   <File Type="PHYSOPT-DCP" Name="sysgen_STN_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="sysgen_STN_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sysgen_STN_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sysgen_STN_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="sysgen_STN_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sysgen_STN_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="sysgen_STN.pdi"/>
   <File Type="RCFI_FILE" Name="sysgen_STN.rcfi"/>
   <File Type="CFI_FILE" Name="sysgen_STN.cfi"/>

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat Dec  3 17:03:08 2022
+| Date         : Mon Dec 26 00:28:41 2022
 | Host         : DESKTOP-1FT5C23 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file stn_16bit_0_utilization_synth.rpt -pb stn_16bit_0_utilization_synth.pb
 | Design       : stn_16bit_0
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             | 2266 |     0 |          0 |     53200 |  4.26 |
 |   LUT as Logic          | 2266 |     0 |          0 |     53200 |  4.26 |
 |   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |
-| Slice Registers         |  412 |     0 |          0 |    106400 |  0.39 |
-|   Register as Flip Flop |  412 |     0 |          0 |    106400 |  0.39 |
+| Slice Registers         |  364 |     0 |          0 |    106400 |  0.34 |
+|   Register as Flip Flop |  364 |     0 |          0 |    106400 |  0.34 |
 |   Register as Latch     |    0 |     0 |          0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 412   |          Yes |       Reset |            - |
+| 364   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,7 +150,7 @@ Table of Contents
 | LUT3     | 1184 |                 LUT |
 | LUT2     |  810 |                 LUT |
 | CARRY4   |  534 |          CarryLogic |
-| FDRE     |  412 |        Flop & Latch |
+| FDRE     |  364 |        Flop & Latch |
 | LUT1     |  280 |                 LUT |
 | LUT5     |   80 |                 LUT |
 | LUT6     |   26 |                 LUT |
